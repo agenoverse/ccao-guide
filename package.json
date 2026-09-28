@@ -1,0 +1,30 @@
+{
+  "name": "cc-sor",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cd system/site && bun run dev",
+    "build": "ksor build && cd system/site && bun run build",
+    "preview": "node system/site/preview.mjs",
+    "check": "node .agents/skills/format-checker/check.mjs",
+    "provision": "bun run schema && bun run grant",
+    "serve": "ksor serve",
+    "refresh": "ksor build && bun run ingest && bun run gc",
+    "schema": "ksor schema --instance instance.md --apply",
+    "grant": "ksor grant --instance instance.md",
+    "ingest": "ksor ingest --instance instance.md --flip",
+    "gc": "ksor gc --instance instance.md"
+  },
+  "dependencies": {
+    "@panaversity/ksor": "0.0.60"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "system/site",
+    "system/gateways/*",
+    "system/packages/*"
+  ]
+}
