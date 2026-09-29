@@ -101,10 +101,10 @@ export function HomeCover({
               </div>
             </dl>
 
-            <div className="mt-9 flex flex-wrap items-center gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards]">
+            <div className="mt-9 grid w-full max-w-2xl grid-cols-1 gap-2 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-2 lg:grid-cols-[1.05fr_0.95fr_1.2fr]">
               <Link
                 href={firstUrl}
-                className="group inline-flex items-center gap-2.5 rounded-md bg-[var(--ksor-cover-foreground)] px-4 py-2.5 text-sm font-semibold text-[var(--ksor-cover-panel)] shadow-[0_8px_20px_-12px_rgb(0_0_0/0.55)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-12px_rgb(0_0_0/0.65)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transform-none motion-reduce:transition-none"
+                className="group inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-[var(--ksor-cover-foreground)] px-3.5 py-2.5 text-[0.8125rem] font-semibold text-[var(--ksor-cover-panel)] shadow-[0_8px_20px_-12px_rgb(0_0_0/0.55)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-12px_rgb(0_0_0/0.65)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transform-none motion-reduce:transition-none"
               >
                 Start studying
                 <ArrowRight
@@ -114,25 +114,24 @@ export function HomeCover({
               </Link>
               <Link
                 href="/docs"
-                className="inline-flex items-center gap-2.5 rounded-md border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-5 py-3 text-sm font-medium text-[var(--ksor-cover-foreground)] transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
+                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-3.5 py-2.5 text-[0.8125rem] font-medium text-[var(--ksor-cover-foreground)] transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
               >
                 <LibraryBig aria-hidden className="size-4" />
                 Browse all
               </Link>
+              {community === null ? null : (
+                <a
+                  href={community}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-3.5 py-2.5 text-[0.8125rem] font-medium text-[var(--ksor-cover-foreground)] transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring sm:col-span-2 lg:col-span-1"
+                >
+                  <MessageCircle aria-hidden className="size-4" />
+                  Join WhatsApp group
+                  <ArrowRight aria-hidden className="size-3.5" />
+                </a>
+              )}
             </div>
-
-            {community === null ? null : (
-              <a
-                href={community}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2.5 rounded-md border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-4 py-2.5 text-sm font-medium text-[var(--ksor-cover-foreground)] transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
-              >
-                <MessageCircle aria-hidden className="size-4" />
-                Join WhatsApp group
-                <ArrowRight aria-hidden className="size-3.5" />
-              </a>
-            )}
           </div>
 
           <div className="flex justify-center lg:justify-end">
