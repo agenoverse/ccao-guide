@@ -2,8 +2,10 @@
 okf_version: "0.2"
 ---
 
-# KSoR
+# CCAO-F & PCAO-F Exam Prep
 
-* [What a Knowledge System of Record is](what-is-a-ksor.md) - The authoritative, governed knowledge layer humans, agents and software operate from.
-* [The governance ladder](governance-ladder.md) - Level 0 works immediately; a project climbs only as far as its domain needs.
-* [Surfaces](surfaces/)
+* [Start Here: How to Use This Record](overview.md) - A guide to navigating this exam preparation record for CCAO-F and PCAO-F, with a recommended study path.
+* [CCAO-F Master Map: The Complete Picture](master-map.md) - Complete overview mapping every course, concept, and exam domain weight — the one-page picture of how everything connects.
+* [Courses](courses/)
+* [Practice exams](practice-exams/)
+* [Reference](reference/)

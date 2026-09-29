@@ -1,23 +1,11 @@
 import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
+import { ArrowRight, BookOpen, LibraryBig } from "lucide-react";
 import type { ReactElement } from "react";
 
 import { RecordStack } from "@/components/record-stack";
 import type { RecordEntry } from "@/lib/source";
 
-/**
- * The cover of the record: one screen, standing alone.
- *
- * It is cover stock, one step off the page beneath it — pale in light, and in
- * the dark not white but the surface that catches the light. Every colour on it
- * is a `--ksor-cover-*` token, so the whole composition inverts with the theme
- * rather than staying dark in both, and the accent inverts with it.
- *
- * The record's own words on the left, the record ITSELF on the right — the
- * document it opens on, and the entries standing behind it. That stack is
- * where this page spends its boldness; everything around it is deliberately
- * quiet.
- */
 export function HomeCover({
   foot,
   mark,
@@ -42,44 +30,26 @@ export function HomeCover({
   /** Signed from inside the cover, so the front door is one screen. */
   foot?: ReactElement;
 }): ReactElement {
-  // The cover fills the window under the navbar (measured at 56px, the shell's
-  // `h-14`): a front door is the whole view, not a band with the page's
-  // background showing beneath it. `dvh` rather than `vh`, so a phone's
-  // collapsing browser chrome does not leave a gap at the bottom.
   return (
-    <section className="relative flex min-h-[calc(100dvh-3.5rem)] flex-col bg-[var(--ksor-cover)] text-[var(--ksor-cover-foreground)]">
-      {/* A ruled ground — the ledger's own lines, not a texture. Masked to
-          fade at both ends: at full strength edge to edge the rules read as
-          stripes ACROSS the composition rather than as the paper under it. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(to bottom, currentColor 0 1px, transparent 1px 2.25rem)",
-          maskImage: "linear-gradient(to bottom, transparent, black 22%, black 70%, transparent)",
-        }}
-      />
+    <section className="relative flex min-h-[calc(100dvh-3.5rem)] flex-col overflow-hidden bg-[var(--ksor-cover)] text-[var(--ksor-cover-foreground)]">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[var(--ksor-cover-rule)]" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[var(--ksor-cover-rule)]" />
 
-      {/* Centred in the space ABOVE the signature, not top-aligned with the
-          slack dumped underneath: `justify-center` on the section was cancelled
-          by the signature's `mt-auto`, which measured as 197px of dead space
-          below the content and none above it (found live 2026-08-22). */}
       <div className="relative flex flex-1 items-center">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-16 px-6 py-14 lg:grid-cols-[1fr_1fr] lg:gap-20">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-10 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(22rem,0.95fr)] lg:gap-14">
           <div>
             <div className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-500">
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <Image
                   src={mark}
                   alt=""
                   width={30}
                   height={30}
                   priority
-                  className="size-[30px] rounded ring-1 ring-[var(--ksor-cover-rule)]"
+                  className="size-[30px] rounded-md ring-1 ring-[var(--ksor-cover-rule)]"
                 />
-                <p className="font-mono text-xs tracking-[0.18em] text-[var(--ksor-cover-muted)] uppercase">
-                  System of record
+                <p className="font-mono text-[11px] tracking-[0.14em] text-[var(--ksor-cover-muted)] uppercase">
+                  Study record
                   <span aria-hidden className="mx-2 text-[var(--ksor-cover-rule)]">
                     /
                   </span>
@@ -87,45 +57,51 @@ export function HomeCover({
                 </p>
               </div>
 
-              <h1 className="mt-8 max-w-4xl font-display text-[clamp(2.5rem,5vw,4rem)] leading-[1.02] font-semibold tracking-[-0.022em] text-balance">
+              <h1 className="mt-7 max-w-3xl font-display text-[clamp(2.25rem,4.4vw,3.65rem)] leading-[1.05] font-semibold tracking-[-0.012em] text-balance">
                 {title}
               </h1>
-
-              {/* The accent as structure, in the token so it inverts with the
-              cover. It was pinned to the dark-theme blue back when the cover
-              was dark in BOTH themes; once the cover started following the
-              theme that left a pale blue hairline on a pale ground, all but
-              invisible in light (found live 2026-08-22). */}
-              <div className="mt-7 h-0.5 w-16 bg-fd-primary" />
             </div>
 
             {purpose === null ? null : (
-              <p className="relative mt-7 max-w-xl text-lg/[1.65] text-pretty sm:text-xl/[1.6] text-[var(--ksor-cover-muted)] motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:120ms] motion-safe:[animation-fill-mode:backwards]">
+              <p className="relative mt-5 max-w-2xl text-base/8 text-pretty text-[var(--ksor-cover-muted)] sm:text-lg/8 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:120ms] motion-safe:[animation-fill-mode:backwards]">
                 {purpose}
               </p>
             )}
 
-            <div className="mt-9 flex flex-wrap items-center gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:220ms] motion-safe:[animation-fill-mode:backwards]">
-              {/* One primary action. It names where it lands, because a front door
-              that says only "open" makes you click to find out. */}
+            <dl className="mt-7 grid max-w-xl grid-cols-2 gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:180ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-[repeat(2,minmax(0,12rem))]">
+              <div className="rounded-lg border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-4 py-3">
+                <dt className="flex items-center gap-2 font-mono text-[10px] tracking-[0.14em] text-[var(--ksor-cover-muted)] uppercase">
+                  <LibraryBig aria-hidden className="size-3.5" />
+                  Record
+                </dt>
+                <dd className="mt-1 text-2xl font-semibold tabular-nums">{documents}</dd>
+              </div>
+              <div className="rounded-lg border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-4 py-3">
+                <dt className="flex items-center gap-2 font-mono text-[10px] tracking-[0.14em] text-[var(--ksor-cover-muted)] uppercase">
+                  <BookOpen aria-hidden className="size-3.5" />
+                  Start
+                </dt>
+                <dd className="mt-1 truncate text-sm font-medium">{lead.title}</dd>
+              </div>
+            </dl>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards]">
               <Link
                 href={firstUrl}
-                className="group inline-flex items-center gap-2.5 rounded-md bg-fd-primary px-6 py-3.5 text-sm font-medium text-fd-primary-foreground transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transition-none"
+                className="group inline-flex items-center gap-2.5 rounded-md bg-fd-primary px-5 py-3 text-sm font-semibold text-fd-primary-foreground shadow-sm transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transition-none"
               >
-                Open the record
-                <span
-                  aria-hidden
-                  className="transition-transform group-hover:translate-x-0.5 motion-reduce:transform-none"
-                >
-                  &rarr;
-                </span>
+                Start studying
+                <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transform-none" />
+              </Link>
+              <Link
+                href="/docs"
+                className="inline-flex items-center gap-2.5 rounded-md border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-5 py-3 text-sm font-medium text-[var(--ksor-cover-foreground)] transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
+              >
+                Browse all
               </Link>
             </div>
           </div>
 
-          {/* The record, not a picture of one. It also carries what the meta
-              line beside the button used to say — which document opens, and
-              how many the record holds — so neither is said twice. */}
           <div className="flex justify-center lg:justify-end">
             <RecordStack lead={lead} behind={behind} documents={documents} />
           </div>

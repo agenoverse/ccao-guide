@@ -226,11 +226,15 @@ export interface RecordEntry {
   readonly documents: number;
 }
 
+function pageTitle(page: KnowledgePage): string {
+  return page.data.title ?? humanise(pathOf(page).replace(/\.md$/, ""));
+}
+
 /** The record's entry for one page — what any listing needs. */
 export function entryFor(page: KnowledgePage): RecordEntry {
   return {
     url: page.url,
-    title: page.data.title,
+    title: pageTitle(page),
     description: page.data.description?.trim() || null,
     badge: stagePageOf(pathOf(page))?.badge ?? null,
     owner: showGovernance ? readGovernance(page.data, page.path).owner : null,
@@ -304,7 +308,7 @@ function stampBullets(): string[] {
  */
 export function recordIndexText(): string {
   const lines = getMachinePages().map((page) => {
-    const link = `- [${page.data.title}](${basePath}${page.url})`;
+    const link = `- [${pageTitle(page)}](${basePath}${page.url})`;
     return page.data.description ? `${link}: ${page.data.description}` : link;
   });
   const head = [`# ${appTitle}`, ""];
@@ -329,9 +333,12 @@ export function rootIndexTwin(): string {
     title: appTitle,
     concepts: pages.map((page) => ({
       id: pathOf(page).replace(/\.md$/, ""),
-      title: page.data.title,
+      title: pageTitle(page),
       description: page.data.description ?? "",
-      order: typeof page.data.order === "number" ? page.data.order : null,
+      order:
+        typeof (page.data as { order?: unknown }).order === "number"
+          ? (page.data as { order: number }).order
+          : null,
     })),
     dirs: [...dirs],
   });

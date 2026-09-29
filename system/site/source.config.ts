@@ -20,6 +20,27 @@ import { knowledgeSourceDir } from "./lib/stage-knowledge";
 // the default page schema so a governed document always renders; the record
 // checker, which staging runs, is what enforces it.
 //
+// Extracted to a const so TypeScript 6 resolves the Zod 4 chain in isolation
+// before it becomes a generic argument — inlining it triggers TS2589
+// (excessively deep instantiation) which loses the fumadocs MDX fields
+// (body, toc, getText) from the inferred PageData type.
+// Intermediate without catchall: TypeScript sees only the named fields, no
+// [key: string]: any index signature. That signature makes T & any = any for
+// every property in intersected types (DocData & DocMethods & Frontmatter),
+// which erases body/toc/getText from PageData and collapses the whole
+// type-inference chain back to the base PageData (TypeScript 6 + Zod 4).
+const _docSchemaBase = pageSchema.extend({
+  type: z.string().optional(),
+  status: z.string().optional(),
+  order: z.number().optional(),
+  ksor: z.record(z.string(), z.any()).optional(),
+});
+
+// Runtime: catchall passes governance frontmatter through Zod's output so
+// readGovernance(page.data, ...) can read sources/verified/etc. TypeScript
+// sees typeof _docSchemaBase (no index signature) via the cast.
+const docSchema = _docSchemaBase.catchall(z.any()) as unknown as typeof _docSchemaBase;
+
 // The documents this build's viewer may see (and the assets they reference)
 // are staged into a filtered copy FIRST, for EVERY build, and this is where
 // that copy is chosen: one directory, one filter, every surface downstream.
@@ -42,14 +63,7 @@ export const docs = defineDocs({
     // staging copies nothing else — so an `.mdx` pattern here advertised a
     // shape the stage can never contain.
     files: ["**/*.md", "!**/*.summary.md", "!**/index.md"],
-    schema: pageSchema
-      .extend({
-        type: z.string().optional(),
-        status: z.string().optional(),
-        order: z.number().optional(),
-        ksor: z.record(z.string(), z.any()).optional(),
-      })
-      .catchall(z.any()),
+    schema: docSchema,
     postprocess: {
       // Exposes each page's processed markdown, for the page's reading time.
       // NOT for the machine surfaces: `/md/` and `llms-full.txt` republish the

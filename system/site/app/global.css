@@ -78,13 +78,13 @@
      brand rather than a shade of grey (hue 258, between the text's 255 and the
      accent's 264). It was ink in both themes for one afternoon, which made the
      light theme a dark page with a white foot. */
-  --ksor-cover: oklch(0.965 0.013 258);
-  --ksor-cover-foreground: oklch(0.2 0.03 258);
-  --ksor-cover-muted: oklch(0.5 0.022 258);
-  --ksor-cover-rule: oklch(0.885 0.016 258);
-  --ksor-cover-hover: oklch(0.935 0.018 258);
+  --ksor-cover: oklch(0.982 0.006 235);
+  --ksor-cover-foreground: oklch(0.19 0.018 245);
+  --ksor-cover-muted: oklch(0.48 0.014 245);
+  --ksor-cover-rule: oklch(0.895 0.01 235);
+  --ksor-cover-hover: oklch(0.955 0.01 235);
   --ksor-cover-panel: oklch(1 0 0);
-  --ksor-cover-panel-rule: oklch(0.9 0.014 258);
+  --ksor-cover-panel-rule: oklch(0.902 0.009 235);
 }
 
 .dark {
@@ -123,13 +123,13 @@
   /* In the dark the cover rises one step ABOVE the page (0.245 against the
      background's 0.155) rather than inverting: a cover is the surface that
      catches the light. Same object, same lighting, darker room. */
-  --ksor-cover: oklch(0.245 0.038 258);
-  --ksor-cover-foreground: oklch(0.97 0.006 258);
-  --ksor-cover-muted: oklch(0.72 0.022 258);
-  --ksor-cover-rule: oklch(0.34 0.03 258);
-  --ksor-cover-hover: oklch(0.3 0.035 258);
-  --ksor-cover-panel: oklch(0.285 0.036 258);
-  --ksor-cover-panel-rule: oklch(0.36 0.03 258);
+  --ksor-cover: oklch(0.19 0.018 245);
+  --ksor-cover-foreground: oklch(0.97 0.004 245);
+  --ksor-cover-muted: oklch(0.74 0.014 245);
+  --ksor-cover-rule: oklch(0.32 0.018 245);
+  --ksor-cover-hover: oklch(0.255 0.018 245);
+  --ksor-cover-panel: oklch(0.225 0.016 245);
+  --ksor-cover-panel-rule: oklch(0.345 0.018 245);
 }
 
 /* The token → utility mapping shadcn components compile against, as
@@ -152,6 +152,8 @@
    beats a distinctive one that arrives late. */
 @theme {
   --font-display: ui-serif, Georgia, "Times New Roman", Times, serif;
+  --font-reading: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman",
+    Times, serif;
 }
 
 @theme inline {
@@ -573,6 +575,41 @@ html > body[data-scroll-locked] {
   font-size: 1.0625rem;
   line-height: 1.6;
   text-wrap: pretty;
+}
+
+/* The record's long-form study text should read like study material, not app
+   chrome. Keep the surrounding shell in sans and the machine vocabulary in
+   mono, but set the markdown body in a warmer system serif with a little more
+   air between lines and list items. */
+#nd-page .prose {
+  font-family: var(--font-reading);
+  font-size: 1.0625rem;
+  line-height: 1.76;
+  color: color-mix(in oklab, var(--color-fd-foreground) 94%, var(--color-fd-muted-foreground));
+  text-wrap: pretty;
+}
+
+#nd-page .prose :is(p, li) {
+  line-height: 1.76;
+}
+
+#nd-page .prose p {
+  margin-top: 1.05rem;
+  margin-bottom: 1.05rem;
+}
+
+#nd-page .prose :is(ul, ol) {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+#nd-page .prose li {
+  margin-top: 0.45rem;
+  padding-inline-start: 0.1rem;
+}
+
+#nd-page .prose :is(table, thead, tbody, tr, th, td, code, pre, kbd) {
+  text-wrap: initial;
 }
 
 /* The section headings inside a document. The shell styles the title and

@@ -35,6 +35,19 @@ import { Slides } from "@/components/slides";
 import { StudyAids } from "@/components/study-aids";
 import { deckFor, quizFor, slidesFor, summaryFor } from "@/lib/attachments";
 import { readingMinutes } from "@/lib/reading-time";
+import type { TOCItemType } from "fumadocs-core/toc";
+
+type MDXBody = (props: { components?: Record<string, unknown> }) => ReactElement;
+type RenderedPageData = typeof source extends { getPage: (...args: never[]) => infer Page }
+  ? Page extends { data: infer Data }
+    ? Data & {
+        body: MDXBody;
+        toc: TOCItemType[];
+        full?: boolean;
+        getText: (mode: "processed" | "raw") => Promise<string>;
+      }
+    : never
+  : never;
 
 /** The route a slug names: `/docs`, or `/docs/a/b`. */
 function routeOf(slug: readonly string[] | undefined): string {
@@ -84,7 +97,8 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
     return <FolderPage dir={dir} />;
   }
 
-  const MDX = page.data.body;
+  const data = page.data as RenderedPageData;
+  const MDX = data.body;
   // Attachments of THIS document, found by suffix on its own path. Null is the
   // ordinary case, not an error.
   const summary = summaryFor(page.path);
@@ -95,7 +109,7 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   // Counted at BUILD time from the document's own markdown, so the figure is in
   // the shipped HTML for a reader with a failed bundle, a crawler and an agent
   // alike.
-  const minutes = readingMinutes(await page.data.getText("processed"));
+  const minutes = readingMinutes(await data.getText("processed"));
   const summaryMinutes =
     summary === null ? null : readingMinutes(await summary.getText("processed"));
   // What the record says about this document. The page renders it; it never
@@ -136,10 +150,10 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   }));
 
   return (
-    <TocItems items={page.data.toc}>
+    <TocItems items={data.toc}>
       <DocsPage
-        toc={page.data.toc}
-        full={page.data.full}
+        toc={data.toc}
+        full={data.full}
         // The rail is ours; the provider and the small-screen popover stay the
         // shell's (its own rail ran two to four headings ahead of the reader on
         // this record's short-sectioned documents). The breadcrumb is ours

@@ -1,0 +1,3 @@
+# Ai fluency
+
+* [Scenarios](scenarios/)

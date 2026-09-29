@@ -1,0 +1,643 @@
+{
+  "format": 1,
+  "build_id": "sha256:5ec747c3dda3352453033d01b1572f23cc4c6e99c375efa3d1108c50d98651a9",
+  "ksor_version": "0.0.60",
+  "okf": {
+    "version": "0.2",
+    "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
+    "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
+  },
+  "source_commit": "45418570874209985defd61bc1bedd360de4de9f",
+  "dirty": true,
+  "as_of": "2026-09-29T02:23:44.813Z",
+  "drafts": "hidden",
+  "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
+  "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
+  "people_sha256": "110d4ff9af5beaca83f8df721e5b8a4f15389bf4dffa5a1c0ec843947f93cad3",
+  "ledger_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ledger_entries": [],
+  "audiences": {
+    "registry": [],
+    "viewers": {
+      "public": [
+        "public"
+      ]
+    }
+  },
+  "documents": [
+    {
+      "path": "courses/ai-fluency/scenarios/part-1.md",
+      "sha256": "1422acb872ee7d5219caa98bf5f8d756d94d9de54c7d899b1d1392d6aea80f13",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-fluency/scenarios/part-2.md",
+      "sha256": "298ea7ba310ef99fe36f61e93d8ba0b22df7ac86532de3a7020263a611267a63",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-fluency/scenarios/part-3.md",
+      "sha256": "eec05c6da95a512203e90ce3f33104905e63dff6b3a5ed8ef6c28297135f6192",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-fluency/scenarios/part-4.md",
+      "sha256": "29903453ebc597e1def73e353461ef85b17f0c4d40323a0bf71f2d7e314ee7e7",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-fluency/scenarios/part-5.md",
+      "sha256": "8b69566afdc0b8aa3ed5610478dea09e24fe7daaf735fee96eb1ba8dae6b916f",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-fluency/scenarios/part-6.md",
+      "sha256": "97aa47177dd7412d644ad22d9d65893a46f85793bfb90bfb11998e33788c2acb",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-prompting-2026/hard-practice-test.md",
+      "sha256": "e25a898aa9c740b98086be4aac15bb3df869846108d7d87b07adab7b2cb5bf55",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-prompting-2026/practice-test.md",
+      "sha256": "aaa8f7b355f2e6d212fc84f6d7669c33ae1bc04fdd5e9351f60fa85094706bc5",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-prompting-2026/scenarios/part-1.md",
+      "sha256": "6a155e5d629d7189b3dea8959b59c10c5e8dc6ab21dcbfb15305650eea268d34",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-prompting-2026/scenarios/part-2.md",
+      "sha256": "b5f800876e7fb6c14121bda4b581e8267b0622a10853534b2df3d353b6c11641",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-prompting-2026/scenarios/part-3.md",
+      "sha256": "fe3bb4202023f7fc54081ab8284a7f06a1300eaa014e41a9b2707b56c7df42cb",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-prompting-2026/scenarios/part-4.md",
+      "sha256": "4d2ff79a357491fde47f92d32ff16fcece9e1809c92925e4d78348175bcbe68e",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/ai-prompting-2026/scenarios/part-5.md",
+      "sha256": "fc049e6739181e8e4c610ac5b37e797eb377040761f952c2c828390e0a251b0d",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/chatgpt-claude-quick-reference/scenarios/part-1.md",
+      "sha256": "6dc7a8735c533b076141c39674f34928cbe310da5953065072b1d52dd48e557b",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/chatgpt-claude-quick-reference/scenarios/part-2.md",
+      "sha256": "61cc6b200ffac73d1892c8f98a8d94c8e519b0f5f4ed2c639c1efec8d16087ba",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/chatgpt-claude-quick-reference/scenarios/part-3.md",
+      "sha256": "493cdd8722bba5fe9b30a6ec072bce7ea1a5f2795e24abe6275c54d9db29fae1",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/chatgpt-claude-quick-reference/scenarios/part-4.md",
+      "sha256": "ab08e6a6c1ffc0ca55abe44a51ef415f0e5fb838980d40bad5651b6c346ba99c",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/hard-practice-test.md",
+      "sha256": "24640a14ed6a73703d76408d91abea9d10ea9f123071c3bf6c3af2d6b1d8ec2f",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/scenarios/part-1.md",
+      "sha256": "b604a294e36c1a1a5c52f48a76a88cd8e4bbcf5a1e2bb7c26b15e0fe5f994293",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/scenarios/part-2.md",
+      "sha256": "0c2c2baa962f3fcabb49097a4369089ea8b343ad82bceef577c87df349fd7cac",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/scenarios/part-3.md",
+      "sha256": "cfaec18a1dc61d1dec7d22bed9e7c9c19408b7088930e0b68d6efdbf1f47479c",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/scenarios/part-4.md",
+      "sha256": "2759ad5c65ffee96c48f286628f0fa3d8b404508b650b989f45f0839999015b1",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/scenarios/part-5.md",
+      "sha256": "fe7d3094eea977d09335c8e3cd56c1c168d34f52131ee040052d473dbcf237b2",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/scenarios/part-6.md",
+      "sha256": "87ae9b166594fb86a515ba7c5c28bd0670762a7c6463074551e908e1e31cb51a",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/study-guide.md",
+      "sha256": "f6a0c300bb808f466122c63718385fda49eb03dba8f13fb2070bcf6036c5cbcf",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/just-delegate-it/practice-questions.md",
+      "sha256": "06eb26c7c925a36eb8736f98fcaa866ddba2b74e95639c55cd5005145ce0dd10",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/just-delegate-it/scenarios/part-1.md",
+      "sha256": "32c52bbd322f2acba4a20cf61d997cad4f7a6e53bda9fc7357c6ec0bb0b84c34",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/just-delegate-it/scenarios/part-2.md",
+      "sha256": "9500e372c03332db8543363c69639f65f8514884e9218f69e7a8db0352d4fb36",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/just-delegate-it/scenarios/part-3.md",
+      "sha256": "700afe05e4977332f261e5b1a401ac2f648b8c1c40e843c2b2538a25c49d90a2",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/just-delegate-it/scenarios/part-4.md",
+      "sha256": "96073a2d4c0ea58d5e1d70a569c99b7235e2a84cd681c1f94b3ec44edbdd86e1",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/just-delegate-it/study-guide.md",
+      "sha256": "ed81f1a05c18afb64b373d6e6e5753732539da3becc7081a4d9907d2a144428c",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/hard-practice-test.md",
+      "sha256": "b1914c3232bd6024a46be978baae1920a42d977ed3870453e38ad726e8cf8551",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/practice-questions.md",
+      "sha256": "4b512571f091a7af09c5644f9248f84fa8b62932200809b7b17d86e5ac560933",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/scenarios/part-1.md",
+      "sha256": "4ccba461bb525c03072dab1df950e15fc02632b3b42c30a1ba0381b83085eee7",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/scenarios/part-2.md",
+      "sha256": "c3b7cdf3ea06c0c722640f879738c5ba1c3e710034e861c69801b62eca629221",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/scenarios/part-3.md",
+      "sha256": "a99b8ce1da0f0198b5b5ec83d5f62afa459c3cc069c025f67b268caf0835db8e",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/scenarios/part-4.md",
+      "sha256": "e27da2a8dfbcae4cfa7ee7584e0b3748547350f6d5cd28469285f7844948a600",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/scenarios/part-5.md",
+      "sha256": "4aaca8b97dd4d54ba0296cf66c7f60a510790d11d8406d37a11ab7c112a6be6b",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/scenarios/part-6.md",
+      "sha256": "3d33777c577c43fc1b80162045ae02c21e962a7186247909026425558c845295",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/study-guide.md",
+      "sha256": "a00dcdb07acf2863b1a64cc26e83b55ca95f0e350b1bb894c8e786ee0f2a5e87",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "master-map.md",
+      "sha256": "c77882338d83104cef2855c8854518be09d9bfb805d59148dc5789109e73a782",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "overview.md",
+      "sha256": "0b273ca25797816b7a7cc9a6f359f488c74ba8f6912e3841ea0d4eb9ffd442f0",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "practice-exams/day1-diagnostic.md",
+      "sha256": "2e86b73b0c2565dc78594859b0e17972b85ec7379038e4be375a9cc1e7464eab",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "practice-exams/day2-weakness-drill.md",
+      "sha256": "4b92dee5a7a74d6b5d495c3b9360a6928a11fd17499e162c7aeb587b1012f81c",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "practice-exams/day3-longcase-speed-drill.md",
+      "sha256": "84973fdfe95a4c3d8892af3d87be2145fe59b3ec19360679187182889bc36df7",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "practice-exams/mock-exam-1.md",
+      "sha256": "9c7e52875f8ee807e996f8d0c7703e8ebd5e4bdf14d90858e81a24397c52aedf",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "practice-exams/mock-exam-2.md",
+      "sha256": "823bfcdab1246bea245bb82f8a9c840156893099426a3bfb66a61cbb75ae0305",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "reference/business-vocabulary.md",
+      "sha256": "346e982c15e99af40fe71b2fa3889819851a4e2e7e8d80a462164fbed27ad70c",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "reference/exam-vocabulary.md",
+      "sha256": "5981ffa6a4679c13345081de12cfaf5345c6f59b161c78b24dbc04b6048c4557",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    }
+  ],
+  "companions": [],
+  "assets": [],
+  "indexes": [
+    {
+      "path": "courses/ai-fluency/index.md",
+      "sha256": "208e34281647f7e678d464941af21ed29feb70dc0524b9ea8cb18fae3aa84c6c"
+    },
+    {
+      "path": "courses/ai-fluency/scenarios/index.md",
+      "sha256": "02673af530479a50bb711f3ce780fcaed7246a9cde4c170353cf5bebb4c6decc"
+    },
+    {
+      "path": "courses/ai-prompting-2026/index.md",
+      "sha256": "3b72796cf757947a56450137b3a39870da71b396c0911642f9faff1ad3838a39"
+    },
+    {
+      "path": "courses/ai-prompting-2026/scenarios/index.md",
+      "sha256": "a3162bf0bba61609a03f12dab942fff818f78873167f10cfe2396a91c48ac873"
+    },
+    {
+      "path": "courses/chatgpt-claude-quick-reference/index.md",
+      "sha256": "c2873c4c57d57e872dc08098ea1ae2f4710824bf8147f99e9d6df8ea79570c2f"
+    },
+    {
+      "path": "courses/chatgpt-claude-quick-reference/scenarios/index.md",
+      "sha256": "2e5565040612aad0679926a104e608e56cd638625e4b8d800e876cf46566e34f"
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/index.md",
+      "sha256": "6deef7acf6f61202a25530e3345d3beb33842cd5212cc08a8e0b36fae5f42c0d"
+    },
+    {
+      "path": "courses/governance-risk-responsible-use/scenarios/index.md",
+      "sha256": "efffb7452ad795518ac5200f95bb50a11368780c9562e13e6ec854a7275007e2"
+    },
+    {
+      "path": "courses/index.md",
+      "sha256": "b27342939687d4d39a8d3031b22b9a9d52fa8ac51f58142a47d3dcf128792d22"
+    },
+    {
+      "path": "courses/just-delegate-it/index.md",
+      "sha256": "088c8878c7a5335a4c51f2266dd7654ad70160c5e0be16fd90b87647ee4ec125"
+    },
+    {
+      "path": "courses/just-delegate-it/scenarios/index.md",
+      "sha256": "783b0e1785cd07923574e74ffb1de6cae7fed5095594ebea504b4c468409124d"
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/index.md",
+      "sha256": "efb26830526c00f84c717237acd2eeb453ea22f90cdcc5a6523e68984aa7a84e"
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/scenarios/index.md",
+      "sha256": "735766adcd4556f011ba7b73ab540a884fd719aa2f0dbad2dc99e523da84746d"
+    },
+    {
+      "path": "index.md",
+      "sha256": "ea30152a74e855491d8808aeb0be34a47f96183affd6b8096cfc8ed60e9d5888"
+    },
+    {
+      "path": "practice-exams/index.md",
+      "sha256": "ec8e665bbb421f59431dcfbe103d15c9ce4ef7e1ebbc8f2fdeeeead9a52ecb0d"
+    },
+    {
+      "path": "reference/index.md",
+      "sha256": "0f0ea28193672690acd3e165e4a11895322d3ba712cd96c75690857efcdf165c"
+    }
+  ],
+  "bundles": [
+    {
+      "viewer": "public",
+      "sha256": "0632ed6535e13ba13d0eaf236c7357be9e7b04666788de4503fa56bfb5889bf8",
+      "files": 65
+    }
+  ]
+}
