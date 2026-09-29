@@ -30,18 +30,18 @@ export const metadata: Metadata = {
     description: appDescription ?? appTitle,
     images: [
       {
-        url: "/icon.png",
-        width: 512,
-        height: 512,
-        alt: `${appTitle} logo`,
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: `${appTitle} study resources`,
       },
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: appTitle,
     description: appDescription ?? appTitle,
-    images: ["/icon.png"],
+    images: ["/opengraph-image.png"],
   },
   // A build that shows drafts (`KSOR_DRAFTS=show`) is a preview, and a static
   // site's pages are open-web artefacts: it says so to every crawler rather
