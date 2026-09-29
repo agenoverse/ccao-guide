@@ -44,7 +44,8 @@ export default function HomePage(): ReactElement {
   // building an entry directly — the first document in governed order can sit
   // BELOW the top level, where the root's own listing would never return it.
   const entries = entriesUnder("");
-  const lead = entries.find((entry) => entry.url === first.url) ?? entryFor(first);
+  const lead =
+    entries.find((entry) => entry.url === first.url) ?? entryFor(first);
   const behind = entries.filter((entry) => entry.url !== lead.url).slice(0, 3);
   const communityPage = pages.find((page) => page.url === "/docs/community");
 
@@ -67,9 +68,7 @@ export default function HomePage(): ReactElement {
         lead={lead}
         behind={behind}
         community={
-          communityPage === undefined
-            ? null
-            : { url: communityPage.url }
+          communityPage === undefined ? null : { url: communityPage.url }
         }
         // Signed from inside the cover, so the front door is one screen rather
         // than a band with a strip of page beneath it.
