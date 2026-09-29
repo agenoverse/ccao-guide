@@ -22,10 +22,10 @@ export function RecordStack({
   const entries = [lead, ...behind].slice(0, 4);
 
   return (
-    <div className="w-full max-w-md rounded-xl border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] p-4 shadow-[0_22px_60px_-42px_rgb(15_23_42/0.65)] motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-3 motion-safe:duration-700 motion-safe:[animation-delay:180ms] motion-safe:[animation-fill-mode:backwards] sm:p-5">
+    <div className="w-full max-w-md overflow-hidden rounded-lg border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] p-5 shadow-[0_22px_60px_-42px_rgb(15_23_42/0.65)] motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-3 motion-safe:duration-700 motion-safe:[animation-delay:180ms] motion-safe:[animation-fill-mode:backwards] sm:p-6">
       <Link
         href={lead.url}
-        className="group block rounded-lg border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-hover)] p-5 transition-colors hover:border-fd-primary/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
+        className="group block border-b border-[var(--ksor-cover-panel-rule)] pb-6 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
       >
         <div className="flex items-center justify-between gap-4">
           <span className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.16em] text-[var(--ksor-cover-muted)] uppercase">
@@ -65,7 +65,7 @@ export function RecordStack({
         </div>
       </Link>
 
-      <div className="mt-5">
+      <div className="mt-6">
         <div className="flex items-center justify-between gap-3">
           <h2 className="font-mono text-[10px] tracking-[0.16em] text-[var(--ksor-cover-muted)] uppercase">
             Study sections
@@ -75,31 +75,33 @@ export function RecordStack({
           </span>
         </div>
 
-        <ul className="mt-3 grid gap-2">
+        <ul className="mt-3 grid gap-1">
           {entries.map((entry) => {
             const Icon = entry.documents > 0 ? FolderOpen : FileText;
             return (
               <li key={entry.url}>
                 <Link
                   href={entry.url}
-                  className="group flex items-center gap-3 rounded-md px-3 py-2.5 transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
+                  className="group flex min-w-0 max-w-full items-center gap-3 rounded-md px-4 py-2.5 transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
                 >
                   <Icon
                     aria-hidden
                     className="size-4 shrink-0 text-[var(--ksor-cover-muted)] transition-colors group-hover:text-fd-primary"
                   />
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate text-sm font-medium transition-colors group-hover:text-fd-primary">
+                  <span className="min-w-0 flex-1 overflow-hidden pr-2">
+                    <span className="block max-w-full truncate text-sm font-medium transition-colors group-hover:text-fd-primary">
                       {entry.title}
                     </span>
                     {entry.description === null ? null : (
-                      <span className="mt-0.5 block truncate text-xs text-[var(--ksor-cover-muted)]">
+                      <span className="mt-0.5 block max-w-full text-xs/5 text-[var(--ksor-cover-muted)] line-clamp-2">
                         {entry.description}
                       </span>
                     )}
                   </span>
                   <span className="flex shrink-0 items-center gap-2">
-                    {entry.badge === null ? null : <StatusChip badge={entry.badge} />}
+                    {entry.badge === null ? null : (
+                      <StatusChip badge={entry.badge} />
+                    )}
                     {entry.documents === 0 ? null : (
                       <span className="font-mono text-[10px] tracking-wider text-[var(--ksor-cover-muted)] uppercase tabular-nums">
                         {entry.documents}

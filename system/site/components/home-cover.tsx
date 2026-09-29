@@ -32,11 +32,17 @@ export function HomeCover({
 }): ReactElement {
   return (
     <section className="relative flex min-h-[calc(100dvh-3.5rem)] flex-col overflow-hidden bg-[var(--ksor-cover)] text-[var(--ksor-cover-foreground)]">
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[var(--ksor-cover-rule)]" />
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[var(--ksor-cover-rule)]" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[var(--ksor-cover-rule)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[var(--ksor-cover-rule)]"
+      />
 
       <div className="relative flex flex-1 items-center">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-10 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(22rem,0.95fr)] lg:gap-14">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-5 py-10 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,1.08fr)_minmax(22rem,0.92fr)] lg:gap-16">
           <div>
             <div className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-500">
               <div className="flex flex-wrap items-center gap-3">
@@ -50,53 +56,64 @@ export function HomeCover({
                 />
                 <p className="font-mono text-[11px] tracking-[0.14em] text-[var(--ksor-cover-muted)] uppercase">
                   Study record
-                  <span aria-hidden className="mx-2 text-[var(--ksor-cover-rule)]">
+                  <span
+                    aria-hidden
+                    className="mx-2 text-[var(--ksor-cover-rule)]"
+                  >
                     /
                   </span>
                   <span className="normal-case">{name}</span>
                 </p>
               </div>
 
-              <h1 className="mt-7 max-w-3xl font-display text-[clamp(2.25rem,4.4vw,3.65rem)] leading-[1.05] font-semibold tracking-[-0.012em] text-balance">
+              <h1 className="mt-7 max-w-2xl font-display text-[clamp(2.25rem,4.4vw,3.65rem)] leading-[1.07] font-semibold tracking-[-0.018em] text-balance">
                 {title}
               </h1>
             </div>
 
             {purpose === null ? null : (
-              <p className="relative mt-5 max-w-2xl text-base/8 text-pretty text-[var(--ksor-cover-muted)] sm:text-lg/8 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:120ms] motion-safe:[animation-fill-mode:backwards]">
+              <p className="relative mt-6 max-w-xl text-base/8 text-pretty text-[var(--ksor-cover-muted)] sm:text-lg/8 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:120ms] motion-safe:[animation-fill-mode:backwards]">
                 {purpose}
               </p>
             )}
 
-            <dl className="mt-7 grid max-w-xl grid-cols-2 gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:180ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-[repeat(2,minmax(0,12rem))]">
-              <div className="rounded-lg border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-4 py-3">
+            <dl className="mt-8 grid max-w-xl grid-cols-2 border-y border-[var(--ksor-cover-rule)] py-4 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:180ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-[repeat(2,minmax(0,12rem))]">
+              <div className="border-r border-[var(--ksor-cover-rule)] pr-4">
                 <dt className="flex items-center gap-2 font-mono text-[10px] tracking-[0.14em] text-[var(--ksor-cover-muted)] uppercase">
                   <LibraryBig aria-hidden className="size-3.5" />
-                  Record
+                  Materials
                 </dt>
-                <dd className="mt-1 text-2xl font-semibold tabular-nums">{documents}</dd>
+                <dd className="mt-1 text-2xl font-semibold tabular-nums">
+                  {documents}
+                </dd>
               </div>
-              <div className="rounded-lg border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-4 py-3">
+              <div className="pl-4">
                 <dt className="flex items-center gap-2 font-mono text-[10px] tracking-[0.14em] text-[var(--ksor-cover-muted)] uppercase">
                   <BookOpen aria-hidden className="size-3.5" />
-                  Start
+                  First stop
                 </dt>
-                <dd className="mt-1 truncate text-sm font-medium">{lead.title}</dd>
+                <dd className="mt-1 truncate text-sm font-medium">
+                  {lead.title}
+                </dd>
               </div>
             </dl>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards]">
+            <div className="mt-9 flex flex-wrap items-center gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards]">
               <Link
                 href={firstUrl}
                 className="group inline-flex items-center gap-2.5 rounded-md bg-fd-primary px-5 py-3 text-sm font-semibold text-fd-primary-foreground shadow-sm transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transition-none"
               >
                 Start studying
-                <ArrowRight aria-hidden className="size-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transform-none" />
+                <ArrowRight
+                  aria-hidden
+                  className="size-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transform-none"
+                />
               </Link>
               <Link
                 href="/docs"
                 className="inline-flex items-center gap-2.5 rounded-md border border-[var(--ksor-cover-panel-rule)] bg-[var(--ksor-cover-panel)] px-5 py-3 text-sm font-medium text-[var(--ksor-cover-foreground)] transition-colors hover:bg-[var(--ksor-cover-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
               >
+                <LibraryBig aria-hidden className="size-4" />
                 Browse all
               </Link>
             </div>
