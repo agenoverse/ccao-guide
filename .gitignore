@@ -7,7 +7,7 @@
 !.ksor/governance.yaml
 !.ksor/people.yaml
 !.ksor/takedowns.yaml
-
+.env
 node_modules/
 system/site/.next/
 system/site/.source/
