@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "build_id": "sha256:82b46b1e87e937a71717798d4bc7ab16030fcbcf68618815097d8c3fd179a11a",
+  "build_id": "sha256:c812fd106e296c4af1d2e1a12bfad18061dbf70cb27ae9d788f80f4232b64f4e",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
@@ -8,8 +8,8 @@
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
   "source_commit": "2e33b80ec93322bf5b49dc1beccb792b36f12b87",
-  "dirty": false,
-  "as_of": "2026-09-29T05:11:46.486Z",
+  "dirty": true,
+  "as_of": "2026-09-29T11:07:17.659Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -126,25 +126,21 @@
     },
     {
       "path": "courses/ai-prompting-2026/hard-practice-test.md",
-      "sha256": "e25a898aa9c740b98086be4aac15bb3df869846108d7d87b07adab7b2cb5bf55",
-      "status": "stable",
+      "sha256": "cdd44d2f8881b7f2a86ff22ad8e18e85c1bfc71096139823abd96dcede762891",
+      "status": "draft",
       "audience": [
         "public"
       ],
-      "admitted": [
-        "public"
-      ]
+      "admitted": []
     },
     {
       "path": "courses/ai-prompting-2026/practice-test.md",
-      "sha256": "aaa8f7b355f2e6d212fc84f6d7669c33ae1bc04fdd5e9351f60fa85094706bc5",
-      "status": "stable",
+      "sha256": "7e7067fd2fed60d09b05330ab019d2f1bc184ad5875d921d2524a0e507f15cc9",
+      "status": "draft",
       "audience": [
         "public"
       ],
-      "admitted": [
-        "public"
-      ]
+      "admitted": []
     },
     {
       "path": "courses/ai-prompting-2026/scenarios/part-1.md",
@@ -247,14 +243,12 @@
     },
     {
       "path": "courses/governance-risk-responsible-use/hard-practice-test.md",
-      "sha256": "24640a14ed6a73703d76408d91abea9d10ea9f123071c3bf6c3af2d6b1d8ec2f",
-      "status": "stable",
+      "sha256": "28078157a333147b8a6549e7971a67cdf2c6f29197482763e80364759c8aea93",
+      "status": "draft",
       "audience": [
         "public"
       ],
-      "admitted": [
-        "public"
-      ]
+      "admitted": []
     },
     {
       "path": "courses/governance-risk-responsible-use/scenarios/part-1.md",
@@ -335,14 +329,12 @@
     },
     {
       "path": "courses/just-delegate-it/practice-questions.md",
-      "sha256": "06eb26c7c925a36eb8736f98fcaa866ddba2b74e95639c55cd5005145ce0dd10",
-      "status": "stable",
+      "sha256": "cf1b5108cb24826dda67c2fec565ed43df7f6c9a8cd622e82e9688357bede618",
+      "status": "draft",
       "audience": [
         "public"
       ],
-      "admitted": [
-        "public"
-      ]
+      "admitted": []
     },
     {
       "path": "courses/just-delegate-it/scenarios/part-1.md",
@@ -401,14 +393,12 @@
     },
     {
       "path": "courses/workflow-design-diagnosis/hard-practice-test.md",
-      "sha256": "b1914c3232bd6024a46be978baae1920a42d977ed3870453e38ad726e8cf8551",
-      "status": "stable",
+      "sha256": "a8debed2c3a19842e4badf7febaea3e76c9c756d0a007cee73d7fce3f59ecdd4",
+      "status": "draft",
       "audience": [
         "public"
       ],
-      "admitted": [
-        "public"
-      ]
+      "admitted": []
     },
     {
       "path": "courses/workflow-design-diagnosis/practice-questions.md",
@@ -647,8 +637,8 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "a860fb48d0ab5276ea3f4c4631bf1b6f837a42886c666ba68aa4fca1af1cc592",
-      "files": 66
+      "sha256": "1437d83681d3d36c106f53c683767bb5872ff08f8ff3afc82382b20fba948342",
+      "files": 61
     }
   ]
 }

@@ -2,7 +2,7 @@
 type: Document
 title: "AI Prompting in 2026: Practice Test"
 description: "Practice test covering all AI Prompting in 2026 concepts at exam difficulty."
-status: stable
+status: draft
 generated:
   by: human:shazilk-dev
   at: "2026-09-28T17:50:00Z"
@@ -20,6 +20,7 @@ order: 48
 **How to use:** The quiz below covers all 26 single-answer questions with hidden answers. The 4 "Select 2" questions are below — work through them with the answer hidden in the callout.
 
 **Scoring:**
+
 - 27–30 (90%+): Exam-ready
 - 23–26 (77–86%): Strong but with gaps — re-read the scenario guide for missed concepts
 - Below 23: Re-read the scenario guides before retrying

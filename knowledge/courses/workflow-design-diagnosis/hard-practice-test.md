@@ -2,7 +2,7 @@
 type: Document
 title: "Workflow Design & Diagnosis: Hard Practice Test"
 description: "Hard-difficulty practice test with complex multi-step workflow scenarios and diagnosis challenges."
-status: stable
+status: draft
 generated:
   by: human:shazilk-dev
   at: "2026-09-28T17:28:00Z"
@@ -20,15 +20,17 @@ order: 89
 ---
 
 > [!warning] EXAM RULES — Read Before Starting
+>
 > - **Total: 30 questions | 60 minutes**
 > - **Hard limit: 90 seconds per MCQ | 2 minutes per multi-select | 4 minutes per long case**
 > - **No going back.** Answer before moving to the next question.
 > - **Never skip blank.** Even a forced guess beats a zero.
-> - **Core sentence:** *"The output is not the verdict. Judge the step by what it costs and who answers for it, and judge a failure by when it started."*
+> - **Core sentence:** _"The output is not the verdict. Judge the step by what it costs and who answers for it, and judge a failure by when it started."_
 
 ---
 
 > [!tip] Time Targets by Section
+>
 > - Q1–Q15 (Part 1): **28 minutes**
 > - Q16–Q30 (Part 2): **32 minutes**
 
@@ -41,7 +43,7 @@ order: 89
 > [!question] Q1 — C1: Step vs. Session
 > ⏱ **90 seconds**
 >
-> A procurement team at a shipping company has been "using AI" for six months to help draft supplier evaluation reports. Each analyst does it their own way — some start from scratch, some load a template, some use AI only for the narrative section. Output quality varies significantly. A consultant brought in to redesign the process asks: *"Is this a workflow yet?"*
+> A procurement team at a shipping company has been "using AI" for six months to help draft supplier evaluation reports. Each analyst does it their own way — some start from scratch, some load a template, some use AI only for the narrative section. Output quality varies significantly. A consultant brought in to redesign the process asks: _"Is this a workflow yet?"_
 >
 > What is the most accurate answer?
 >
@@ -56,9 +58,9 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course draws this line precisely: *"'I use AI' and 'our workflow uses AI' are different things."* A workflow is *"a repeatable process a team runs, where AI performs named steps every time, the same way, whoever is at the keyboard."* This team has the opposite — it varies by person, by mood, by section choice. No step has a named owner. No reason for any step has been stated in advance. Duration of use is irrelevant to this distinction.
+> **Why B is correct:** The course draws this line precisely: _"'I use AI' and 'our workflow uses AI' are different things."_ A workflow is _"a repeatable process a team runs, where AI performs named steps every time, the same way, whoever is at the keyboard."_ This team has the opposite — it varies by person, by mood, by section choice. No step has a named owner. No reason for any step has been stated in advance. Duration of use is irrelevant to this distinction.
 >
-> **Why A is wrong:** Six months of usage doesn't make something a workflow. The course is explicit — only the second version *"grows in value"* and *"can be wrong in a way that keeps being wrong."* Personal habits, however consistent in calendar time, remain personal habits.
+> **Why A is wrong:** Six months of usage doesn't make something a workflow. The course is explicit — only the second version _"grows in value"_ and _"can be wrong in a way that keeps being wrong."_ Personal habits, however consistent in calendar time, remain personal habits.
 >
 > **Why C is wrong:** Using the same AI tool is an implementation detail. The workflow/habit distinction rests on named steps, fixed owners, and stated reasons — not on tool consistency.
 >
@@ -69,7 +71,7 @@ order: 89
 > [!question] Q2 — C2: Requirements — The AI Fills the Gaps
 > ⏱ **90 seconds**
 >
-> A project manager at a legal firm receives this client email: *"We need contract summary reports delivered in a timely manner, formatted appropriately for senior review."* She passes this directly to an AI with the instruction: *"Turn this into a task definition with the five required elements."* The AI returns: *"Reports should be delivered within 24 hours of contract finalization, formatted as a one-page executive brief with three sections: key terms, risk flags, and recommended actions."* She is satisfied and begins building the workflow.
+> A project manager at a legal firm receives this client email: _"We need contract summary reports delivered in a timely manner, formatted appropriately for senior review."_ She passes this directly to an AI with the instruction: _"Turn this into a task definition with the five required elements."_ The AI returns: _"Reports should be delivered within 24 hours of contract finalization, formatted as a one-page executive brief with three sections: key terms, risk flags, and recommended actions."_ She is satisfied and begins building the workflow.
 >
 > What critical error has occurred?
 >
@@ -84,7 +86,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course is explicit: *"Asked to define a task, a model will define one, and the slots you never specified close at likely-looking defaults."* The correct prompt instruction is: *"Where I have not told you, say so instead of filling it in."* "Timely" has now become "24 hours" — a decision the client never made. "Appropriate for senior review" has become a specific three-section structure — also never specified. Both look decided in the output but are AI-generated guesses. An ambiguous requirement does not look ambiguous, and that is exactly what makes this dangerous.
+> **Why B is correct:** The course is explicit: _"Asked to define a task, a model will define one, and the slots you never specified close at likely-looking defaults."_ The correct prompt instruction is: _"Where I have not told you, say so instead of filling it in."_ "Timely" has now become "24 hours" — a decision the client never made. "Appropriate for senior review" has become a specific three-section structure — also never specified. Both look decided in the output but are AI-generated guesses. An ambiguous requirement does not look ambiguous, and that is exactly what makes this dangerous.
 >
 > **Why A is wrong:** Retrieval mode is irrelevant here. This is a reasoning/structuring task, not a lookup. The failure is in how the task definition was generated.
 >
@@ -97,7 +99,7 @@ order: 89
 > [!question] Q3 — C2: Task Definition (Multi-Select)
 > ⏱ **2 minutes** | Select **TWO** answers
 >
-> A sales operations manager is asked to redesign the weekly pipeline report her team produces for the Monday leadership call. The original request from the VP of Sales: *"We need better visibility into the pipeline — something more useful than what we have."* Before designing anything, she decides to build a proper task definition.
+> A sales operations manager is asked to redesign the weekly pipeline report her team produces for the Monday leadership call. The original request from the VP of Sales: _"We need better visibility into the pipeline — something more useful than what we have."_ Before designing anything, she decides to build a proper task definition.
 >
 > Which **TWO** of the following questions must be answered before the task definition is complete?
 >
@@ -129,7 +131,7 @@ order: 89
 > [!question] Q4 — C3: Computed Not Generated
 > ⏱ **90 seconds**
 >
-> A financial analyst at a logistics firm is building a staffing model. She sends this prompt: *"Based on our average monthly shipment growth of 12% over the last year, estimate how many additional drivers we will need next quarter if we want to maintain our current driver-to-shipment ratio of 1:450. Show the calculation."* The AI returns a confident paragraph: *"Based on 12% growth, you will need approximately 14 additional drivers next quarter to maintain your target ratio."* There is no code block. She pastes this number into the quarterly headcount request.
+> A financial analyst at a logistics firm is building a staffing model. She sends this prompt: _"Based on our average monthly shipment growth of 12% over the last year, estimate how many additional drivers we will need next quarter if we want to maintain our current driver-to-shipment ratio of 1:450. Show the calculation."_ The AI returns a confident paragraph: _"Based on 12% growth, you will need approximately 14 additional drivers next quarter to maintain your target ratio."_ There is no code block. She pastes this number into the quarterly headcount request.
 >
 > What is the most important problem with this step as designed?
 >
@@ -144,7 +146,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course rule is unambiguous: *"If a result matters, compute it. Never write it."* The correct approach uses code execution — the assistant writes and runs a small program on the actual data, then reports what it computed. A staffing number going into a headcount request "matters." The absence of a code block is the signal that this was written, not run. The course: *"A written figure and a calculated one look the same."* The correct prompt separates computation from recommendation: compute the numbers first, then recommend based on those figures, and show the assumptions so someone can disagree without redoing the arithmetic.
+> **Why B is correct:** The course rule is unambiguous: _"If a result matters, compute it. Never write it."_ The correct approach uses code execution — the assistant writes and runs a small program on the actual data, then reports what it computed. A staffing number going into a headcount request "matters." The absence of a code block is the signal that this was written, not run. The course: _"A written figure and a calculated one look the same."_ The correct prompt separates computation from recommendation: compute the numbers first, then recommend based on those figures, and show the assumptions so someone can disagree without redoing the arithmetic.
 >
 > **Why A is wrong:** Providing the growth rate and ratio is exactly right — those are the inputs the calculation needs. More context is better, not worse.
 >
@@ -157,7 +159,7 @@ order: 89
 > [!question] Q5 — C3: Description Problem vs. Feature Problem
 > ⏱ **90 seconds**
 >
-> A team is in the second cycle of a build loop for an internal budget dashboard. In Cycle 1 they built five charts from their data — all correct. In Cycle 2 they added a date-range filter and a totals row at the bottom. The filter works correctly. One analyst notices that after filtering to Q3, two of the five totals still show full-year figures. She points it out. A colleague responds: *"The prompt wasn't clear enough about how the totals should work with the filter — just describe it better in the next message."*
+> A team is in the second cycle of a build loop for an internal budget dashboard. In Cycle 1 they built five charts from their data — all correct. In Cycle 2 they added a date-range filter and a totals row at the bottom. The filter works correctly. One analyst notices that after filtering to Q3, two of the five totals still show full-year figures. She points it out. A colleague responds: _"The prompt wasn't clear enough about how the totals should work with the filter — just describe it better in the next message."_
 >
 > Is the colleague right?
 >
@@ -172,7 +174,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course uses this exact scenario as the worked example of the build loop's critical distinction: *"The totals were written rather than computed, and a written number looks as right as a calculated one."* This is a **feature problem**, not a description problem. *"Cycle 2 was a feature problem, and no amount of describing would have solved it."* The fix is to move the totals row into code execution so they are computed from the filtered data, not written as prose values.
+> **Why B is correct:** The course uses this exact scenario as the worked example of the build loop's critical distinction: _"The totals were written rather than computed, and a written number looks as right as a calculated one."_ This is a **feature problem**, not a description problem. _"Cycle 2 was a feature problem, and no amount of describing would have solved it."_ The fix is to move the totals row into code execution so they are computed from the filtered data, not written as prose values.
 >
 > **Why A is wrong:** This is the colleague's error — treating a feature problem as a description problem. Describing the filter interaction more clearly still produces a static written number that the filter cannot move.
 >
@@ -185,7 +187,7 @@ order: 89
 > [!question] Q6 — C4: Window Test — Eligibility vs. Ownership
 > ⏱ **90 seconds**
 >
-> A legal operations manager is designing a workflow for responding to contract amendment requests from clients. One proposed step is: *"Recommend whether to accept, negotiate, or reject the proposed amendment."* She considers delegating it to AI. She can supply: the original contract, the proposed amendment, the company's standard playbook for acceptable terms, and a risk scoring rubric. She cannot supply: the current state of the client relationship (discussed privately between the account manager and the relationship partner), or whether the firm is in active renewal negotiations with this client.
+> A legal operations manager is designing a workflow for responding to contract amendment requests from clients. One proposed step is: _"Recommend whether to accept, negotiate, or reject the proposed amendment."_ She considers delegating it to AI. She can supply: the original contract, the proposed amendment, the company's standard playbook for acceptable terms, and a risk scoring rubric. She cannot supply: the current state of the client relationship (discussed privately between the account manager and the relationship partner), or whether the firm is in active renewal negotiations with this client.
 >
 > What should she conclude from the window test?
 >
@@ -200,13 +202,13 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The window test is: *"Could I put everything this step needs into the window? If not, the step is mine."* The relationship state and renewal negotiations live between two people in private conversations — they cannot be put in a prompt. The course: *"A model with missing inputs does not stop. It fills the gap with what such a decision usually looks like, at the same confidence as the part it really computed."* This is the exact hiring-freeze failure — the recommendation will look analytically derived but will rest on a guessed input.
+> **Why B is correct:** The window test is: _"Could I put everything this step needs into the window? If not, the step is mine."_ The relationship state and renewal negotiations live between two people in private conversations — they cannot be put in a prompt. The course: _"A model with missing inputs does not stop. It fills the gap with what such a decision usually looks like, at the same confidence as the part it really computed."_ This is the exact hiring-freeze failure — the recommendation will look analytically derived but will rest on a guessed input.
 >
 > **Why A is wrong:** Supplying some inputs is not sufficient. The window test fails on the missing inputs, not on the present ones. The presence of the contract and playbook is necessary but not enough.
 >
 > **Why C is wrong:** "Soft information" is not a category the course uses. Missing inputs are missing inputs. The hiring-freeze example was also soft contextual information — announced in a meeting, not in a dataset — and it caused the exact failure this test is designed to prevent.
 >
-> **Why D is the critical trap:** This confuses two separate decisions. The window test decides *eligibility* — can everything this step needs be supplied? It must be answered before ownership. The step fails eligibility here, so you never reach the three criteria. You cannot classify a step that failed the window test as "human-retained because of stakes" — the correct conclusion is simply: *this step is mine*, full stop, because the window test failed.
+> **Why D is the critical trap:** This confuses two separate decisions. The window test decides _eligibility_ — can everything this step needs be supplied? It must be answered before ownership. The step fails eligibility here, so you never reach the three criteria. You cannot classify a step that failed the window test as "human-retained because of stakes" — the correct conclusion is simply: _this step is mine_, full stop, because the window test failed.
 
 ---
 
@@ -215,22 +217,22 @@ order: 89
 >
 > A hospital administrator is redesigning a five-step workflow for processing patient insurance appeals. For each step, she must determine whether it passes or fails the window test. Which **TWO** steps **FAIL** the window test?
 >
-> **A)** *"Extract the denial reason codes from the insurance denial letter and cross-reference them against the hospital's billing code database"* — the denial letter and the billing code database can both be uploaded
+> **A)** _"Extract the denial reason codes from the insurance denial letter and cross-reference them against the hospital's billing code database"_ — the denial letter and the billing code database can both be uploaded
 >
-> **B)** *"Draft a formal appeal letter using the patient treatment records, the denial reason, and the hospital's standard appeal template"* — all three documents can be attached to the prompt
+> **B)** _"Draft a formal appeal letter using the patient treatment records, the denial reason, and the hospital's standard appeal template"_ — all three documents can be attached to the prompt
 >
-> **C)** *"Recommend whether to escalate a denied appeal to external legal review, given the hospital's current litigation budget position and the general counsel's standing judgment on whether to pursue this particular insurer"* — the quarterly budget position is discussed in private leadership meetings; the general counsel's judgment has not been documented
+> **C)** _"Recommend whether to escalate a denied appeal to external legal review, given the hospital's current litigation budget position and the general counsel's standing judgment on whether to pursue this particular insurer"_ — the quarterly budget position is discussed in private leadership meetings; the general counsel's judgment has not been documented
 >
-> **D)** *"Format the approved appeal letter into the insurer's required submission format"* — the insurer's submission guidelines are publicly published and can be attached
+> **D)** _"Format the approved appeal letter into the insurer's required submission format"_ — the insurer's submission guidelines are publicly published and can be attached
 >
-> **E)** *"Determine the priority tier for this appeal based on the patient's assessed financial hardship and the admitting physician's clinical judgment on medical necessity"* — financial hardship assessments exist in the system; the admitting physician's clinical judgment has not been documented in writing for this case
+> **E)** _"Determine the priority tier for this appeal based on the patient's assessed financial hardship and the admitting physician's clinical judgment on medical necessity"_ — financial hardship assessments exist in the system; the admitting physician's clinical judgment has not been documented in writing for this case
 
 > [!success]- Reveal Answer
 > **Correct: C and E**
 >
 > **Why C fails:** The recommendation requires two inputs that cannot be supplied: (1) the current litigation budget position, which is discussed in private leadership meetings and not in a queryable document, and (2) the general counsel's personal standing judgment on this specific insurer, which lives in the general counsel's head. The AI will fill both gaps with what such a recommendation usually looks like — the hiring-freeze failure, applied to legal strategy.
 >
-> **Why E fails:** Financial hardship data may be partially available in the system. But *"the admitting physician's clinical judgment on medical necessity for this specific case"* is a professional judgment that exists in the physician's assessment, not in a document that can be put in a prompt. Priority tiering that depends on undocumented clinical judgment fails the window test on that input.
+> **Why E fails:** Financial hardship data may be partially available in the system. But _"the admitting physician's clinical judgment on medical necessity for this specific case"_ is a professional judgment that exists in the physician's assessment, not in a document that can be put in a prompt. Priority tiering that depends on undocumented clinical judgment fails the window test on that input.
 >
 > **Why A passes:** Denial letter + billing codes database = both suppliable. This is mechanical cross-referencing with all required inputs available. Passes.
 >
@@ -243,13 +245,13 @@ order: 89
 > [!question] Q8 — C5: Three Criteria — Accountability Alone
 > ⏱ **90 seconds**
 >
-> A payroll team at a manufacturing company is designing an AI-assisted workflow for monthly overtime claim processing. One step is: *"Cross-check each employee's submitted overtime hours against the timesheet system and flag any discrepancies above five hours."* The team lead says: *"This step must stay human-retained — our HR Director is accountable for all payroll accuracy."*
+> A payroll team at a manufacturing company is designing an AI-assisted workflow for monthly overtime claim processing. One step is: _"Cross-check each employee's submitted overtime hours against the timesheet system and flag any discrepancies above five hours."_ The team lead says: _"This step must stay human-retained — our HR Director is accountable for all payroll accuracy."_
 >
 > Is the team lead's reasoning correct?
 >
 > **A)** Yes — when a senior leader is accountable for an outcome, any step in the chain producing that outcome must be human-retained
 >
-> **B)** No — accountability asks whether this step *is the call* the accountable person answers for. This step produces a flagged list that the HR Director then judges — accountability sits at the judgment, not at the step that produces the input for it
+> **B)** No — accountability asks whether this step _is the call_ the accountable person answers for. This step produces a flagged list that the HR Director then judges — accountability sits at the judgment, not at the step that produces the input for it
 >
 > **C)** Yes — payroll is a compliance-sensitive domain, so any step in the payroll chain requires human ownership regardless of the three criteria
 >
@@ -258,26 +260,26 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course draws this distinction precisely: *"Accountability... whether this step is the call they answer for, or an input they judge before it acts on anything. A step that produces an input somebody judges can be handed over, because the accountability sits at the judging."* Cross-checking and flagging discrepancies produces a list that a human reviews. The HR Director's accountability attaches to the *judgment of that list*, not to the mechanical comparison that generated it. The course directly anticipates this question: *"Somebody says a step must stay human because a manager is accountable for it. Why is that not enough?"*
+> **Why B is correct:** The course draws this distinction precisely: _"Accountability... whether this step is the call they answer for, or an input they judge before it acts on anything. A step that produces an input somebody judges can be handed over, because the accountability sits at the judging."_ Cross-checking and flagging discrepancies produces a list that a human reviews. The HR Director's accountability attaches to the _judgment of that list_, not to the mechanical comparison that generated it. The course directly anticipates this question: _"Somebody says a step must stay human because a manager is accountable for it. Why is that not enough?"_
 >
-> **Why A is wrong:** This is the exact wrong reasoning the course addresses. Accountability does not cascade downward to every step in the chain. Only the step that *is the decision* carries the accountability criterion.
+> **Why A is wrong:** This is the exact wrong reasoning the course addresses. Accountability does not cascade downward to every step in the chain. Only the step that _is the decision_ carries the accountability criterion.
 >
 > **Why C is wrong:** Domain sensitivity (compliance, payroll) is not a criterion. The three criteria — reversibility, stakes, accountability — apply uniformly. The stakes question would capture genuine payroll risk, but the team lead's stated reason is accountability, which as explained in B, does not apply to this step.
 >
-> **Why D is wrong:** The course says *"where the three disagree, the strictest one wins"* — it does not say reversibility overrides. More importantly, the three criteria aren't in genuine conflict here. B's answer shows that accountability does not actually apply to this step as classified — so there's nothing for reversibility to override.
+> **Why D is wrong:** The course says _"where the three disagree, the strictest one wins"_ — it does not say reversibility overrides. More importantly, the three criteria aren't in genuine conflict here. B's answer shows that accountability does not actually apply to this step as classified — so there's nothing for reversibility to override.
 
 ---
 
 > [!question] Q9 — C5: Three Criteria — Past Performance
 > ⏱ **90 seconds**
 >
-> An accounts receivable team has used AI to draft overdue payment reminder emails for three months. The drafts have been professional and effective — the team lead reports 94% required no edits before sending. Based on this track record, the team lead proposes to reclassify the *"send overdue payment reminder"* step from Collaborative to AI-appropriate, removing human review entirely.
+> An accounts receivable team has used AI to draft overdue payment reminder emails for three months. The drafts have been professional and effective — the team lead reports 94% required no edits before sending. Based on this track record, the team lead proposes to reclassify the _"send overdue payment reminder"_ step from Collaborative to AI-appropriate, removing human review entirely.
 >
 > What is wrong with this proposal?
 >
 > **A)** 94% is too low — the threshold for removing a review gate is 99% or higher
 >
-> **B)** The track record is evidence about the drafts. The *send* step is irreversible and externally binding — those properties have not changed, regardless of how good the drafts have been
+> **B)** The track record is evidence about the drafts. The _send_ step is irreversible and externally binding — those properties have not changed, regardless of how good the drafts have been
 >
 > **C)** The proposal is reasonable for routine low-stakes reminders — the consequences of an occasional wrong email are minor and recoverable
 >
@@ -286,7 +288,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course is explicit: *"How well AI performed on this step in your test run is not a criterion."* And: *"Drafting quality is evidence about the draft. It is not evidence about the decision."* The sending step has two properties that decide it: it is irreversible (a sent email cannot be unsent) and it is externally binding (it reaches the customer). Neither property changed because the drafts were good. The course uses this exact pattern with the second contracting team: *"The drafting is good, week after week, so the next step feels safe. It is not a next step. It is a different kind of step."*
+> **Why B is correct:** The course is explicit: _"How well AI performed on this step in your test run is not a criterion."_ And: _"Drafting quality is evidence about the draft. It is not evidence about the decision."_ The sending step has two properties that decide it: it is irreversible (a sent email cannot be unsent) and it is externally binding (it reaches the customer). Neither property changed because the drafts were good. The course uses this exact pattern with the second contracting team: _"The drafting is good, week after week, so the next step feels safe. It is not a next step. It is a different kind of step."_
 >
 > **Why A is wrong:** There is no percentage threshold. The course is unambiguous — past performance is not a criterion at any percentage. 94% is not "too low"; it is simply the wrong input to the classification decision.
 >
@@ -301,26 +303,26 @@ order: 89
 >
 > An insurance company is mapping their claims intake workflow. The team has classified five steps. Which **TWO** classifications are **incorrect**?
 >
-> **A)** *"Extract the claim number, policy number, and incident date from the submitted claim form"* → **AI-appropriate.** Reason: mechanical extraction, fully reversible, low stakes.
+> **A)** _"Extract the claim number, policy number, and incident date from the submitted claim form"_ → **AI-appropriate.** Reason: mechanical extraction, fully reversible, low stakes.
 >
-> **B)** *"Calculate the estimated payout based on policy terms and the submitted damage assessment"* → **AI-appropriate.** Reason: this is arithmetic, which AI handles well.
+> **B)** _"Calculate the estimated payout based on policy terms and the submitted damage assessment"_ → **AI-appropriate.** Reason: this is arithmetic, which AI handles well.
 >
-> **C)** *"Decide whether to approve or deny the claim"* → **Collaborative.** Reason: high stakes, so a claims assessor reviews the AI's decision before it is recorded.
+> **C)** _"Decide whether to approve or deny the claim"_ → **Collaborative.** Reason: high stakes, so a claims assessor reviews the AI's decision before it is recorded.
 >
-> **D)** *"Send the approval or denial letter to the claimant"* → **AI-appropriate.** Reason: the decision was approved by the assessor in the previous step, so sending is low-risk.
+> **D)** _"Send the approval or denial letter to the claimant"_ → **AI-appropriate.** Reason: the decision was approved by the assessor in the previous step, so sending is low-risk.
 >
-> **E)** *"Flag claims where the damage description doesn't match the policy coverage category"* → **AI-appropriate.** Reason: reversible, and flags are reviewed by the assessor at the next step.
+> **E)** _"Flag claims where the damage description doesn't match the policy coverage category"_ → **AI-appropriate.** Reason: reversible, and flags are reviewed by the assessor at the next step.
 
 > [!success]- Reveal Answer
 > **Correct: C and D**
 >
-> **Why C is incorrectly classified:** The approve/deny decision is the call somebody answers for — it is the step where accountability sits. The course is precise: *"A step that is itself the decision cannot [be handed over], because nothing after it is left to carry it."* Classifying it as Collaborative means AI decides and a human reviews that decision. But the decision must be human-retained — the assessor makes the call, AI provides inputs for it. The review gate should be *before* the decision is made, not a check of the AI's decision.
+> **Why C is incorrectly classified:** The approve/deny decision is the call somebody answers for — it is the step where accountability sits. The course is precise: _"A step that is itself the decision cannot [be handed over], because nothing after it is left to carry it."_ Classifying it as Collaborative means AI decides and a human reviews that decision. But the decision must be human-retained — the assessor makes the call, AI provides inputs for it. The review gate should be _before_ the decision is made, not a check of the AI's decision.
 >
-> **Why D is incorrectly classified:** Sending the approval or denial letter to the claimant is irreversible and externally binding — two properties that make it human regardless of what came before. The course contract map: *"Sign and send — Human — Irreversible and externally binding."* The fact that the previous step was human-approved does not transfer that approval to the sending act itself. The sending step needs its own named signer.
+> **Why D is incorrectly classified:** Sending the approval or denial letter to the claimant is irreversible and externally binding — two properties that make it human regardless of what came before. The course contract map: _"Sign and send — Human — Irreversible and externally binding."_ The fact that the previous step was human-approved does not transfer that approval to the sending act itself. The sending step needs its own named signer.
 >
 > **Why A is correct:** Mechanical extraction is reversible, low-stakes, and errors surface at later review steps. Correctly AI-appropriate.
 >
-> **Why B is a near-miss trap:** The classification (AI-appropriate) could be correct if the calculation uses code execution and is checked at a gate. The *reason* given ("AI handles arithmetic well") is incomplete — the correct reason is "reversible, and checked at the approval gate." But the classification itself isn't necessarily wrong if those conditions hold.
+> **Why B is a near-miss trap:** The classification (AI-appropriate) could be correct if the calculation uses code execution and is checked at a gate. The _reason_ given ("AI handles arithmetic well") is incomplete — the correct reason is "reversible, and checked at the approval gate." But the classification itself isn't necessarily wrong if those conditions hold.
 >
 > **Why E is correct:** Flagging departures from a policy is AI-appropriate when somebody reads the flags at the next step. The assessor review in the next step is exactly that gate. Correctly classified.
 
@@ -329,7 +331,7 @@ order: 89
 > [!question] Q11 — C6: The Penalty Clause — Arithmetic ≠ Low Stakes
 > ⏱ **90 seconds**
 >
-> A legal team at a commercial real estate firm is mapping their lease amendment review workflow. One step is: *"Calculate the total financial exposure if the proposed penalty clause is accepted, including compounding across the lease term."* A junior analyst argues: *"This is pure arithmetic — nothing human about multiplying numbers. It should be AI-appropriate with no review gate."* The team lead disagrees.
+> A legal team at a commercial real estate firm is mapping their lease amendment review workflow. One step is: _"Calculate the total financial exposure if the proposed penalty clause is accepted, including compounding across the lease term."_ A junior analyst argues: _"This is pure arithmetic — nothing human about multiplying numbers. It should be AI-appropriate with no review gate."_ The team lead disagrees.
 >
 > What is the team lead's correct response, using the course framework?
 >
@@ -344,20 +346,20 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course addresses this exact scenario: *"The penalty-exposure row is the one people get wrong. Being arithmetic does not make a step low-stakes. That figure feeds the approval decision, and if it is wrong the approval is wrong. What makes it safe to hand over is that the result can be undone and lands in front of a human at the very next row. Take that gate away and the step stops being AI-appropriate, even though the arithmetic has not changed."* This is the central insight of the penalty clause example — classification depends on the gate that follows, not on the nature of the computation.
+> **Why B is correct:** The course addresses this exact scenario: _"The penalty-exposure row is the one people get wrong. Being arithmetic does not make a step low-stakes. That figure feeds the approval decision, and if it is wrong the approval is wrong. What makes it safe to hand over is that the result can be undone and lands in front of a human at the very next row. Take that gate away and the step stops being AI-appropriate, even though the arithmetic has not changed."_ This is the central insight of the penalty clause example — classification depends on the gate that follows, not on the nature of the computation.
 >
 > **Why A is wrong:** Legal domain doesn't auto-classify every step as human. The three criteria apply uniformly. Domain sensitivity is captured by the stakes question, but even a high-stakes calculation can be AI-appropriate if a gate follows it.
 >
 > **Why C is wrong:** This is precisely the trap the course warns against. "Arithmetic = reversible = AI-appropriate always" ignores stakes and ignores what happens downstream. The junior analyst's reasoning is the wrong reasoning.
 >
-> **Why D is wrong:** The course does not say financial calculations are always human-retained. It says the step is AI-appropriate *because* it lands at a gate before acting on anything. The criteria, not the category, decide it.
+> **Why D is wrong:** The course does not say financial calculations are always human-retained. It says the step is AI-appropriate _because_ it lands at a gate before acting on anything. The criteria, not the category, decide it.
 
 ---
 
 > [!question] Q12 — C6: The Flagging Step Changes Columns
 > ⏱ **90 seconds**
 >
-> An HR team uses AI to check expense reports against the company travel policy — flagging any line items that exceed allowed amounts or use unapproved vendors. The team lead classifies this as AI-appropriate, stating: *"We already have AI flagging policy departures in our contract review workflow, so the same classification applies here."*
+> An HR team uses AI to check expense reports against the company travel policy — flagging any line items that exceed allowed amounts or use unapproved vendors. The team lead classifies this as AI-appropriate, stating: _"We already have AI flagging policy departures in our contract review workflow, so the same classification applies here."_
 >
 > A workflow designer challenges this. What is the most likely basis for the challenge?
 >
@@ -372,7 +374,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course makes this move explicitly: *"Flagging departures from a written policy is AI-appropriate here because somebody reads the flags at the very next row... Move the same step into a workflow where nothing after it reads the flags, and it becomes collaborative instead. Checking expenses against a travel policy is usually that second shape."* The team lead made the classic mistake of copying a classification across workflows without checking whether the structural condition that made it safe — the gate — also exists in the new workflow. *"The step did not change. What changed is whether anybody is standing after it."*
+> **Why B is correct:** The course makes this move explicitly: _"Flagging departures from a written policy is AI-appropriate here because somebody reads the flags at the very next row... Move the same step into a workflow where nothing after it reads the flags, and it becomes collaborative instead. Checking expenses against a travel policy is usually that second shape."_ The team lead made the classic mistake of copying a classification across workflows without checking whether the structural condition that made it safe — the gate — also exists in the new workflow. _"The step did not change. What changed is whether anybody is standing after it."_
 >
 > **Why A is wrong:** Data classification is a governance/eligibility question decided before classification. It can prevent the step from being used at all, but it doesn't change the AI-appropriate vs. collaborative distinction for a step that passed eligibility.
 >
@@ -387,7 +389,7 @@ order: 89
 >
 > **SCENARIO:** A mid-size property management company uses the following workflow for handling tenant maintenance requests. Read the entire description before answering.
 >
-> > *The workflow operates as follows. When a maintenance request arrives, AI pulls the tenant record and property maintenance history from the database — the team classified this as AI-appropriate because it is mechanical retrieval. AI then scores each request with a priority level from 1 to 5 using a Skill the team built last year; the team classified this as AI-appropriate, noting the Skill has produced accurate priority scores for the past four months. AI then drafts the response message to the tenant using an approved template, classified as Collaborative, with a property coordinator reviewing the draft before it is sent. For urgent requests (priority 4 or 5), AI sends the maintenance team a dispatch notification directly without coordinator review, because the team noted that all priority-4-and-5 drafts had been approved without changes for the past two months. Finally, AI logs the request outcome in the property management system.*
+> > _The workflow operates as follows. When a maintenance request arrives, AI pulls the tenant record and property maintenance history from the database — the team classified this as AI-appropriate because it is mechanical retrieval. AI then scores each request with a priority level from 1 to 5 using a Skill the team built last year; the team classified this as AI-appropriate, noting the Skill has produced accurate priority scores for the past four months. AI then drafts the response message to the tenant using an approved template, classified as Collaborative, with a property coordinator reviewing the draft before it is sent. For urgent requests (priority 4 or 5), AI sends the maintenance team a dispatch notification directly without coordinator review, because the team noted that all priority-4-and-5 drafts had been approved without changes for the past two months. Finally, AI logs the request outcome in the property management system._
 >
 > ---
 >
@@ -416,17 +418,17 @@ order: 89
 > [!success]- Reveal Answer
 > **13A — Correct: B**
 >
-> **Why B is correct:** The stated reason for classifying step 2 as AI-appropriate is *"accurate scores for four months."* The course is explicit: *"How well AI performed on this step in your test run is not a criterion."* This is halo delegation — the accuracy evidence is real, but it belongs to the scoring performance, not to the classification decision. Ownership rests on reversibility, stakes, and accountability. The stated reason passes none of those tests.
+> **Why B is correct:** The stated reason for classifying step 2 as AI-appropriate is _"accurate scores for four months."_ The course is explicit: _"How well AI performed on this step in your test run is not a criterion."_ This is halo delegation — the accuracy evidence is real, but it belongs to the scoring performance, not to the classification decision. Ownership rests on reversibility, stakes, and accountability. The stated reason passes none of those tests.
 >
 > **Why C is a plausible near-miss:** There is an element of mapping the tool here — the Skill is good, so the step was handed to it. But the primary, named error in the course is halo delegation (carrying forward credit from one step to justify owning another). C is a secondary observation.
 >
-> **Why D is wrong:** High stakes alone doesn't make a step incorrectly classified — stakes is one of three criteria. If the step is reversible and there is a gate after it, high stakes can still be AI-appropriate. The error is not the classification itself but the *reason* given for it.
+> **Why D is wrong:** High stakes alone doesn't make a step incorrectly classified — stakes is one of three criteria. If the step is reversible and there is a gate after it, high stakes can still be AI-appropriate. The error is not the classification itself but the _reason_ given for it.
 >
 > ---
 >
 > **13B — Correct: B**
 >
-> **Why B is correct:** The course describes this pattern directly in the customer complaint example: *"'Low severity only' sounds like a control, but severity was set in row 3 by the same system that is now sending without review. A step cannot give itself permission to skip the gate."* Here: "priority 4 or 5 only" is a condition set by the AI scoring step — the same system family that is now dispatching without review. Additionally, sending a dispatch notification to a maintenance team triggers real-world action that cannot be recalled. Irreversibility + no human gate = over-delegation.
+> **Why B is correct:** The course describes this pattern directly in the customer complaint example: _"'Low severity only' sounds like a control, but severity was set in row 3 by the same system that is now sending without review. A step cannot give itself permission to skip the gate."_ Here: "priority 4 or 5 only" is a condition set by the AI scoring step — the same system family that is now dispatching without review. Additionally, sending a dispatch notification to a maintenance team triggers real-world action that cannot be recalled. Irreversibility + no human gate = over-delegation.
 >
 > **Why A is wrong:** The coordinator review step (step 3) is reasonably designed as written. The problem is that step 4 bypasses it entirely for urgent cases — not that step 3's review criteria are vague.
 >
@@ -439,7 +441,7 @@ order: 89
 > [!question] Q14 — C7: The Unstaffed Gate
 > ⏱ **90 seconds**
 >
-> A software company's customer complaint workflow was designed eight months ago. Step 4 on the map reads: *"Collaborative — AI drafts response, duty agent reviews before sending."* Since then, complaint volume has doubled. During an audit, the reviewer asks the duty agent how long they spend reviewing each draft. The agent replies: *"Honestly, when we're busy I click through most of them in a few seconds — I really only read the tricky ones."*
+> A software company's customer complaint workflow was designed eight months ago. Step 4 on the map reads: _"Collaborative — AI drafts response, duty agent reviews before sending."_ Since then, complaint volume has doubled. During an audit, the reviewer asks the duty agent how long they spend reviewing each draft. The agent replies: _"Honestly, when we're busy I click through most of them in a few seconds — I really only read the tricky ones."_
 >
 > What has happened, and what does the map say about it?
 >
@@ -454,7 +456,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: A**
 >
-> **Why A is correct:** The course: *"An unstaffed gate is a collaborative step whose review is no longer really done. When the reviewer is busy, or the queue is long, or the drafts have been good for two months, the review becomes a glance and then a click. Nothing was decided and nobody changed the map, but the step is now automated. The map does not tell you, because a map records what you designed rather than what is running."* The map says Collaborative. The reality is that most drafts go out without genuine review. The map is wrong about the workflow that is actually running — and it failed silently, with no alarm.
+> **Why A is correct:** The course: _"An unstaffed gate is a collaborative step whose review is no longer really done. When the reviewer is busy, or the queue is long, or the drafts have been good for two months, the review becomes a glance and then a click. Nothing was decided and nobody changed the map, but the step is now automated. The map does not tell you, because a map records what you designed rather than what is running."_ The map says Collaborative. The reality is that most drafts go out without genuine review. The map is wrong about the workflow that is actually running — and it failed silently, with no alarm.
 >
 > **Why B is wrong:** "A human is in the loop" is not sufficient for a gate to be staffed. The course draws the line clearly: if the review has become a glance and a click, nobody is judging the output. The gate exists on paper and is unstaffed in practice.
 >
@@ -467,7 +469,7 @@ order: 89
 > [!question] Q15 — C8: Map Ownership and the Review Questions
 > ⏱ **90 seconds**
 >
-> A retail operations team has a delegation map for their weekly inventory report workflow. The map was created 14 months ago. The original map owner left the company six months ago and was not replaced. Nobody on the team can name a current map owner, the date of the last review, or the date of the next scheduled review. An outside reviewer asks: *"Without reading the map yet, which of the four review questions is most likely to reveal a live problem right now?"*
+> A retail operations team has a delegation map for their weekly inventory report workflow. The map was created 14 months ago. The original map owner left the company six months ago and was not replaced. Nobody on the team can name a current map owner, the date of the last review, or the date of the next scheduled review. An outside reviewer asks: _"Without reading the map yet, which of the four review questions is most likely to reveal a live problem right now?"_
 >
 > **A)** Question 1: Has a step been added or removed that is not on the map?
 >
@@ -480,11 +482,11 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course identifies Q2 as the one that *"finds the real problems."* More specifically: *"It asks about last week rather than about policy, because policy is what the map already says and last week is what happened."* A map with no owner and no review for 14 months in an active weekly workflow is exactly where unstaffed gates are most likely. Q2 surfaces them by asking about actual behavior last week — not what the map says should happen, but what actually happened at the review step. This is the only question that catches a gate that decayed silently.
+> **Why B is correct:** The course identifies Q2 as the one that _"finds the real problems."_ More specifically: _"It asks about last week rather than about policy, because policy is what the map already says and last week is what happened."_ A map with no owner and no review for 14 months in an active weekly workflow is exactly where unstaffed gates are most likely. Q2 surfaces them by asking about actual behavior last week — not what the map says should happen, but what actually happened at the review step. This is the only question that catches a gate that decayed silently.
 >
 > **Why A is reasonable but secondary:** Steps added without updating the map are a real problem. But a 14-month-old map with a weekly workflow is more likely to have drifted on gate staffing than on step count — teams add steps less often than they let reviews decay.
 >
-> **Why C is reasonable but secondary:** Volume changes break gates — the course is explicit about this. But Q3 points at a condition that *might* have broken a gate. Q2 asks whether the gate is actually broken right now, last week, in practice.
+> **Why C is reasonable but secondary:** Volume changes break gates — the course is explicit about this. But Q3 points at a condition that _might_ have broken a gate. Q2 asks whether the gate is actually broken right now, last week, in practice.
 >
 > **Why D is reasonable but secondary:** Stale configuration is real and fails silently. But it has a different diagnostic path (check the instruction or knowledge source's date). Q2 finds the most common and most consequential failure mode first — the unstaffed gate.
 
@@ -494,6 +496,7 @@ order: 89
 > **Part 1 complete: 15 questions | Target time: 28 minutes**
 >
 > **Error tagging:**
+>
 > - **C** = content error (didn't know the concept)
 > - **T** = timing error (knew it but ran out of time)
 > - **L** = language error (misread the scenario under pressure)
@@ -527,7 +530,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The course: *"The totals were written rather than computed, and a written number looks as right as a calculated one."* This is Concept 3 applied inside the build loop. Any metric that must update dynamically — a cumulative rate, a total, a filtered average — belongs in code execution, and the code block is the proof that computation ran. No code block = written value = static. The habit is to check after every cycle that touches a number.
+> **Why C is correct:** The course: _"The totals were written rather than computed, and a written number looks as right as a calculated one."_ This is Concept 3 applied inside the build loop. Any metric that must update dynamically — a cumulative rate, a total, a filtered average — belongs in code execution, and the code block is the proof that computation ran. No code block = written value = static. The habit is to check after every cycle that touches a number.
 >
 > **Why A is wrong:** Session continuity is good practice for context stability but does not prevent the AI from writing static values. The problem is not context loss — it is the mechanism used to generate numbers.
 >
@@ -555,7 +558,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course's central distinction: *"Cycle 2 was a feature problem, and no amount of describing would have solved it."* A financial calculation that must be accurate — especially one that varies by campaign — is a feature problem. Code execution is required. Adding the formula (A) or naming the columns more precisely (C) are description-level fixes. They may produce a correctly-worded number that still has no computation behind it. Wrong values by different margins across campaigns is the signature of prose generation, not a prompt specification failure.
+> **Why B is correct:** The course's central distinction: _"Cycle 2 was a feature problem, and no amount of describing would have solved it."_ A financial calculation that must be accurate — especially one that varies by campaign — is a feature problem. Code execution is required. Adding the formula (A) or naming the columns more precisely (C) are description-level fixes. They may produce a correctly-worded number that still has no computation behind it. Wrong values by different margins across campaigns is the signature of prose generation, not a prompt specification failure.
 >
 > **Why A is wrong:** Specifying the formula is a description fix. The AI already knows division. The problem is whether the result was calculated or written. A more precise description still produces a written number.
 >
@@ -583,9 +586,9 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course: *"Dependency is the escalation signal — the point where a tool has outgrown prompt-and-iterate. Once other people rely on something as infrastructure, it has requirements it never had before. Uptime, access control, somebody to call when it breaks, and a guarantee that it still does today what it did in March."* Three departments + client-facing invoices = infrastructure. The course: *"Escalating is a correct answer, not an admission of failure. The failure is the opposite — you keep running something by prompt long after other people depend on it, because nobody marked the moment it stopped being small."*
+> **Why B is correct:** The course: _"Dependency is the escalation signal — the point where a tool has outgrown prompt-and-iterate. Once other people rely on something as infrastructure, it has requirements it never had before. Uptime, access control, somebody to call when it breaks, and a guarantee that it still does today what it did in March."_ Three departments + client-facing invoices = infrastructure. The course: _"Escalating is a correct answer, not an admission of failure. The failure is the opposite — you keep running something by prompt long after other people depend on it, because nobody marked the moment it stopped being small."_
 >
-> **Why A is wrong:** The "solved same way multiple times" signal means the method has stabilized and can be manufactured — it is about method repeatability, not dependency. The escalation signal is specifically about *who else depends on it*, not *how often it has been used the same way*. These are two different signals pointing to two different responses.
+> **Why A is wrong:** The "solved same way multiple times" signal means the method has stabilized and can be manufactured — it is about method repeatability, not dependency. The escalation signal is specifically about _who else depends on it_, not _how often it has been used the same way_. These are two different signals pointing to two different responses.
 >
 > **Why C is wrong:** The configuration error is real and must be fixed. But fixing it and continuing as before misses the structural problem: the tool is now infrastructure and must be treated as such. A configuration fix is a symptom response, not a structural response.
 >
@@ -596,7 +599,7 @@ order: 89
 > [!question] Q19 — C11: Four Causes — Timing
 > ⏱ **90 seconds**
 >
-> A team runs an AI-assisted workflow to generate weekly supplier performance reports. An analyst contacts the support desk with this description: *"The report format is fine, and the data looks right. But this week the recommendation section started using phrases from last quarter's improvement framework — language we retired two months ago. It was working correctly last week and the week before."*
+> A team runs an AI-assisted workflow to generate weekly supplier performance reports. An analyst contacts the support desk with this description: _"The report format is fine, and the data looks right. But this week the recommendation section started using phrases from last quarter's improvement framework — language we retired two months ago. It was working correctly last week and the week before."_
 >
 > Which cause does the timing point to first?
 >
@@ -611,13 +614,13 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** Timing signal: *"Used to work, now doesn't."* The course maps this directly to stale configuration: *"Output that slowly gets worse because a standing instruction, knowledge source, or Skill is out of date... It shows up as 'it used to work.' Nothing reports an error."* The retired framework language appearing in the output — despite working correctly last week — is the signature of a knowledge source or standing instruction that still contains the old language and was not updated when the framework changed two months ago. The cheap confirmation: open the relevant knowledge source and check when it was last updated.
+> **Why C is correct:** Timing signal: _"Used to work, now doesn't."_ The course maps this directly to stale configuration: _"Output that slowly gets worse because a standing instruction, knowledge source, or Skill is out of date... It shows up as 'it used to work.' Nothing reports an error."_ The retired framework language appearing in the output — despite working correctly last week — is the signature of a knowledge source or standing instruction that still contains the old language and was not updated when the framework changed two months ago. The cheap confirmation: open the relevant knowledge source and check when it was last updated.
 >
-> **Why A is wrong:** Under-specification shows up from the *very first answer*. If the prompt never constrained the recommendation language, the problem would have existed from the beginning — not appeared after weeks of correct operation.
+> **Why A is wrong:** Under-specification shows up from the _very first answer_. If the prompt never constrained the recommendation language, the problem would have existed from the beginning — not appeared after weeks of correct operation.
 >
-> **Why B is wrong:** Context overload shows as degradation *within one long session* as it grows. A fresh weekly run in a new session that immediately uses old language is not context overload. That signal requires a session that "started fine, then degraded."
+> **Why B is wrong:** Context overload shows as degradation _within one long session_ as it grows. A fresh weekly run in a new session that immediately uses old language is not context overload. That signal requires a session that "started fine, then degraded."
 >
-> **Why D is wrong:** Wrong feature or model shows as one *repeatable error type* that was present from the start. Using an outdated framework is a content problem, not a capability problem. A stronger tier cannot generate current language if the knowledge source still contains the old language.
+> **Why D is wrong:** Wrong feature or model shows as one _repeatable error type_ that was present from the start. Using an outdated framework is a content problem, not a capability problem. A stronger tier cannot generate current language if the knowledge source still contains the old language.
 
 ---
 
@@ -626,24 +629,24 @@ order: 89
 >
 > A team reports four separate AI problems in the same week. Which **TWO** symptom descriptions are correctly paired with their diagnostic cause?
 >
-> **A)** *"Our AI has consistently missed the 'pending approval' deal category in every sales digest since we launched the workflow three weeks ago."* → **Under-specification.** The prompt never included instructions to include pending-approval deals.
+> **A)** _"Our AI has consistently missed the 'pending approval' deal category in every sales digest since we launched the workflow three weeks ago."_ → **Under-specification.** The prompt never included instructions to include pending-approval deals.
 >
-> **B)** *"The AI formatted our compliance reports correctly for four weeks. This week it dropped the section headers entirely."* → **Context overload.** The conversation has grown long and early formatting instructions were compressed.
+> **B)** _"The AI formatted our compliance reports correctly for four weeks. This week it dropped the section headers entirely."_ → **Context overload.** The conversation has grown long and early formatting instructions were compressed.
 >
-> **C)** *"Our financial model output has been adding figures instead of dividing them — the error appears on every single run, including fresh sessions."* → **Stale configuration.** The setup has drifted since the financial model was last configured.
+> **C)** _"Our financial model output has been adding figures instead of dividing them — the error appears on every single run, including fresh sessions."_ → **Stale configuration.** The setup has drifted since the financial model was last configured.
 >
-> **D)** *"The competitive analysis tool used to write sharp, specific summaries. For the past two weeks the outputs have been noticeably generic and flat, with no change to our prompts."* → **Wrong feature or model.** A speed-tier model is being used for analysis that needs depth.
+> **D)** _"The competitive analysis tool used to write sharp, specific summaries. For the past two weeks the outputs have been noticeably generic and flat, with no change to our prompts."_ → **Wrong feature or model.** A speed-tier model is being used for analysis that needs depth.
 >
-> **E)** *"The risk summary was excellent in the first three responses of our session. By message fourteen, it stopped including the international exposure categories we specified at the start."* → **Context overload.** Early context is being compressed as the session grows.
+> **E)** _"The risk summary was excellent in the first three responses of our session. By message fourteen, it stopped including the international exposure categories we specified at the start."_ → **Context overload.** Early context is being compressed as the session grows.
 
 > [!success]- Reveal Answer
 > **Correct: A and E**
 >
 > **Why A is correct:** "Consistently missed pending-approval deals since we launched" = wrong from the very first answer, every time. This is under-specification — the prompt never carried what the step needed. The fix: add the missing specification. Timing confirmation: re-read the prompt against its five parts. Is "pending approval" actually there? It is not. ✓
 >
-> **Why E is correct:** "Excellent in the first three responses, stopped including international categories by message fourteen *in the same session*" = started fine, degraded as the session grew. This is context overload — the early specification was compressed to make room. The fix is to restart with a summary of what matters. ✓
+> **Why E is correct:** "Excellent in the first three responses, stopped including international categories by message fourteen _in the same session_" = started fine, degraded as the session grew. This is context overload — the early specification was compressed to make room. The fix is to restart with a summary of what matters. ✓
 >
-> **Why B is incorrectly paired:** "Formatted correctly for four weeks, then dropped headers *this week*" = used to work, now doesn't. This is **stale configuration**, not context overload. Context overload happens within one session. A problem that appears after weeks of correct operation across multiple separate runs is stale configuration.
+> **Why B is incorrectly paired:** "Formatted correctly for four weeks, then dropped headers _this week_" = used to work, now doesn't. This is **stale configuration**, not context overload. Context overload happens within one session. A problem that appears after weeks of correct operation across multiple separate runs is stale configuration.
 >
 > **Why C is incorrectly paired:** "Adding instead of dividing, on every single run, including fresh sessions" = one repeatable error type, present consistently. This is **wrong feature** — a calculation being generated in prose instead of via code execution. Not stale configuration, which requires "used to work, now doesn't."
 >
@@ -656,13 +659,13 @@ order: 89
 >
 > **SCENARIO:** A compliance team at an investment firm uses an AI workflow with three steps: Step 1 extracts flagged items from five regulatory data feeds. Step 2 drafts a risk-tier summary. Step 3 generates a one-page executive brief for the Chief Compliance Officer. An analyst reviewing a month of problems identifies four reported symptoms:
 >
-> > **Problem 1:** *"In week 1, the executive brief never included a 'remediation status' section that the CCO expects. It was absent from the very first run."*
+> > **Problem 1:** _"In week 1, the executive brief never included a 'remediation status' section that the CCO expects. It was absent from the very first run."_
 > >
-> > **Problem 2:** *"By week 3, the risk-tier summary was correct for the first eight items, then became increasingly vague for items nine through twenty. The analyst had been running all three steps in one long continuing conversation throughout the month."*
+> > **Problem 2:** _"By week 3, the risk-tier summary was correct for the first eight items, then became increasingly vague for items nine through twenty. The analyst had been running all three steps in one long continuing conversation throughout the month."_
 > >
-> > **Problem 3:** *"In week 4, the extraction step started pulling figures from last quarter's regulatory guidance instead of the current version. The guidance was updated six weeks ago. No error appeared — the figures were plausible."*
+> > **Problem 3:** _"In week 4, the extraction step started pulling figures from last quarter's regulatory guidance instead of the current version. The guidance was updated six weeks ago. No error appeared — the figures were plausible."_
 > >
-> > **Problem 4:** *"The executive brief consistently shows percentages with three decimal places instead of two, which the firm's style guide prohibits. This has appeared on every single run since the workflow was built."*
+> > **Problem 4:** _"The executive brief consistently shows percentages with three decimal places instead of two, which the firm's style guide prohibits. This has appeared on every single run since the workflow was built."_
 >
 > ---
 >
@@ -691,7 +694,7 @@ order: 89
 > [!success]- Reveal Answer
 > **21A — Correct: B**
 >
-> **Why B is correct:** Problem 3 has the exact timing signature of stale configuration: *"used to work, now doesn't"* — and additionally, *"nothing reports an error, the figures were plausible."* The course: *"Last quarter's figures sit in the Project knowledge base and this quarter's report quotes them, formatted perfectly. The model has no way to know that what you gave it is out of date."* The cheap confirmation is the one-minute check: open the regulatory guidance file in the knowledge base and read its update date. If it was last updated before the guidance changed six weeks ago, that is the cause.
+> **Why B is correct:** Problem 3 has the exact timing signature of stale configuration: _"used to work, now doesn't"_ — and additionally, _"nothing reports an error, the figures were plausible."_ The course: _"Last quarter's figures sit in the Project knowledge base and this quarter's report quotes them, formatted perfectly. The model has no way to know that what you gave it is out of date."_ The cheap confirmation is the one-minute check: open the regulatory guidance file in the knowledge base and read its update date. If it was last updated before the guidance changed six weeks ago, that is the cause.
 >
 > **Why A is wrong:** Under-specification shows from the first answer. Problem 3 worked correctly before — the extraction step produced correct figures from current guidance until recently. That "used to work" timing rules out under-specification.
 >
@@ -703,7 +706,7 @@ order: 89
 >
 > **21B — Correct: C**
 >
-> **Why C is correct:** The course: *"A better prompt does not help, because the problem is not the prompt you just wrote."* Context overload is caused by session length — earlier text is shortened or dropped to make room as the conversation grows. A stronger model has a larger context window in absolute terms, but the session filling up is still the mechanism. If someone runs all three workflow steps in one continuously growing conversation, the early instructions lose force regardless of the tier. The fix is to restart the session (clearing the accumulated history) or to explicitly restate the critical instructions at the point where degradation starts.
+> **Why C is correct:** The course: _"A better prompt does not help, because the problem is not the prompt you just wrote."_ Context overload is caused by session length — earlier text is shortened or dropped to make room as the conversation grows. A stronger model has a larger context window in absolute terms, but the session filling up is still the mechanism. If someone runs all three workflow steps in one continuously growing conversation, the early instructions lose force regardless of the tier. The fix is to restart the session (clearing the accumulated history) or to explicitly restate the critical instructions at the point where degradation starts.
 >
 > **Why A is wrong:** Even flagship models have limits, and the course's solution for context overload is not "use a bigger window" — it is "restart or summarize." Chasing model tiers for a session management problem is the wrong diagnostic path.
 >
@@ -716,7 +719,7 @@ order: 89
 > [!question] Q22 — C12: Diagnostic Sequence — Wrong First Move
 > ⏱ **90 seconds**
 >
-> A data analyst at a retail company runs an AI workflow for monthly inventory forecasts. This month, Category C product forecasts are consistently too high — by roughly the same margin, on every run, including in fresh sessions started from scratch. She says: *"I need to escalate this to our developer team and ask them to rebuild the workflow with a more capable model."*
+> A data analyst at a retail company runs an AI workflow for monthly inventory forecasts. This month, Category C product forecasts are consistently too high — by roughly the same margin, on every run, including in fresh sessions started from scratch. She says: _"I need to escalate this to our developer team and ask them to rebuild the workflow with a more capable model."_
 >
 > What is wrong with her next step?
 >
@@ -731,13 +734,13 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The diagnostic sequence runs cheapest first: (1) re-read the prompt, (2) check session length, (3) check feature and model, (4) check configuration, (5) question the task. *"One repeatable error type"* in fresh sessions points to step 3 — wrong feature or model (likely a calculation in prose that needs code execution, or a speed tier on a task needing depth). But step 1 must come first — the prompt check takes seconds and may reveal that the Category C specification is simply missing. The course: *"Most people run it backwards. The instinct on a disappointing output is to switch to the most capable model, or to declare the task impossible. Both are moves from the bottom of the ladder, made before anything at the top was checked."* Developer escalation is not in the five-step sequence — that is the Concept 10 escalation signal (dependency), which this situation does not show.
+> **Why B is correct:** The diagnostic sequence runs cheapest first: (1) re-read the prompt, (2) check session length, (3) check feature and model, (4) check configuration, (5) question the task. _"One repeatable error type"_ in fresh sessions points to step 3 — wrong feature or model (likely a calculation in prose that needs code execution, or a speed tier on a task needing depth). But step 1 must come first — the prompt check takes seconds and may reveal that the Category C specification is simply missing. The course: _"Most people run it backwards. The instinct on a disappointing output is to switch to the most capable model, or to declare the task impossible. Both are moves from the bottom of the ladder, made before anything at the top was checked."_ Developer escalation is not in the five-step sequence — that is the Concept 10 escalation signal (dependency), which this situation does not show.
 >
 > **Why A is wrong:** Consistent errors do not trigger the escalation signal. The escalation signal is dependency — other people relying on the tool as infrastructure. A private workflow with repeatable errors is a diagnostic problem, not an infrastructure problem.
 >
-> **Why C is wrong:** Context overload shows as degradation *within* one session that started well. A problem that is consistent on every fresh session from the start is not context overload — the timing rules it out immediately.
+> **Why C is wrong:** Context overload shows as degradation _within_ one session that started well. A problem that is consistent on every fresh session from the start is not context overload — the timing rules it out immediately.
 >
-> **Why D is wrong:** Expectation mismatch is step 5, reached after the other four have been genuinely ruled out. Jumping to it after observing a consistent error is the exact mistake the sequence is designed to prevent. *"Reached first, 'the task does not fit' is an excuse. Reached last, it is a conclusion."*
+> **Why D is wrong:** Expectation mismatch is step 5, reached after the other four have been genuinely ruled out. Jumping to it after observing a consistent error is the exact mistake the sequence is designed to prevent. _"Reached first, 'the task does not fit' is an excuse. Reached last, it is a conclusion."_
 
 ---
 
@@ -759,7 +762,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course: *"An expectation mismatch is a task that asks for something the tool cannot do, which here is predicting one exact future number. The fix is to the task. Ask for a range with stated assumptions, or a model of the drivers you can adjust and re-run."* Predicting a specific settlement amount requires knowing the judge's actual reasoning, the opposing counsel's decisions, and variables that exist only in the future. These cannot be put in a prompt — this is a judgment step that fails the window test at the concept level. The reshaped task: *"Given the case facts and comparable settlements, what is the likely range of outcomes, and what are the key assumptions that would shift it toward the high or low end?"*
+> **Why B is correct:** The course: _"An expectation mismatch is a task that asks for something the tool cannot do, which here is predicting one exact future number. The fix is to the task. Ask for a range with stated assumptions, or a model of the drivers you can adjust and re-run."_ Predicting a specific settlement amount requires knowing the judge's actual reasoning, the opposing counsel's decisions, and variables that exist only in the future. These cannot be put in a prompt — this is a judgment step that fails the window test at the concept level. The reshaped task: _"Given the case facts and comparable settlements, what is the likely range of outcomes, and what are the key assumptions that would shift it toward the high or low end?"_
 >
 > **Why A is wrong:** Historical data and prior rulings can improve the analysis. But they cannot convert an inherently unpredictable outcome into a reliably predictable one. More data does not fix an expectation mismatch. Additionally, the analyst confirmed in step 1 that the prompt was complete — revisiting step 1 at step 5 is not the right move.
 >
@@ -772,13 +775,13 @@ order: 89
 > [!question] Q24 — C13: Reaction to Instruction
 > ⏱ **90 seconds**
 >
-> An HR manager generates weekly job requisition posts using AI. Every post feels wrong to her, but when asked to describe the problem she writes: *"The posts just aren't quite right — the tone feels off and they don't really convey what we're looking for in candidates."* She sends this to a colleague and asks: *"Can you use this to fix the prompt?"*
+> An HR manager generates weekly job requisition posts using AI. Every post feels wrong to her, but when asked to describe the problem she writes: _"The posts just aren't quite right — the tone feels off and they don't really convey what we're looking for in candidates."_ She sends this to a colleague and asks: _"Can you use this to fix the prompt?"_
 >
 > What is wrong with the feedback as written, and what single question would turn it into an instruction?
 >
 > **A)** Nothing is wrong — the colleague can interpret "tone feels off" and "don't convey what we're looking for" and make the appropriate changes
 >
-> **B)** The feedback is a reaction, not an instruction — it names how the output feels but not what would have to be present for it to be right, or which part of the setup controls that. The question that converts it: *"What specifically would have to appear in the output for it to be right — and is this a prompt change, a standing instruction, or something that belongs in the knowledge base?"*
+> **B)** The feedback is a reaction, not an instruction — it names how the output feels but not what would have to be present for it to be right, or which part of the setup controls that. The question that converts it: _"What specifically would have to appear in the output for it to be right — and is this a prompt change, a standing instruction, or something that belongs in the knowledge base?"_
 >
 > **C)** The feedback identifies two problems at once, which is too many for one fix — each should be sent separately to avoid confusing the model
 >
@@ -787,13 +790,13 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course: *"A reaction names how the output feels. 'Too generic.' 'Not quite right.' 'Missed the point.' An instruction names what to change, so the next output is different."* And: *"If you cannot name the lever, the critique is still a reaction, and the next attempt will be a guess that looks like a revision."* "Tone feels off" and "don't convey what we're looking for" are reactions — they tell the colleague how the output lands emotionally, not what specific element is missing or which part of the setup controls it. The converting question forces naming: what would have to be in the output (specific language, a constraint, a named quality the candidate description must answer), and which lever it sits on (the prompt, a standing instruction, the knowledge base).
+> **Why B is correct:** The course: _"A reaction names how the output feels. 'Too generic.' 'Not quite right.' 'Missed the point.' An instruction names what to change, so the next output is different."_ And: _"If you cannot name the lever, the critique is still a reaction, and the next attempt will be a guess that looks like a revision."_ "Tone feels off" and "don't convey what we're looking for" are reactions — they tell the colleague how the output lands emotionally, not what specific element is missing or which part of the setup controls it. The converting question forces naming: what would have to be in the output (specific language, a constraint, a named quality the candidate description must answer), and which lever it sits on (the prompt, a standing instruction, the knowledge base).
 >
 > **Why A is wrong:** The course directly contradicts this. Without a named lever, the colleague's next attempt is a guess. It may happen to be better, but it cannot be reliably better, because nothing about the setup was precisely identified.
 >
 > **Why C is wrong:** Having two reactions is not the problem — neither reaction has been turned into an instruction yet. The issue is the lack of specificity, not the quantity of feedback items.
 >
-> **Why D is wrong:** A standing instruction is where a *rule* goes after it has been identified. The fix has not been identified yet. You cannot promote a reaction — you can only promote an instruction.
+> **Why D is wrong:** A standing instruction is where a _rule_ goes after it has been identified. The fix has not been identified yet. You cannot promote a reaction — you can only promote an instruction.
 
 ---
 
@@ -815,7 +818,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course's three-home test: *"A rule is a limit that always applies → standing instruction. A reference is material the work has to read → knowledge base. A procedure is a sequence of steps → Skill."*
+> **Why B is correct:** The course's three-home test: _"A rule is a limit that always applies → standing instruction. A reference is material the work has to read → knowledge base. A procedure is a sequence of steps → Skill."_
 >
 > - Background paragraph (market positioning) = material the analysis has to read = **reference** = knowledge base. ✓
 > - Format fix (numbered lists, not bullets) = a rule that applies to every output = **rule** = standing instruction. ✓
@@ -823,7 +826,7 @@ order: 89
 >
 > **Why A is wrong:** Puts the background paragraph in a standing instruction. Standing instructions are for behavioral rules ("always include X"), not for reference material to read. A two-paragraph background document in a standing instruction bloats every prompt whether or not that detail is needed, and it is not the right home for material.
 >
-> **Why C is wrong:** Puts the seven-step sequence in a knowledge base. A knowledge base holds reference material — facts, documents, source text. A procedure stored in a knowledge base loses the enforcement of its order. The course: *"A procedure pasted as a one-line instruction loses its steps."* The Skill is what enforces the sequence.
+> **Why C is wrong:** Puts the seven-step sequence in a knowledge base. A knowledge base holds reference material — facts, documents, source text. A procedure stored in a knowledge base loses the enforcement of its order. The course: _"A procedure pasted as a one-line instruction loses its steps."_ The Skill is what enforces the sequence.
 >
 > **Why D is wrong:** Same error as C for the seven-step sequence. A knowledge base entry for a procedure means someone has to manually follow the steps — it is not executed. Putting a procedure anywhere other than a Skill is the failure mode the course explicitly describes.
 
@@ -849,15 +852,15 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: A and B**
 >
-> **Why A is correct:** The course: *"Memory is per-user. Whatever it learned about your preferences is yours, and the colleague covering for you starts from nothing."* Two analysts running the same workflow with different memory entries produce different results — the 8% vs 10% inconsistency is memory-driven variance. The course: *"Use both, and rely on configuration."* The shared fix is a Project-level standing instruction or knowledge base entry that applies consistently regardless of who is running the workflow.
+> **Why A is correct:** The course: _"Memory is per-user. Whatever it learned about your preferences is yours, and the colleague covering for you starts from nothing."_ Two analysts running the same workflow with different memory entries produce different results — the 8% vs 10% inconsistency is memory-driven variance. The course: _"Use both, and rely on configuration."_ The shared fix is a Project-level standing instruction or knowledge base entry that applies consistently regardless of who is running the workflow.
 >
-> **Why B is correct:** This is the analyst-and-canceled-orders failure from the course, applied to rounding. The senior colleague repeated the rounding correction in chat until the AI's memory picked it up. The new analyst starts from nothing. The course: *"The fix existed the whole time. The failure was leaving it somewhere only one person could find."* Promote to a standing instruction: *"Round all figures to two decimal places."*
+> **Why B is correct:** This is the analyst-and-canceled-orders failure from the course, applied to rounding. The senior colleague repeated the rounding correction in chat until the AI's memory picked it up. The new analyst starts from nothing. The course: _"The fix existed the whole time. The failure was leaving it somewhere only one person could find."_ Promote to a standing instruction: _"Round all figures to two decimal places."_
 >
 > **Why C is wrong:** The new analyst building personal memory only creates another per-user profile — which makes the variance problem worse, not better. Two analysts with two different memory profiles produce two different outputs. Memory is not the fix for a shared-workflow consistency problem.
 >
 > **Why D is wrong:** Stale configuration shows as "used to work, now doesn't" — a single consistent failure across the team. The pattern here is different outputs for different users running the same workflow — that is a memory/configuration gap, not a knowledge source that went stale.
 >
-> **Why E is wrong:** The course explicitly contradicts this. *"Memory is per-user... It is best-effort. It may pick a pattern up. It may not. You cannot point at it, read it, or hand it to somebody. Configuration is the shared home you can open and read."* They are not equivalent for team workflows.
+> **Why E is wrong:** The course explicitly contradicts this. _"Memory is per-user... It is best-effort. It may pick a pattern up. It may not. You cannot point at it, read it, or hand it to somebody. Configuration is the shared home you can open and read."_ They are not equivalent for team workflows.
 
 ---
 
@@ -879,7 +882,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The course: *"Variance is the one teams miss, because no individual feels it. The inconsistency exists only between people, so it shows up at the reviewer."* Each analyst produces something correct by their own standard. The problem only exists in the aggregate — when the manager receives all three and must reconcile them into a coherent report. The fix is a shared Skill (procedure) that standardizes the output format, or a shared knowledge base entry that defines the output standard all three must match. The course audit example uses exactly this: the report format becomes a Skill, eliminating the three-way divergence.
+> **Why C is correct:** The course: _"Variance is the one teams miss, because no individual feels it. The inconsistency exists only between people, so it shows up at the reviewer."_ Each analyst produces something correct by their own standard. The problem only exists in the aggregate — when the manager receives all three and must reconcile them into a coherent report. The fix is a shared Skill (procedure) that standardizes the output format, or a shared knowledge base entry that defines the output standard all three must match. The course audit example uses exactly this: the report format becomes a Skill, eliminating the three-way divergence.
 >
 > **Why A is wrong:** Repetition is when individuals each paste the same content on every run — a per-person waste. It does not produce between-person divergence. This is a different friction signal.
 >
@@ -892,7 +895,7 @@ order: 89
 > [!question] Q28 — C16: Measure — The Baseline
 > ⏱ **90 seconds**
 >
-> A logistics company redesigns its AI-assisted freight documentation workflow. The project lead reports in the business case: *"The old process took approximately 45 minutes per document. The new workflow takes 12 minutes. That is a 73% time saving."* Two weeks later, the finance team rejects the business case. The project lead is confused — the 12-minute measurement is real and verifiable.
+> A logistics company redesigns its AI-assisted freight documentation workflow. The project lead reports in the business case: _"The old process took approximately 45 minutes per document. The new workflow takes 12 minutes. That is a 73% time saving."_ Two weeks later, the finance team rejects the business case. The project lead is confused — the 12-minute measurement is real and verifiable.
 >
 > What is the most likely reason for the rejection?
 >
@@ -907,7 +910,7 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The course: *"A baseline is that measurement. Without one you have an improvement you believe in and cannot state, which is the same as no improvement the first time a manager asks."* And: *"You cannot rebuild a baseline afterwards, because your estimate of the old way will flatter you."* The 12-minute figure is real. The 45-minute figure is a remembered estimate of a process that no longer runs. Human memory of how long tedious processes took is unreliable — and systematically underestimates efficient moments while overestimating painful ones. The baseline had to be *measured* on one unchanged run before the redesign. Without it, the numerator is verified and the denominator is a guess.
+> **Why B is correct:** The course: _"A baseline is that measurement. Without one you have an improvement you believe in and cannot state, which is the same as no improvement the first time a manager asks."_ And: _"You cannot rebuild a baseline afterwards, because your estimate of the old way will flatter you."_ The 12-minute figure is real. The 45-minute figure is a remembered estimate of a process that no longer runs. Human memory of how long tedious processes took is unreliable — and systematically underestimates efficient moments while overestimating painful ones. The baseline had to be _measured_ on one unchanged run before the redesign. Without it, the numerator is verified and the denominator is a guess.
 >
 > **Why A is wrong:** Finance teams do not apply a standard percentage discount to efficiency claims. They reject unverifiable baselines — which is what B describes.
 >
@@ -920,7 +923,7 @@ order: 89
 > [!question] Q29 — C17: Incident Path — Long Case (Two-Part)
 > ⏱ **4 minutes for both parts**
 >
-> **SCENARIO:** A customer service team at a subscription software company runs an AI workflow that sends automated responses to billing dispute tickets. The workflow has been running for five months. Last Tuesday, a junior agent noticed that several responses were citing a 30-day refund window when the company's actual current policy is 14 days. She fixed the response she was working on and posted in the internal chat: *"Heads up — the AI is using old policy language."* It is now Friday. Four days later. The workflow has continued running without interruption. The team lead has only just seen the note.
+> **SCENARIO:** A customer service team at a subscription software company runs an AI workflow that sends automated responses to billing dispute tickets. The workflow has been running for five months. Last Tuesday, a junior agent noticed that several responses were citing a 30-day refund window when the company's actual current policy is 14 days. She fixed the response she was working on and posted in the internal chat: _"Heads up — the AI is using old policy language."_ It is now Friday. Four days later. The workflow has continued running without interruption. The team lead has only just seen the note.
 >
 > ---
 >
@@ -937,7 +940,7 @@ order: 89
 > [!success]- Reveal Answer (29A)
 > **Correct: C**
 >
-> **Why C is correct:** The course: *"What is the fastest way to halt this workflow, who can do it, and does that person need permission? If the honest answer is 'we would have to ask the person who set it up,' fix that first, because it makes every other step wait."* Every hour the workflow continues running produces more responses citing the wrong refund policy — more customers with incorrect information, more potential exposure. Decisions B, D, and even the map update (A) cannot be meaningfully acted on until the workflow is stopped. The first decision at design time was supposed to be: who can stop this, and can they act without permission?
+> **Why C is correct:** The course: _"What is the fastest way to halt this workflow, who can do it, and does that person need permission? If the honest answer is 'we would have to ask the person who set it up,' fix that first, because it makes every other step wait."_ Every hour the workflow continues running produces more responses citing the wrong refund policy — more customers with incorrect information, more potential exposure. Decisions B, D, and even the map update (A) cannot be meaningfully acted on until the workflow is stopped. The first decision at design time was supposed to be: who can stop this, and can they act without permission?
 >
 > **Why A is wrong:** Updating the map is the last of the four decisions — it happens after stopping, scoping, and notifying. Critical and necessary, but not causing active damage right now.
 >
@@ -948,9 +951,9 @@ order: 89
 ---
 
 > [!question] Q29B — C17: Incident Scope
-> ⏱ *(Included in the 4-minute budget above)*
+> ⏱ _(Included in the 4-minute budget above)_
 >
-> The team lead stops the workflow on Friday. She now asks: *"How many customer responses sent the wrong refund terms?"*
+> The team lead stops the workflow on Friday. She now asks: _"How many customer responses sent the wrong refund terms?"_
 >
 > What is the correct scope of the investigation?
 >
@@ -965,13 +968,13 @@ order: 89
 > [!success]- Reveal Answer (29B)
 > **Correct: C**
 >
-> **Why C is correct:** The course: *"Not 'did this one output go wrong' but how many outputs did this affect, and where did they go? A stale configuration does not produce one bad result. It produces every result since it went stale, and nobody notices which day that was."* The knowledge source containing the 30-day policy language was not updated when the policy changed. It could have gone stale days, weeks, or months before Tuesday. Every response sent since that configuration went stale potentially carries the wrong information. The investigation must trace back to the last known-correct update of the knowledge source.
+> **Why C is correct:** The course: _"Not 'did this one output go wrong' but how many outputs did this affect, and where did they go? A stale configuration does not produce one bad result. It produces every result since it went stale, and nobody notices which day that was."_ The knowledge source containing the 30-day policy language was not updated when the policy changed. It could have gone stale days, weeks, or months before Tuesday. Every response sent since that configuration went stale potentially carries the wrong information. The investigation must trace back to the last known-correct update of the knowledge source.
 >
 > **Why A is wrong:** The agent noticed the problem on one ticket. She did not cause it. The underlying configuration failure predates that observation.
 >
 > **Why B is wrong:** Tuesday is when a human noticed the symptom. Stale configuration produces no visible failure moment. The actual scope begins when the configuration went stale — which may be significantly earlier than Tuesday.
 >
-> **Why D is wrong:** A 30-day sample may miss the start of the problem entirely. The course is explicit that the scope question must be answered systematically, not by sampling. *"A stale configuration does not produce one bad result."*
+> **Why D is wrong:** A 30-day sample may miss the start of the problem entirely. The course is explicit that the scope question must be answered systematically, not by sampling. _"A stale configuration does not produce one bad result."_
 
 ---
 
@@ -980,11 +983,11 @@ order: 89
 >
 > A team lead at a law firm describes their AI-assisted due diligence workflow to three audiences in one day, producing three different descriptions. One of the three drops the human gate.
 >
-> > **Description 1 — to the senior partner:** *"Due diligence turnaround has gone from eight days to three, with the same sign-off standard. A senior associate reviews every output before it leaves the firm."*
+> > **Description 1 — to the senior partner:** _"Due diligence turnaround has gone from eight days to three, with the same sign-off standard. A senior associate reviews every output before it leaves the firm."_
 > >
-> > **Description 2 — to the risk committee:** *"The AI handles the document extraction and initial risk flagging. Anything flagged is reviewed by a qualified associate before it reaches the client."*
+> > **Description 2 — to the risk committee:** _"The AI handles the document extraction and initial risk flagging. Anything flagged is reviewed by a qualified associate before it reaches the client."_
 > >
-> > **Description 3 — to the technology team:** *"The workflow uses a custom Skill for extraction, code execution for financial exposure calculation, and a named review gate at the final step where the associate confirms accuracy before client delivery."*
+> > **Description 3 — to the technology team:** _"The workflow uses a custom Skill for extraction, code execution for financial exposure calculation, and a named review gate at the final step where the associate confirms accuracy before client delivery."_
 >
 > Which description has the problem, and what specifically causes it?
 >
@@ -999,11 +1002,11 @@ order: 89
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** Two failures compound in Description 2. First, *"AI handles the document extraction and initial risk flagging"* uses the phrase "AI handles" — the course warns: *"'AI handles X' drops the human gate out of the sentence. Whoever hears it now believes there is no gate."* Second, and more seriously: *"anything flagged is reviewed"* means the gate only covers what AI chose to surface. If the AI misses a risk and does not flag it, that item never reaches the associate. The gate is conditional on AI's flagging performance — which is precisely the kind of failure the gate is supposed to catch. The correct framing names what AI does, names the human checkpoint, and names what the workflow is designed to decline or escalate.
+> **Why B is correct:** Two failures compound in Description 2. First, _"AI handles the document extraction and initial risk flagging"_ uses the phrase "AI handles" — the course warns: _"'AI handles X' drops the human gate out of the sentence. Whoever hears it now believes there is no gate."_ Second, and more seriously: _"anything flagged is reviewed"_ means the gate only covers what AI chose to surface. If the AI misses a risk and does not flag it, that item never reaches the associate. The gate is conditional on AI's flagging performance — which is precisely the kind of failure the gate is supposed to catch. The correct framing names what AI does, names the human checkpoint, and names what the workflow is designed to decline or escalate.
 >
-> **Why A is wrong:** Description 1 explicitly names the gate: *"A senior associate reviews every output before it leaves the firm."* The gate is present and unambiguous. "The same sign-off standard" refers to the human sign-off, not to the AI's output quality.
+> **Why A is wrong:** Description 1 explicitly names the gate: _"A senior associate reviews every output before it leaves the firm."_ The gate is present and unambiguous. "The same sign-off standard" refers to the human sign-off, not to the AI's output quality.
 >
-> **Why C is wrong:** Description 3 names the gate in precise terms appropriate for a technical audience (*"named review gate... associate confirms accuracy before client delivery"*). The course says the same workflow is described at three levels of detail — Description 3 is the technical version. Precision for a technical audience is correct.
+> **Why C is wrong:** Description 3 names the gate in precise terms appropriate for a technical audience (_"named review gate... associate confirms accuracy before client delivery"_). The course says the same workflow is described at three levels of detail — Description 3 is the technical version. Precision for a technical audience is correct.
 >
 > **Why D is wrong:** The baseline concern (Concept 16) is a separate issue from communication accuracy. The question asks which description drops the gate — that is a Concept 18 question. Description 1 retains the gate regardless of whether the eight-day baseline was measured.
 
@@ -1017,6 +1020,7 @@ order: 89
 > ### Post-Test Review Protocol
 >
 > **Step 1 — Score yourself:**
+>
 > - 27–30: Exam-ready
 > - 23–26: Strong — review the concepts behind each miss
 > - 18–22: Solid — re-read the relevant course sections before retesting
@@ -1033,23 +1037,24 @@ order: 89
 > ---
 >
 > ### Concept Quick-Reference
-> | Concept | Core Rule |
-> |---------|-----------|
-> | C1 | Step = named owner + stated reason in advance. Session = judged afterwards. |
-> | C2 | AI fills blank slots silently. "Where I have not told you, say so." |
-> | C3 | If it matters, compute it. Written = computed on the page. Code block = proof. |
-> | C4 | Window test = can everything be supplied? Passing = eligible, not owned. |
-> | C5 | Three criteria: reversibility, stakes, accountability. Past performance is NOT a criterion. Strictest wins. |
-> | C6 | Arithmetic ≠ low stakes. Flagging step column depends on whether anyone stands after it. |
-> | C7 | Halo = credit carried forward. Unstaffed gate = collaborative on paper, automated in practice. Mapping the tool = hardest to see from inside. |
-> | C8 | One named owner. Review date. Q2 asks about last week, not policy. Three controls fail silently. |
-> | C9 | Description problem: better prompt fixes it. Feature problem: better prompt does not. |
-> | C10 | Escalation = dependency (others rely on it). Manufacture = method stabilized. Different signals. |
-> | C11 | Timing: first answer wrong = under-spec. Session degraded = context overload. Repeatable type = wrong feature. Used to work = stale config. |
-> | C12 | Cheapest first. Step 5 reached first = excuse. Reached last = conclusion. |
-> | C13 | Reaction = feels. Instruction = what + which lever. Cannot promote a reaction. |
-> | C14 | Rule → standing instruction. Reference → knowledge base. Procedure → Skill. Memory is not configuration. |
-> | C15 | Variance is invisible to individuals. Appears only at the reviewer. Consolidate first, then promote. |
-> | C16 | Baseline must be measured BEFORE the change. Cannot reconstruct it afterwards. |
-> | C17 | Four decisions at design time: stop, scope, tell, change the map. Stale config = many outputs affected. |
-> | C18 | Say what it does. Name the gate. Say what it refuses. Gates explicit = more trust, not less. |
+>
+> | Concept | Core Rule                                                                                                                                     |
+> | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+> | C1      | Step = named owner + stated reason in advance. Session = judged afterwards.                                                                   |
+> | C2      | AI fills blank slots silently. "Where I have not told you, say so."                                                                           |
+> | C3      | If it matters, compute it. Written = computed on the page. Code block = proof.                                                                |
+> | C4      | Window test = can everything be supplied? Passing = eligible, not owned.                                                                      |
+> | C5      | Three criteria: reversibility, stakes, accountability. Past performance is NOT a criterion. Strictest wins.                                   |
+> | C6      | Arithmetic ≠ low stakes. Flagging step column depends on whether anyone stands after it.                                                      |
+> | C7      | Halo = credit carried forward. Unstaffed gate = collaborative on paper, automated in practice. Mapping the tool = hardest to see from inside. |
+> | C8      | One named owner. Review date. Q2 asks about last week, not policy. Three controls fail silently.                                              |
+> | C9      | Description problem: better prompt fixes it. Feature problem: better prompt does not.                                                         |
+> | C10     | Escalation = dependency (others rely on it). Manufacture = method stabilized. Different signals.                                              |
+> | C11     | Timing: first answer wrong = under-spec. Session degraded = context overload. Repeatable type = wrong feature. Used to work = stale config.   |
+> | C12     | Cheapest first. Step 5 reached first = excuse. Reached last = conclusion.                                                                     |
+> | C13     | Reaction = feels. Instruction = what + which lever. Cannot promote a reaction.                                                                |
+> | C14     | Rule → standing instruction. Reference → knowledge base. Procedure → Skill. Memory is not configuration.                                      |
+> | C15     | Variance is invisible to individuals. Appears only at the reviewer. Consolidate first, then promote.                                          |
+> | C16     | Baseline must be measured BEFORE the change. Cannot reconstruct it afterwards.                                                                |
+> | C17     | Four decisions at design time: stop, scope, tell, change the map. Stale config = many outputs affected.                                       |
+> | C18     | Say what it does. Name the gate. Say what it refuses. Gates explicit = more trust, not less.                                                  |

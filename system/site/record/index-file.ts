@@ -17,7 +17,12 @@
  * on the filename, which reordered every record that declares no `order:` at
  * all. Both are gone; `compareSiblings` decides here as it does there.
  */
-import { compareSiblings, folderOrder, tieKey, UNORDERED } from "../lib/order-rule";
+import {
+  compareSiblings,
+  folderOrder,
+  tieKey,
+  UNORDERED,
+} from "../lib/order-rule";
 
 export interface IndexConcept {
   /** Bundle-relative id (path without `.md`). */
@@ -103,7 +108,10 @@ const ROOT_FRONTMATTER = '---\nokf_version: "0.2"\n---\n\n';
 /** `purchase-policies` → `Purchase policies`. */
 export function humanise(name: string): string {
   const words = name.replace(/[-_]+/g, " ").trim();
-  return words.charAt(0).toUpperCase() + words.slice(1);
+  return (words.charAt(0).toUpperCase() + words.slice(1)).replace(
+    /\bAi\b/g,
+    "AI",
+  );
 }
 
 function orderOf(c: IndexConcept): number {
@@ -132,7 +140,9 @@ export interface IndexEntry {
  * bullet markers, an optional root frontmatter, and a missing description.
  */
 export function parseIndex(text: string): IndexEntry[] {
-  const body = text.startsWith("---\n") ? text.slice(text.indexOf("\n---\n") + 5) : text;
+  const body = text.startsWith("---\n")
+    ? text.slice(text.indexOf("\n---\n") + 5)
+    : text;
   const entries: IndexEntry[] = [];
   let heading = "";
   for (const line of body.split("\n")) {
@@ -143,7 +153,12 @@ export function parseIndex(text: string): IndexEntry[] {
     }
     const b = /^[*-]\s+\[(.+)\]\(([^)\s]+)\)(?:\s+-\s+(.*))?\s*$/.exec(line);
     if (b !== null) {
-      entries.push({ heading, title: b[1] ?? "", href: b[2] ?? "", description: b[3] ?? null });
+      entries.push({
+        heading,
+        title: b[1] ?? "",
+        href: b[2] ?? "",
+        description: b[3] ?? null,
+      });
     }
   }
   return entries;

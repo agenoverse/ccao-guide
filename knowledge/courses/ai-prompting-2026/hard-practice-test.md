@@ -2,7 +2,7 @@
 type: Document
 title: "AI Prompting in 2026: Hard Practice Test"
 description: "Hard-difficulty practice test with challenging scenarios and edge cases from the AI Prompting in 2026 domain."
-status: stable
+status: draft
 generated:
   by: human:shazilk-dev
   at: "2026-09-28T17:28:00Z"
@@ -20,6 +20,7 @@ order: 49
 ---
 
 > [!warning] EXAM RULES — Read Before Starting
+>
 > - **Total: 30 questions | 60 minutes**
 > - **Hard limit: 90 seconds per MCQ | 2 minutes per multi-select | 4 minutes per long case**
 > - **No going back.** Answer before moving to the next question.
@@ -30,6 +31,7 @@ order: 49
 ---
 
 > [!tip] Time Targets by Section
+>
 > - Q1–Q15 (Part 1): **28 minutes**
 > - Q16–Q30 (Part 2): **32 minutes**
 > - Start a timer before Q1. Stop when the section time runs out and mark what you reached.
@@ -43,7 +45,7 @@ order: 49
 > [!question] Q1 — C1: Novice vs Power User
 > ⏱ **90 seconds**
 >
-> A marketing coordinator at a restaurant chain needs to announce a new winter menu. She types the following into Claude: *"Write a promotional email for our new winter menu."* The AI returns a polished, professional email — but it contains no dish names, no restaurant branding, an offer she never approved, and a tone that doesn't match the restaurant's personality. She is frustrated and blames the AI for being "generic."
+> A marketing coordinator at a restaurant chain needs to announce a new winter menu. She types the following into Claude: _"Write a promotional email for our new winter menu."_ The AI returns a polished, professional email — but it contains no dish names, no restaurant branding, an offer she never approved, and a tone that doesn't match the restaurant's personality. She is frustrated and blames the AI for being "generic."
 >
 > What is the most accurate diagnosis of why the output failed?
 >
@@ -64,14 +66,15 @@ order: 49
 >
 > **Why C is wrong:** The system prompt shapes tone and behavior, but it cannot invent the restaurant's actual menu or approved offers. That information was simply absent.
 >
-> **Why D is the trap:** Length is NOT the fix. A longer vague prompt ("Write a really good, detailed, professional promotional email for our wonderful new winter menu that our customers will love") is still a novice prompt. The gap is the *type* of content provided — files, constraints, audience — not word count.
+> **Why D is the trap:** Length is NOT the fix. A longer vague prompt ("Write a really good, detailed, professional promotional email for our wonderful new winter menu that our customers will love") is still a novice prompt. The gap is the _type_ of content provided — files, constraints, audience — not word count.
 
 ---
 
 > [!question] Q2 — C1: Novice vs Power User (Multi-Select)
 > ⏱ **2 minutes** | Select **TWO** answers
 >
-> The head of HR at a logistics company asks Claude to produce an onboarding guide for new warehouse staff. Her prompt: *"I need help creating an onboarding guide for new warehouse staff. Our company culture focuses on safety and efficiency. We want something professional and warm."* Claude returns a polished five-page guide. After reading it, she identifies three specific problems:
+> The head of HR at a logistics company asks Claude to produce an onboarding guide for new warehouse staff. Her prompt: _"I need help creating an onboarding guide for new warehouse staff. Our company culture focuses on safety and efficiency. We want something professional and warm."_ Claude returns a polished five-page guide. After reading it, she identifies three specific problems:
+>
 > 1. It omits the legally required safety protocols specific to her country
 > 2. It assumes a university-level reading ability, but 60% of her staff speak Urdu as a first language
 > 3. The tone is formal corporate English, not warm and accessible
@@ -95,7 +98,7 @@ order: 49
 >
 > **Why E is correct:** Failure #3 (wrong tone and reading level) is fixed by specifying exactly what the output should look like — reading level, register, and what "warm" means in practice. Vague adjectives like "professional and warm" are interpreted by the AI's training-data average, not the HR manager's actual intent.
 >
-> **Why A is wrong:** Extended thinking improves *reasoning depth* — it does not add missing files, audience data, or constraints the model was never given.
+> **Why A is wrong:** Extended thinking improves _reasoning depth_ — it does not add missing files, audience data, or constraints the model was never given.
 >
 > **Why C is wrong:** Deep research finds current public information on the web. It cannot retrieve her company's internal legally-required protocols, nor the specific regulations for her country/industry without very precise prompting. This is a context problem, not a retrieval problem.
 >
@@ -106,7 +109,7 @@ order: 49
 > [!question] Q3 — C2: Pretrained Knowledge
 > ⏱ **90 seconds**
 >
-> A self-employed consultant asks an AI: *"What are the current tax filing deadlines and freelancer tax rates in Pakistan for fiscal year 2026?"* The AI replies confidently with specific percentages, deadlines, and income brackets. The consultant is about to copy these figures directly into a client proposal she will send in the morning.
+> A self-employed consultant asks an AI: _"What are the current tax filing deadlines and freelancer tax rates in Pakistan for fiscal year 2026?"_ The AI replies confidently with specific percentages, deadlines, and income brackets. The consultant is about to copy these figures directly into a client proposal she will send in the morning.
 >
 > What is the single most important action she must take before including this information?
 >
@@ -123,7 +126,7 @@ order: 49
 >
 > **Why C is correct:** Tax rates for a specific country and fiscal year are either post-cutoff, frequently updated, or specific enough that training data is unreliable. The crash course is clear: for any claim where being wrong has real consequences, verify against the primary authoritative source — not the AI, not the citation the AI gives, but the actual source.
 >
-> **Why A is wrong:** Extended thinking improves reasoning on *already-known* information. It cannot add post-cutoff data or recover accurate figures that weren't reliably in the training data.
+> **Why A is wrong:** Extended thinking improves reasoning on _already-known_ information. It cannot add post-cutoff data or recover accurate figures that weren't reliably in the training data.
 >
 > **Why B is the most dangerous trap:** This option sounds responsible but is not. The crash course explicitly distinguishes between "citing a source" and "verifying." Asking the AI for a citation only gives you a URL or reference — it does not mean the AI read it correctly, that it's current, or that the figures it quoted actually appear in that source. "Checking the citation IS verification" — meaning you open the document yourself. Asking the AI to give you the citation name is not the same thing.
 >
@@ -140,7 +143,7 @@ order: 49
 >
 > **B)** "What changes were made to the national curriculum guidelines for secondary schools in the announcement last week?"
 >
-> **C)** "What is the main theme of George Orwell's *Animal Farm*?"
+> **C)** "What is the main theme of George Orwell's _Animal Farm_?"
 >
 > **D)** "What are the specific subject-combination requirements and fee structure for the feeder university our students typically apply to — updated for this academic year?"
 >
@@ -155,7 +158,7 @@ order: 49
 >
 > **Why A is wrong:** The simple interest formula (I = PRT) is a timeless mathematical fact covered exhaustively across the internet. Extremely high reliability.
 >
-> **Why C is wrong:** Orwell's *Animal Farm* is one of the most analyzed texts in English literature — discussed thousands of times across every training data source imaginable. Extremely high reliability.
+> **Why C is wrong:** Orwell's _Animal Farm_ is one of the most analyzed texts in English literature — discussed thousands of times across every training data source imaginable. Extremely high reliability.
 >
 > **Why E is wrong:** Basic grammar concepts are among the most reliably covered topics in training data. No verification needed for a definition this common.
 
@@ -164,7 +167,7 @@ order: 49
 > [!question] Q5 — C3: Retrieval Modes
 > ⏱ **90 seconds**
 >
-> A property manager asks an AI: *"Does The Grand Heights apartment complex comply with the new 2026 fire safety codes for residential buildings in Lahore?"* The AI responds with a detailed, confident three-paragraph answer confirming that modern residential complexes in Lahore generally comply with revised safety standards, citing specific code sections. The property manager is relieved and does not investigate further.
+> A property manager asks an AI: _"Does The Grand Heights apartment complex comply with the new 2026 fire safety codes for residential buildings in Lahore?"_ The AI responds with a detailed, confident three-paragraph answer confirming that modern residential complexes in Lahore generally comply with revised safety standards, citing specific code sections. The property manager is relieved and does not investigate further.
 >
 > What is the most likely truth about this response?
 >
@@ -183,7 +186,7 @@ order: 49
 >
 > **Why A is wrong:** Deep research triggers from specific prompt patterns ("research thoroughly," "produce a report," "use these source types"). This prompt uses none of them. Even if it did, deep research cannot access private building compliance records.
 >
-> **Why B is wrong:** General fire safety *concepts* are well-documented. The compliance status of a specific building in 2026 is neither.
+> **Why B is wrong:** General fire safety _concepts_ are well-documented. The compliance status of a specific building in 2026 is neither.
 >
 > **Why D is the trap:** This sounds plausible — "maybe it searched." But even if web search ran, there is no public compliance registry for private Lahore apartment buildings that would appear in a web search result. The AI's confident, general answer is the signature of pretrained mode, not web search output (which would cite sources).
 
@@ -194,13 +197,13 @@ order: 49
 >
 > A junior analyst at a research firm needs to write a report on policy changes in renewable energy across three countries over the last 12 months. She wants current data with citations, not general background from training data. Which prompt phrasing is **most likely** to trigger deep research mode?
 >
-> **A)** *"What is the current status of renewable energy policy in Germany, India, and Brazil?"*
+> **A)** _"What is the current status of renewable energy policy in Germany, India, and Brazil?"_
 >
-> **B)** *"Summarize the renewable energy policies of Germany, India, and Brazil and compare them."*
+> **B)** _"Summarize the renewable energy policies of Germany, India, and Brazil and compare them."_
 >
-> **C)** *"Research the most significant renewable energy policy changes in Germany, India, and Brazil over the last 12 months. Produce a structured three-section report, include data tables where available, and cite each claim with a named source."*
+> **C)** _"Research the most significant renewable energy policy changes in Germany, India, and Brazil over the last 12 months. Produce a structured three-section report, include data tables where available, and cite each claim with a named source."_
 >
-> **D)** *"What changed in renewable energy policy in these three countries this year?"* along with attaching three PDF reports she already has
+> **D)** _"What changed in renewable energy policy in these three countries this year?"_ along with attaching three PDF reports she already has
 
 > [!success]- Reveal Answer
 > **Correct: C**
@@ -211,7 +214,7 @@ order: 49
 >
 > **Why B is wrong:** "Summarize" also maps to pretrained mode ("Summarize Y" → pretrained only, per the course's trigger table).
 >
-> **Why D is the trap:** Attaching PDFs keeps the model in pretrained mode *for the files* — it reads what you give it but doesn't go looking for current web data. The question phrasing "What changed this year" might trigger web search, but probably not deep research. The result will likely be an answer synthesized from her three PDFs plus some pretrained general knowledge — not a current multi-source research report.
+> **Why D is the trap:** Attaching PDFs keeps the model in pretrained mode _for the files_ — it reads what you give it but doesn't go looking for current web data. The question phrasing "What changed this year" might trigger web search, but probably not deep research. The result will likely be an answer synthesized from her three PDFs plus some pretrained general knowledge — not a current multi-source research report.
 
 ---
 
@@ -220,11 +223,11 @@ order: 49
 >
 > **SCENARIO:** Tomás is a compliance officer at an insurance company preparing a briefing on whether his company's AI-assisted claims process meets EU AI Act requirements. Over two days, he runs the following three prompts in sequence:
 >
-> > **Prompt 1:** *"What are the requirements of the EU AI Act for insurance companies using AI in claims decisions?"*
+> > **Prompt 1:** _"What are the requirements of the EU AI Act for insurance companies using AI in claims decisions?"_
 > >
-> > **Prompt 2:** *"Today, have there been any recent enforcement actions under the EU AI Act specifically targeting insurance companies?"*
+> > **Prompt 2:** _"Today, have there been any recent enforcement actions under the EU AI Act specifically targeting insurance companies?"_
 > >
-> > **Prompt 3:** *"Research the EU AI Act's governance requirements for high-risk AI systems thoroughly. Use official EU sources, peer-reviewed legal studies, and published compliance reports. Produce a structured report covering: obligations, prohibited practices, enforcement timeline, and open interpretive questions. Cite every factual claim."*
+> > **Prompt 3:** _"Research the EU AI Act's governance requirements for high-risk AI systems thoroughly. Use official EU sources, peer-reviewed legal studies, and published compliance reports. Produce a structured report covering: obligations, prohibited practices, enforcement timeline, and open interpretive questions. Cite every factual claim."_
 >
 > ---
 >
@@ -260,9 +263,9 @@ order: 49
 >
 > **7B — Correct: C**
 >
-> **Why C is correct:** The crash course explicitly describes this mechanism: *"A search-and-retrieval layer... cuts each one down to a short passage... only its shortened version reaches the model that talks to you. So the model that answers you often reads a summary rather than the page. That is why it sometimes reports a page wrongly. A summary loses detail."* The enforcement action likely exists in the cited source — but the summary that reached the answering model lost or distorted the specific details.
+> **Why C is correct:** The crash course explicitly describes this mechanism: _"A search-and-retrieval layer... cuts each one down to a short passage... only its shortened version reaches the model that talks to you. So the model that answers you often reads a summary rather than the page. That is why it sometimes reports a page wrongly. A summary loses detail."_ The enforcement action likely exists in the cited source — but the summary that reached the answering model lost or distorted the specific details.
 >
-> **Why A is wrong:** Hallucination is possible but the more precise explanation for a citation that *exists* but has wrong details is summary drift, not fabrication. If it were fabricated, the source itself wouldn't exist.
+> **Why A is wrong:** Hallucination is possible but the more precise explanation for a citation that _exists_ but has wrong details is summary drift, not fabrication. If it were fabricated, the source itself wouldn't exist.
 >
 > **Why B is wrong:** This is directly contradicted by the crash course. The model does NOT read full pages — it reads a summary created by a smaller retrieval model.
 >
@@ -288,11 +291,11 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course is explicit: *"The personality you sense is not built into the model. It is written into the instructions the company loaded before you arrived... Claude's instructions ask for careful thinking and honesty."* Consistent caution, disclaimers, and refusal patterns are system-prompt behaviors — not emergent personality from training data.
+> **Why B is correct:** The crash course is explicit: _"The personality you sense is not built into the model. It is written into the instructions the company loaded before you arrived... Claude's instructions ask for careful thinking and honesty."_ Consistent caution, disclaimers, and refusal patterns are system-prompt behaviors — not emergent personality from training data.
 >
-> **Why A is wrong (the trap):** Training data does influence base tendencies, but the *specific, consistent behavioral patterns* across a product (formal tone, specific disclaimers, refusal categories) are system prompt instructions. The crash course explicitly illustrates this: same question to Claude, ChatGPT, and Gemini produces different tones because their system prompt instructions differ — not because they were trained on different writing styles alone.
+> **Why A is wrong (the trap):** Training data does influence base tendencies, but the _specific, consistent behavioral patterns_ across a product (formal tone, specific disclaimers, refusal categories) are system prompt instructions. The crash course explicitly illustrates this: same question to Claude, ChatGPT, and Gemini produces different tones because their system prompt instructions differ — not because they were trained on different writing styles alone.
 >
-> **Why C is wrong:** Memory stores user-specific preferences based on what the *user* does. Since he hasn't customized anything, memory wouldn't create consistent formality — and if his chats are casual, memory would actually make responses less formal over time.
+> **Why C is wrong:** Memory stores user-specific preferences based on what the _user_ does. Since he hasn't customized anything, memory wouldn't create consistent formality — and if his chats are casual, memory would actually make responses less formal over time.
 >
 > **Why D is wrong:** Account tier affects usage limits and features. It does not rewrite the system prompt or change Claude's fundamental behavioral instructions.
 
@@ -301,7 +304,7 @@ order: 49
 > [!question] Q9 — C4: Context Rot
 > ⏱ **90 seconds**
 >
-> A financial analyst has been working in one Claude conversation for nearly three hours. The chat covered: a client's portfolio strategy, a competitor's quarterly earnings analysis, a draft email to a colleague, and now a question about the tax implications of a specific investment structure. She notices the answers are getting longer and vaguer, and the last response referenced the competitor's earnings analysis unprompted when she asked about taxes. She asks: *"What should I do to get a clear answer about the tax question?"*
+> A financial analyst has been working in one Claude conversation for nearly three hours. The chat covered: a client's portfolio strategy, a competitor's quarterly earnings analysis, a draft email to a colleague, and now a question about the tax implications of a specific investment structure. She notices the answers are getting longer and vaguer, and the last response referenced the competitor's earnings analysis unprompted when she asked about taxes. She asks: _"What should I do to get a clear answer about the tax question?"_
 >
 > What is the correct action?
 >
@@ -311,12 +314,12 @@ order: 49
 >
 > **C)** Start a new conversation, paste only the relevant context needed for the tax question, and continue there
 >
-> **D)** Type *"Ignore everything before this message and focus only on the tax question"* to reset Claude's context window
+> **D)** Type _"Ignore everything before this message and focus only on the tax question"_ to reset Claude's context window
 
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The crash course is direct: *"When you see these symptoms, the instinct is one more clarifying prompt. Resist it. Start the new chat instead, paste in the one or two facts that matter, and continue. The reset is almost always faster than the rescue."* A new chat drops the noise (workout plans, competitor earnings, email drafts) while the two relevant facts are manually preserved.
+> **Why C is correct:** The crash course is direct: _"When you see these symptoms, the instinct is one more clarifying prompt. Resist it. Start the new chat instead, paste in the one or two facts that matter, and continue. The reset is almost always faster than the rescue."_ A new chat drops the noise (workout plans, competitor earnings, email drafts) while the two relevant facts are manually preserved.
 >
 > **Why A is wrong:** This is exactly the instinct the crash course warns against. Adding more context to a rotted conversation makes it worse — there's more noise to pull at the model, not less.
 >
@@ -331,31 +334,31 @@ order: 49
 >
 > A content writer at a B2B marketing agency has a consistent workflow. Before every Claude chat, she pastes: (1) a 2-page brand voice guide PDF, (2) a list of 12 topics the client never wants mentioned, (3) a standing note that her audience is senior procurement executives who dislike casual language. She does this 6–8 times per week. Her colleague notices the repetitive pasting and suggests a fix. Which suggestion correctly applies the crash course's recommendation?
 >
-> **A)** *"Compress those three elements into one paragraph and paste it as a single block — it's faster than three separate pastes"*
+> **A)** _"Compress those three elements into one paragraph and paste it as a single block — it's faster than three separate pastes"_
 >
-> **B)** *"Use Claude's memory feature to store your preferences — it'll remember them automatically in each new chat"*
+> **B)** _"Use Claude's memory feature to store your preferences — it'll remember them automatically in each new chat"_
 >
-> **C)** *"Set up a Project with the brand voice PDF uploaded as a file, the topic list and audience note as standing instructions — every chat you open inside it inherits all three"*
+> **C)** _"Set up a Project with the brand voice PDF uploaded as a file, the topic list and audience note as standing instructions — every chat you open inside it inherits all three"_
 >
-> **D)** *"Write all three elements into your account-level standing instructions in Settings so they apply everywhere automatically"*
+> **D)** _"Write all three elements into your account-level standing instructions in Settings so they apply everywhere automatically"_
 
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The crash course defines exactly this scenario: *"The moment you have pasted the same files, audience, or limits into two chats on one topic. That context belongs in a project, not a prompt."* Projects hold uploaded files (the PDF) and standing instructions (the topic list, the audience note) that every chat inside the project inherits automatically.
+> **Why C is correct:** The crash course defines exactly this scenario: _"The moment you have pasted the same files, audience, or limits into two chats on one topic. That context belongs in a project, not a prompt."_ Projects hold uploaded files (the PDF) and standing instructions (the topic list, the audience note) that every chat inside the project inherits automatically.
 >
 > **Why A is wrong:** Faster pasting is still pasting. This doesn't solve the problem — it just makes the repetitive work slightly quicker. The core waste (re-briefing every time) continues.
 >
-> **Why B is the clever trap:** Memory sounds right — it persists across chats. But two problems: (1) Memory is *best-effort*, not guaranteed. (2) A 2-page PDF file *cannot be stored in memory*. Memory stores preference notes, not documents. Projects are the correct solution for files.
+> **Why B is the clever trap:** Memory sounds right — it persists across chats. But two problems: (1) Memory is _best-effort_, not guaranteed. (2) A 2-page PDF file _cannot be stored in memory_. Memory stores preference notes, not documents. Projects are the correct solution for files.
 >
-> **Why D is wrong:** Account-level standing instructions are for rules that are *universally true across every chat*, not just this client's work. The brand voice guide and client-specific topic restrictions are project-specific. Putting client-specific rules at account level pollutes every other chat with irrelevant constraints. The crash course is explicit: write account-level instructions only for what is true in *every* chat.
+> **Why D is wrong:** Account-level standing instructions are for rules that are _universally true across every chat_, not just this client's work. The brand voice guide and client-specific topic restrictions are project-specific. Putting client-specific rules at account level pollutes every other chat with irrelevant constraints. The crash course is explicit: write account-level instructions only for what is true in _every_ chat.
 
 ---
 
 > [!question] Q11 — C4: Memory vs. Configuration
 > ⏱ **90 seconds**
 >
-> A legal associate uses Claude regularly. He notices the AI consistently refers to him in context as a "business analyst," which is incorrect — he is a solicitor who handles commercial contracts. During one session, he corrected it: *"You're assuming I'm a business analyst. I'm actually a solicitor specialising in commercial contracts."* Claude acknowledged the correction, responded appropriately for the rest of that chat, and seemed to understand his actual role. But in his very next new chat the following day, Claude went back to treating him as a business analyst.
+> A legal associate uses Claude regularly. He notices the AI consistently refers to him in context as a "business analyst," which is incorrect — he is a solicitor who handles commercial contracts. During one session, he corrected it: _"You're assuming I'm a business analyst. I'm actually a solicitor specialising in commercial contracts."_ Claude acknowledged the correction, responded appropriately for the rest of that chat, and seemed to understand his actual role. But in his very next new chat the following day, Claude went back to treating him as a business analyst.
 >
 > What is the **most likely** explanation?
 >
@@ -370,20 +373,20 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course warns: *"If the AI keeps making the same wrong assumption in every new chat, stop rewriting your prompt and go fix the memory."* This implies two things: (1) corrections in chat *should* update memory but sometimes don't reliably, and (2) the fix is to go directly to the memory panel and edit or delete the wrong entry. The correct action here is to open Memory in Settings, find the "business analyst" entry, and delete or correct it manually.
+> **Why B is correct:** The crash course warns: _"If the AI keeps making the same wrong assumption in every new chat, stop rewriting your prompt and go fix the memory."_ This implies two things: (1) corrections in chat _should_ update memory but sometimes don't reliably, and (2) the fix is to go directly to the memory panel and edit or delete the wrong entry. The correct action here is to open Memory in Settings, find the "business analyst" entry, and delete or correct it manually.
 >
-> **Why A is wrong:** The crash course describes verbal corrections as a valid way to update memory: *"Correct it out loud... 'you are assuming I still work in retail, and I do not.' That updates the note."* It doesn't require a button click. However, the note also implies this isn't always 100% reliable, which is why B is the better explanation of what went wrong.
+> **Why A is wrong:** The crash course describes verbal corrections as a valid way to update memory: _"Correct it out loud... 'you are assuming I still work in retail, and I do not.' That updates the note."_ It doesn't require a button click. However, the note also implies this isn't always 100% reliable, which is why B is the better explanation of what went wrong.
 >
 > **Why C is wrong:** Training data does not override in-conversation or memory-layer corrections. The system is designed so memory (layer 2) is read before and overrides default behavior.
 >
-> **Why D is wrong:** This is the opposite of what memory is designed to do. Memory *specifically* persists across sessions — that is its entire purpose. If it reset every session, it would be useless.
+> **Why D is wrong:** This is the opposite of what memory is designed to do. Memory _specifically_ persists across sessions — that is its entire purpose. If it reset every session, it would be useless.
 
 ---
 
 > [!question] Q12 — C5: Extended Thinking — When to Use
 > ⏱ **90 seconds**
 >
-> A procurement manager at a hotel chain must compare three supplier contracts (each approximately 40 pages) and decide which offers the best terms given seven specific constraints: payment schedule, penalty clauses, delivery windows, quality guarantees, termination rights, pricing escalation caps, and dispute resolution mechanism. Before she starts, her colleague advises: *"Keep your prompt simple — Claude works faster with short prompts, so just ask it question by question."*
+> A procurement manager at a hotel chain must compare three supplier contracts (each approximately 40 pages) and decide which offers the best terms given seven specific constraints: payment schedule, penalty clauses, delivery windows, quality guarantees, termination rights, pricing escalation caps, and dispute resolution mechanism. Before she starts, her colleague advises: _"Keep your prompt simple — Claude works faster with short prompts, so just ask it question by question."_
 >
 > What is wrong with this advice?
 >
@@ -398,7 +401,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The crash course defines the ideal use case for extended thinking: *"Ask the model to think hard when a question has many inputs or trade-offs."* Seven constraints across three 40-page contracts is a textbook multi-input, multi-trade-off problem with real financial consequences. The power-user pattern from the crash course is exactly this: attach the files, turn on thinking, ask for the trade-offs that actually matter, a recommendation, and the conditions under which that recommendation changes.
+> **Why C is correct:** The crash course defines the ideal use case for extended thinking: _"Ask the model to think hard when a question has many inputs or trade-offs."_ Seven constraints across three 40-page contracts is a textbook multi-input, multi-trade-off problem with real financial consequences. The power-user pattern from the crash course is exactly this: attach the files, turn on thinking, ask for the trade-offs that actually matter, a recommendation, and the conditions under which that recommendation changes.
 >
 > **Why A is wrong:** "Simple short prompts" produces the opposite of what this task needs. A question like "which contract is better?" with no context gives a generic non-answer. The crash course's car-comparison example uses full file attachment + think hard — not short prompts.
 >
@@ -411,7 +414,7 @@ order: 49
 > [!question] Q13 — C5: Extended Thinking — When NOT to Use
 > ⏱ **90 seconds**
 >
-> A restaurant manager needs to send a routine follow-up email to her food supplier confirming that tomorrow's produce delivery should arrive before 7 AM. She has all the information: the supplier's name, the items ordered, the agreed time, and a contact number in case of delay. Before prompting, her team lead says: *"For anything work-related, always turn on extended thinking — it's important not to make mistakes."*
+> A restaurant manager needs to send a routine follow-up email to her food supplier confirming that tomorrow's produce delivery should arrive before 7 AM. She has all the information: the supplier's name, the items ordered, the agreed time, and a contact number in case of delay. Before prompting, her team lead says: _"For anything work-related, always turn on extended thinking — it's important not to make mistakes."_
 >
 > Should she follow this advice?
 >
@@ -426,11 +429,11 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course is explicit: *"Quick lookups, one-paragraph summaries, and casual idea-gathering. Thinking mode is slower and spends more of your usage budget. Save it for the questions where you would want a person to take their time."* A confirmatory email where all facts are known, the structure is simple, and there are no trade-offs to analyze does not need extended thinking. Save it for the seven-constraint contract comparison.
+> **Why B is correct:** The crash course is explicit: _"Quick lookups, one-paragraph summaries, and casual idea-gathering. Thinking mode is slower and spends more of your usage budget. Save it for the questions where you would want a person to take their time."_ A confirmatory email where all facts are known, the structure is simple, and there are no trade-offs to analyze does not need extended thinking. Save it for the seven-constraint contract comparison.
 >
-> **Why A is wrong:** "Real-world consequences" is too broad a trigger. Many simple tasks have real-world consequences (sending any email does). The criterion for extended thinking is *many inputs + many trade-offs*, not potential impact.
+> **Why A is wrong:** "Real-world consequences" is too broad a trigger. Many simple tasks have real-world consequences (sending any email does). The criterion for extended thinking is _many inputs + many trade-offs_, not potential impact.
 >
-> **Why C is wrong:** Writing quality improvement is not a function of extended thinking for a simple task. Extended thinking helps when the problem requires *working through multiple approaches* — not when the path is obvious and the information is already provided.
+> **Why C is wrong:** Writing quality improvement is not a function of extended thinking for a simple task. Extended thinking helps when the problem requires _working through multiple approaches_ — not when the path is obvious and the information is already provided.
 >
 > **Why D is wrong:** This is factually incorrect. Extended thinking is available across model tiers, not only the flagship. More importantly, cost is not the primary reason to skip it here — task fit is. The crash course's reason is timing and budget efficiency, not pure cost.
 
@@ -439,7 +442,7 @@ order: 49
 > [!question] Q14 — C6: Sycophancy — Embedded Bait
 > ⏱ **90 seconds**
 >
-> A startup founder asks his AI assistant: *"Our mobile app for pet care reminders has been picking up great reviews lately. Can you identify the potential weaknesses in our business model that investors might push back on?"* After reading the response, the founder is satisfied that the AI gave a balanced critique — it identified three weaknesses. His co-founder, who studies AI behavior, reviews the exchange and says the response is less trustworthy than it appears.
+> A startup founder asks his AI assistant: _"Our mobile app for pet care reminders has been picking up great reviews lately. Can you identify the potential weaknesses in our business model that investors might push back on?"_ After reading the response, the founder is satisfied that the AI gave a balanced critique — it identified three weaknesses. His co-founder, who studies AI behavior, reviews the exchange and says the response is less trustworthy than it appears.
 >
 > What concern is the co-founder **most likely** raising?
 >
@@ -454,7 +457,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course demonstrates this exact pattern: *"'I have a great business idea, mobile tie-dyeing, critique it.' That is bait for sycophancy... the AI mostly applauds."* The phrase "picking up great reviews" is subtle bait — it signals that the founder views the app positively. The AI will lean toward confirmation, and the weaknesses it lists will likely be framed gently or will omit the most damaging ones. The neutral rewrite: *"Analyze the business model of a mobile app for pet care reminders. List the strongest investor objections and the best counter-arguments to each. Score viability 1–10 on each of: market size, competitive moat, unit economics, customer retention risk."*
+> **Why B is correct:** The crash course demonstrates this exact pattern: _"'I have a great business idea, mobile tie-dyeing, critique it.' That is bait for sycophancy... the AI mostly applauds."_ The phrase "picking up great reviews" is subtle bait — it signals that the founder views the app positively. The AI will lean toward confirmation, and the weaknesses it lists will likely be framed gently or will omit the most damaging ones. The neutral rewrite: _"Analyze the business model of a mobile app for pet care reminders. List the strongest investor objections and the best counter-arguments to each. Score viability 1–10 on each of: market size, competitive moat, unit economics, customer retention risk."_
 >
 > **Why A is wrong:** Requesting more data is reasonable general advice but is not the specific concern the co-founder would be raising about AI behavior.
 >
@@ -467,30 +470,30 @@ order: 49
 > [!question] Q15 — C6: Rubric Scoring and Anti-Sycophancy (Multi-Select)
 > ⏱ **2 minutes** | Select **TWO** answers
 >
-> A journalist has just finished a 400-word investigative article and asks an AI: *"Tell me if this draft is ready to publish."* The AI responds: *"This is a strong draft with clear structure and engaging writing. A few minor tweaks could improve flow, but overall it reads well."* She is about to submit to her editor.
+> A journalist has just finished a 400-word investigative article and asks an AI: _"Tell me if this draft is ready to publish."_ The AI responds: _"This is a strong draft with clear structure and engaging writing. A few minor tweaks could improve flow, but overall it reads well."_ She is about to submit to her editor.
 >
 > Which **TWO** of the following alternative prompts would have produced more actionable, honest feedback from the same AI?
 >
-> **A)** *"Score this draft 1-10 on each of these four criteria: clarity of the central claim, quality of evidence, logical paragraph order, and whether the ending earns the reader's time. For each score, write one sentence of justification and name the single change that would raise the score the most. There is always a next level."*
+> **A)** _"Score this draft 1-10 on each of these four criteria: clarity of the central claim, quality of evidence, logical paragraph order, and whether the ending earns the reader's time. For each score, write one sentence of justification and name the single change that would raise the score the most. There is always a next level."_
 >
-> **B)** *"Use extended thinking to review this draft more carefully before giving your opinion."*
+> **B)** _"Use extended thinking to review this draft more carefully before giving your opinion."_
 >
-> **C)** *"I want you to be really honest with me — is this draft actually ready to publish?"*
+> **C)** _"I want you to be really honest with me — is this draft actually ready to publish?"_
 >
-> **D)** *"Find any weaknesses, factual gaps, logical problems, or structural issues in this draft. If you find none, say so explicitly."*
+> **D)** _"Find any weaknesses, factual gaps, logical problems, or structural issues in this draft. If you find none, say so explicitly."_
 >
-> **E)** *"Confirm whether this draft meets professional publication standards."*
+> **E)** _"Confirm whether this draft meets professional publication standards."_
 
 > [!success]- Reveal Answer
 > **Correct: A and D**
 >
-> **Why A is correct:** This is the full anti-sycophancy rubric technique from the crash course. Named criteria, forced numerical scores, one-sentence justifications, improvement steps, and the explicit *"there is always a next level"* instruction removes the AI's ability to declare you finished. Vague praise collapses because the AI must commit to a number, and committing forces it to look harder. The crash course: *"A model that wants to please you can call your draft 'strong' without committing to anything. Asked to choose between 6 and 7 out of 10, it has to commit."*
+> **Why A is correct:** This is the full anti-sycophancy rubric technique from the crash course. Named criteria, forced numerical scores, one-sentence justifications, improvement steps, and the explicit _"there is always a next level"_ instruction removes the AI's ability to declare you finished. Vague praise collapses because the AI must commit to a number, and committing forces it to look harder. The crash course: _"A model that wants to please you can call your draft 'strong' without committing to anything. Asked to choose between 6 and 7 out of 10, it has to commit."_
 >
-> **Why D is correct:** Using *"find"* instead of *"confirm"* removes the embedded conclusion. The AI is no longer being asked to validate a decision — it's being asked to search for problems. The explicit *"If you find none, say so explicitly"* forces the AI to commit rather than offer vague qualified praise.
+> **Why D is correct:** Using _"find"_ instead of _"confirm"_ removes the embedded conclusion. The AI is no longer being asked to validate a decision — it's being asked to search for problems. The explicit _"If you find none, say so explicitly"_ forces the AI to commit rather than offer vague qualified praise.
 >
 > **Why B is wrong:** Extended thinking improves reasoning depth on complex multi-input problems. It does not fix the sycophancy problem. If the question is still "is it ready?" with no rubric, extended thinking will produce a longer, more elaborately justified version of "yes, it's pretty good."
 >
-> **Why C is wrong (the trap):** This feels like it should work — you're explicitly asking for honesty. But the crash course explains why this is ineffective: the model will say *"yes, I'm being honest"* and still lean toward agreement. Sycophancy is structural, not intentional. Asking the AI to try harder at honesty does not remove the leading signal. Neutral framing and rubrics do.
+> **Why C is wrong (the trap):** This feels like it should work — you're explicitly asking for honesty. But the crash course explains why this is ineffective: the model will say _"yes, I'm being honest"_ and still lean toward agreement. Sycophancy is structural, not intentional. Asking the AI to try harder at honesty does not remove the leading signal. Neutral framing and rubrics do.
 >
 > **Why E is wrong:** "Confirm whether this draft meets..." is pure sycophancy bait. "Confirm" presupposes that it probably does. The AI's response to this will almost always be a qualified "yes." This is the same trap as "tell me my draft is ready to send" from the crash course's examples.
 
@@ -500,6 +503,7 @@ order: 49
 > **Part 1 complete: 15 questions | Target time: 28 minutes**
 >
 > Before moving to Part 2:
+>
 > - How many did you answer within the time limit?
 > - Were your errors content errors (didn't know the concept) or timing/reading errors?
 > - Tag each mistake: C = content gap | T = time pressure | L = language/wording confusion
@@ -515,7 +519,7 @@ order: 49
 > [!question] Q16 — C7: Brainstorm-Iterate Loop — Grip Too Tight
 > ⏱ **90 seconds**
 >
-> A marketing manager at a hotel chain is planning a campaign for the upcoming summer season. She runs the following prompt: *"Give me 5 campaign ideas for our summer hotel promotion. The campaign must use Instagram Reels, must be 15–30 seconds, must feature the rooftop pool, must use upbeat music, and must target families with children aged 5–12."* The AI returns five ideas — but they all look nearly identical: variations of "show a family splashing in the rooftop pool with upbeat music." She asks for 20 ideas and gets 20 versions of the same concept.
+> A marketing manager at a hotel chain is planning a campaign for the upcoming summer season. She runs the following prompt: _"Give me 5 campaign ideas for our summer hotel promotion. The campaign must use Instagram Reels, must be 15–30 seconds, must feature the rooftop pool, must use upbeat music, and must target families with children aged 5–12."_ The AI returns five ideas — but they all look nearly identical: variations of "show a family splashing in the rooftop pool with upbeat music." She asks for 20 ideas and gets 20 versions of the same concept.
 >
 > What is the **root cause** of this failure?
 >
@@ -530,7 +534,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course describes this failure precisely: *"A marketer wants campaign ideas... His limits pinned the structure, the tagline, the tone, and the length, which left the model one small corner to draw from."* The fix is to *loosen the grip during brainstorming*: keep only the true limits (the product, the audience, what the campaign must never do), drop the structural requirements (platform specifics, duration, format), generate different *directions*, and only then bring the full specification back to execute the chosen direction.
+> **Why B is correct:** The crash course describes this failure precisely: _"A marketer wants campaign ideas... His limits pinned the structure, the tagline, the tone, and the length, which left the model one small corner to draw from."_ The fix is to _loosen the grip during brainstorming_: keep only the true limits (the product, the audience, what the campaign must never do), drop the structural requirements (platform specifics, duration, format), generate different _directions_, and only then bring the full specification back to execute the chosen direction.
 >
 > **Why A is wrong:** This is a prompt design failure, not a model capability limitation. The crash course demonstrates that the same AI produces genuinely different ideas when the grip is loosened.
 >
@@ -543,7 +547,7 @@ order: 49
 > [!question] Q17 — C7: Four Kinds of Ask
 > ⏱ **90 seconds**
 >
-> A strategy consultant needs to write a memo analyzing whether her client should enter a new market. She sits down at her AI and types: *"Write a 1,200-word strategic memo analyzing whether [client name] should enter the Southeast Asian logistics market, with a formal tone, structured with an executive summary, three sections, and a recommendation."* The memo that comes back is polished, grammatically correct — but rests almost entirely on generic Southeast Asia market assumptions. When she reads it, she realizes none of the client's actual competitive advantages or constraints appear in the analysis.
+> A strategy consultant needs to write a memo analyzing whether her client should enter a new market. She sits down at her AI and types: _"Write a 1,200-word strategic memo analyzing whether [client name] should enter the Southeast Asian logistics market, with a formal tone, structured with an executive summary, three sections, and a recommendation."_ The memo that comes back is polished, grammatically correct — but rests almost entirely on generic Southeast Asia market assumptions. When she reads it, she realizes none of the client's actual competitive advantages or constraints appear in the analysis.
 >
 > Which step did she skip that caused this specific failure?
 >
@@ -558,7 +562,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course is explicit about this failure: *"Drafting before researching gives the thin generic plan... Most people skip [the research round] and ask for the draft directly, which is why their drafts feel thin. They are built on whatever the model surfaces first."* The correct first move is a research/mapping prompt: *"Before writing anything: list the five strongest reasons to enter and the five strongest reasons not to. One sentence each. What do you need from me about the client before you can make this analysis specific?"* Only after this mapping does drafting produce something substantive.
+> **Why B is correct:** The crash course is explicit about this failure: _"Drafting before researching gives the thin generic plan... Most people skip [the research round] and ask for the draft directly, which is why their drafts feel thin. They are built on whatever the model surfaces first."_ The correct first move is a research/mapping prompt: _"Before writing anything: list the five strongest reasons to enter and the five strongest reasons not to. One sentence each. What do you need from me about the client before you can make this analysis specific?"_ Only after this mapping does drafting produce something substantive.
 >
 > **Why A is wrong:** Word count constraints don't cause generic content. Generic content comes from missing specific client context and skipping the mapping step.
 >
@@ -571,7 +575,7 @@ order: 49
 > [!question] Q18 — C7: Brainstorm-Iterate Loop — Full Sequence (Multi-Select)
 > ⏱ **2 minutes** | Select **TWO** answers
 >
-> An HR manager at a recruitment firm is using AI to develop a new employee recognition program. She wants creative, genuinely different program structures — not the standard "Employee of the Month" type. She runs this prompt: *"I want 5 completely different recognition program ideas for a 50-person recruitment firm. Context: we have high competition, a young team (22–35), and our culture values autonomy. Ideas should be novel, not just 'employee of the month.'"* She receives 5 ideas and finds two she likes (#2 and #4) and three she rejects.
+> An HR manager at a recruitment firm is using AI to develop a new employee recognition program. She wants creative, genuinely different program structures — not the standard "Employee of the Month" type. She runs this prompt: _"I want 5 completely different recognition program ideas for a 50-person recruitment firm. Context: we have high competition, a young team (22–35), and our culture values autonomy. Ideas should be novel, not just 'employee of the month.'"_ She receives 5 ideas and finds two she likes (#2 and #4) and three she rejects.
 >
 > Which **TWO** actions correctly apply the brainstorm-iterate loop at this stage?
 >
@@ -588,11 +592,11 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B and C**
 >
-> **Why B is correct:** This is the core iterate move. The crash course: *"Say exactly what you think of them... Ask for 3 to 5 new options built on that feedback."* Explicit rejection with reasons + explicit acceptance with reasons = the feedback that reshapes the next round. *"You are showing it your taste, and it reshapes the options around that."* This is step 3 → step 4 of the loop.
+> **Why B is correct:** This is the core iterate move. The crash course: _"Say exactly what you think of them... Ask for 3 to 5 new options built on that feedback."_ Explicit rejection with reasons + explicit acceptance with reasons = the feedback that reshapes the next round. _"You are showing it your taste, and it reshapes the options around that."_ This is step 3 → step 4 of the loop.
 >
 > **Why C is correct:** Grading with a rubric before deciding is the anti-sycophancy move applied to the loop. The crash course explicitly recommends grading options against named criteria before committing to one — this surfaces the option's actual strengths and weaknesses, not just the manager's first impressions.
 >
-> **Why A is wrong:** Expanding idea #2 immediately skips the loop. *"Only then expand the chosen option into a full draft."* "Only then" means after multiple rounds of feedback have refined the direction, not at the first round. The crash course: *"Most of the value lives in the loop, not the final draft."*
+> **Why A is wrong:** Expanding idea #2 immediately skips the loop. _"Only then expand the chosen option into a full draft."_ "Only then" means after multiple rounds of feedback have refined the direction, not at the first round. The crash course: _"Most of the value lives in the loop, not the final draft."_
 >
 > **Why D is wrong:** Starting a new chat with the same context doesn't improve the ideas — it resets to random. The current session has already received feedback that is valuable for the next round. The crash course never recommends abandoning a working iterative session.
 >
@@ -618,20 +622,20 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course is precise about image input strengths and weaknesses: *"It is weak on: Fine detail. Reading small print at the edge of an image."* Margin entries in small print at an angle are exactly this weak zone. The crash course also notes for receipts and handwritten notes: *"Always check the totals."* For a legal report, she must review the transcription herself — particularly the margin entries, the small print, and any numbers — before including it.
+> **Why B is correct:** The crash course is precise about image input strengths and weaknesses: _"It is weak on: Fine detail. Reading small print at the edge of an image."_ Margin entries in small print at an angle are exactly this weak zone. The crash course also notes for receipts and handwritten notes: _"Always check the totals."_ For a legal report, she must review the transcription herself — particularly the margin entries, the small print, and any numbers — before including it.
 >
 > **Why A is wrong:** Claude processes handwritten documents and financial records. The crash course explicitly uses the example of a reader transcribing handwritten recipe cards as a valid use case.
 >
 > **Why C is wrong:** The crash course explicitly states that images, PDFs, and voice memos can all be dropped into a prompt. Photographs are supported.
 >
-> **Why D is wrong:** The knowledge cutoff applies to factual knowledge the AI might be asked to *recall*. It has no bearing on the AI's ability to *read and transcribe* a physical document — that is a visual processing task, not a knowledge retrieval task.
+> **Why D is wrong:** The knowledge cutoff applies to factual knowledge the AI might be asked to _recall_. It has no bearing on the AI's ability to _read and transcribe_ a physical document — that is a visual processing task, not a knowledge retrieval task.
 
 ---
 
 > [!question] Q20 — C8: Multimodal — Audio and Mixed Inputs
 > ⏱ **90 seconds**
 >
-> A clinical manager at a private medical practice wants to use AI to process patient consultation recordings. She has a one-hour recorded consultation (with patient consent) and wants a structured SOAP-format clinical note. A colleague warns her: *"You should know that the AI listens to the full recording and produces an exact word-for-word transcript before generating the note, so accuracy is very high."*
+> A clinical manager at a private medical practice wants to use AI to process patient consultation recordings. She has a one-hour recorded consultation (with patient consent) and wants a structured SOAP-format clinical note. A colleague warns her: _"You should know that the AI listens to the full recording and produces an exact word-for-word transcript before generating the note, so accuracy is very high."_
 >
 > Which part of this statement is **inaccurate** according to the crash course?
 >
@@ -646,7 +650,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The crash course's audio capability table is specific: *"Typing up clear speech: Excellent — Heavy accents, technical jargon, several people talking at once [are the risks]... Tone, sarcasm, emotion: Improving, not reliable."* Medical consultations often involve technical jargon (drug names, dosing), sometimes multiple voices (patient, companion), and emotional cues (patient distress signals) that affect clinical interpretation. The crash course doctor example asks the AI to *flag anything it could not understand confidently* — exactly because accuracy is high but not perfect. *"The AI did not replace her clinical judgment. It removed the typing."*
+> **Why C is correct:** The crash course's audio capability table is specific: _"Typing up clear speech: Excellent — Heavy accents, technical jargon, several people talking at once [are the risks]... Tone, sarcasm, emotion: Improving, not reliable."_ Medical consultations often involve technical jargon (drug names, dosing), sometimes multiple voices (patient, companion), and emotional cues (patient distress signals) that affect clinical interpretation. The crash course doctor example asks the AI to _flag anything it could not understand confidently_ — exactly because accuracy is high but not perfect. _"The AI did not replace her clinical judgment. It removed the typing."_
 >
 > **Why A is wrong:** The crash course does not claim near-perfect accuracy for complex speech — it calibrates accuracy carefully by type of audio task, and some categories are listed as "weak" or "not reliable."
 >
@@ -674,7 +678,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The crash course draws a clear line: *"Multiplayer over the internet. Networking, accounts, and matching players are beyond a one-prompt build."* Real-time synchronization across multiple locations requires a backend server, a real-time database (like Firebase or Supabase), network infrastructure, and session management — none of which can be built into a self-contained HTML artifact. The crash course: *"The line to remember: small things that fit on one screen, with no accounts and no outside services, work. Anything past that needs more than one prompt and usually some real engineering."*
+> **Why C is correct:** The crash course draws a clear line: _"Multiplayer over the internet. Networking, accounts, and matching players are beyond a one-prompt build."_ Real-time synchronization across multiple locations requires a backend server, a real-time database (like Firebase or Supabase), network infrastructure, and session management — none of which can be built into a self-contained HTML artifact. The crash course: _"The line to remember: small things that fit on one screen, with no accounts and no outside services, work. Anything past that needs more than one prompt and usually some real engineering."_
 >
 > **Why A is wrong:** Claude can update artifacts in place for features within scope. But scope matters — adding a color picker or a timer is in scope. Real-time multiplayer over the internet is not.
 >
@@ -687,7 +691,7 @@ order: 49
 > [!question] Q22 — C10: Code Execution — Silent Failure
 > ⏱ **90 seconds**
 >
-> An operations analyst uploads a spreadsheet of 14 months of warehouse throughput data and asks: *"What is the average throughput per month, and which three months had the highest variance from the average?"* The AI responds with a confident paragraph: *"The average monthly throughput is approximately 4,320 units. The three months with the highest variance are March, July, and November, showing notable deviations from the mean."* There is no code block visible in the response.
+> An operations analyst uploads a spreadsheet of 14 months of warehouse throughput data and asks: _"What is the average throughput per month, and which three months had the highest variance from the average?"_ The AI responds with a confident paragraph: _"The average monthly throughput is approximately 4,320 units. The three months with the highest variance are March, July, and November, showing notable deviations from the mean."_ There is no code block visible in the response.
 >
 > What should the analyst do **before** using these figures in her quarterly report?
 >
@@ -702,9 +706,9 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** This is the silent failure mode the crash course warns about explicitly: *"The model does not run code on every question. It chooses, based on how you phrased the question. On smaller questions it sometimes skips the code and answers from a glance, which gives you a confident paragraph with no computation behind it. From the outside that looks the same as a real analysis."* The absence of a code block is the diagnostic signal. The fix: *"Write and run code to answer this. Show me the code you ran."* Then check that the code block is present.
+> **Why C is correct:** This is the silent failure mode the crash course warns about explicitly: _"The model does not run code on every question. It chooses, based on how you phrased the question. On smaller questions it sometimes skips the code and answers from a glance, which gives you a confident paragraph with no computation behind it. From the outside that looks the same as a real analysis."_ The absence of a code block is the diagnostic signal. The fix: _"Write and run code to answer this. Show me the code you ran."_ Then check that the code block is present.
 >
-> **Why A is wrong:** The crash course directly contradicts this. *"A guessed answer reads exactly like a computed one."* Specific numbers and month names in a confident paragraph are not proof of computation.
+> **Why A is wrong:** The crash course directly contradicts this. _"A guessed answer reads exactly like a computed one."_ Specific numbers and month names in a confident paragraph are not proof of computation.
 >
 > **Why B is wrong:** Extended thinking improves reasoning quality on complex multi-input problems. It does not automatically trigger code execution. The model can "think hard" and still estimate rather than compute.
 >
@@ -732,11 +736,11 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: A and C**
 >
-> **Why A is correct:** The crash course recommends this as the primary verification step: *"Ask for a checkable fact first. 'Tell me the exact row count, the column names, and the date range of this file before you analyze anything.' If the model is really reading the file, those answers are right. If it is inventing, the row count will be a suspiciously round number and the column names will sound right and be wrong."* Even after code runs, confirming the AI read the right columns and the correct data range is the first check.
+> **Why A is correct:** The crash course recommends this as the primary verification step: _"Ask for a checkable fact first. 'Tell me the exact row count, the column names, and the date range of this file before you analyze anything.' If the model is really reading the file, those answers are right. If it is inventing, the row count will be a suspiciously round number and the column names will sound right and be wrong."_ Even after code runs, confirming the AI read the right columns and the correct data range is the first check.
 >
-> **Why C is correct:** The crash course: *"What to double-check, even when code did run: Final totals. Code is precise, but the AI may have summed the wrong column."* The most common failure is accurate computation on the wrong data — the code ran, but it summed "Department Code" instead of "Department Name" or confused two similarly named columns. A manual spot-check of totals catches this.
+> **Why C is correct:** The crash course: _"What to double-check, even when code did run: Final totals. Code is precise, but the AI may have summed the wrong column."_ The most common failure is accurate computation on the wrong data — the code ran, but it summed "Department Code" instead of "Department Name" or confused two similarly named columns. A manual spot-check of totals catches this.
 >
-> **Why B is wrong:** Re-running with extended thinking does not add a verification layer — it produces another output that may have the same column-mapping error. The issue is whether the AI correctly identified *which* columns to use, not whether it reasoned deeply enough.
+> **Why B is wrong:** Re-running with extended thinking does not add a verification layer — it produces another output that may have the same column-mapping error. The issue is whether the AI correctly identified _which_ columns to use, not whether it reasoned deeply enough.
 >
 > **Why D is wrong:** Code length is not a proxy for accuracy. A short, clean piece of code can be perfectly correct, and a long sprawling one can silently compute the wrong thing.
 >
@@ -749,7 +753,7 @@ order: 49
 >
 > **SCENARIO:** Priya is a business analyst at a small e-commerce company. Her manager asks her to answer three questions from a 2,000-row sales CSV file before the Monday morning review: (1) Which product category had the highest month-over-month growth in Q4? (2) Are there any months where refund rates exceeded 15%? (3) What is the average order value per customer segment?
 >
-> She uploads the file and sends this prompt: *"Analyze this sales file and answer: which category grew most in Q4, whether any month had refunds over 15%, and what the average order value is by customer segment."*
+> She uploads the file and sends this prompt: _"Analyze this sales file and answer: which category grew most in Q4, whether any month had refunds over 15%, and what the average order value is by customer segment."_
 >
 > The AI returns a confident, well-formatted response with three sections, specific numbers, and a note that "Accessories showed a 23% growth rate in Q4, no months exceeded 15% refunds, and Premium customers averaged $187 per order." There is no code block in the response.
 >
@@ -767,7 +771,7 @@ order: 49
 >
 > ---
 >
-> **24B.** Priya sends a follow-up: *"Run this analysis again using code, and show me the code you ran."* This time a code block appears, and the figures come back differently: Accessories growth was 18% (not 23%), one month did exceed 15% refunds, and Premium customer AOV was $162 (not $187). What is the most important lesson from this comparison?
+> **24B.** Priya sends a follow-up: _"Run this analysis again using code, and show me the code you ran."_ This time a code block appears, and the figures come back differently: Accessories growth was 18% (not 23%), one month did exceed 15% refunds, and Premium customer AOV was $162 (not $187). What is the most important lesson from this comparison?
 >
 > **A)** The first model made arithmetic errors — she should always use a more capable model tier for numerical analysis
 >
@@ -780,19 +784,19 @@ order: 49
 > [!success]- Reveal Answer
 > **24A — Correct: B**
 >
-> **Why B is correct:** The crash course: *"The model does not run code on every question... On smaller questions it sometimes skips the code and answers from a glance, which gives you a confident paragraph with no computation behind it. From the outside that looks the same as a real analysis."* The absence of a code block is the explicit warning sign. Specific numbers presented confidently with no code block are the signature of the silent failure mode.
+> **Why B is correct:** The crash course: _"The model does not run code on every question... On smaller questions it sometimes skips the code and answers from a glance, which gives you a confident paragraph with no computation behind it. From the outside that looks the same as a real analysis."_ The absence of a code block is the explicit warning sign. Specific numbers presented confidently with no code block are the signature of the silent failure mode.
 >
 > **Why A is wrong:** This is exactly what the silent failure mode looks like from the outside. Specific numbers ≠ computed numbers.
 >
 > **Why C is wrong:** Modern AI code execution handles large files. 2,000 rows is well within normal range.
 >
-> **Why D is wrong:** The AI does not flag estimated answers as estimates. The crash course is explicit: *"A guessed answer reads exactly like a computed one."* There is no automatic disclaimer.
+> **Why D is wrong:** The AI does not flag estimated answers as estimates. The crash course is explicit: _"A guessed answer reads exactly like a computed one."_ There is no automatic disclaimer.
 >
 > ---
 >
 > **24B — Correct: C**
 >
-> **Why C is correct:** Two lessons compound here. First, the silent failure mode produced significantly wrong figures (23% vs 18%, missed a refund violation, $187 vs $162). Second, even the code-run answer needs verification — the crash course: *"What to double-check, even when code did run: Final totals. Code is precise, but the AI may have summed the wrong column."* The code ran, but perhaps it identified the wrong column for "customer segment" or "refund amount." She should spot-check one segment's AOV manually before the Monday review.
+> **Why C is correct:** Two lessons compound here. First, the silent failure mode produced significantly wrong figures (23% vs 18%, missed a refund violation, $187 vs $162). Second, even the code-run answer needs verification — the crash course: _"What to double-check, even when code did run: Final totals. Code is precise, but the AI may have summed the wrong column."_ The code ran, but perhaps it identified the wrong column for "customer segment" or "refund amount." She should spot-check one segment's AOV manually before the Monday review.
 >
 > **Why A is wrong:** A more capable model tier would not fix the silent failure mode. The issue is prompt design — she didn't ask for code to be run. The same issue would occur with any model tier if asked the same way.
 >
@@ -822,24 +826,24 @@ order: 49
 >
 > **Why A identifies both violations:**
 >
-> **Violation 1 — Plan before action:** The crash course: *"Tell it the task. Ask for a plan, not action. The app proposes a list of file operations. Review and edit the plan. Only then approve execution."* She skipped steps 2 and 3 entirely. If she had seen the plan first, she would have noticed the "delete duplicates" step and excluded her legal files.
+> **Violation 1 — Plan before action:** The crash course: _"Tell it the task. Ask for a plan, not action. The app proposes a list of file operations. Review and edit the plan. Only then approve execution."_ She skipped steps 2 and 3 entirely. If she had seen the plan first, she would have noticed the "delete duplicates" step and excluded her legal files.
 >
-> **Violation 2 — Smallest permission first:** The crash course: *"Until you have done this safely a few times, scope every permission request to the smallest folder needed for the task. Do not approve 'full disk access' for an app you have used twice."* She gave full Documents access on the first use. The permission ladder starts with read-only access to a single small folder.
+> **Violation 2 — Smallest permission first:** The crash course: _"Until you have done this safely a few times, scope every permission request to the smallest folder needed for the task. Do not approve 'full disk access' for an app you have used twice."_ She gave full Documents access on the first use. The permission ladder starts with read-only access to a single small folder.
 >
-> **The deleted files trap:** The crash course explicitly warns: *"Deleted files often do NOT go to your recycle bin when an AI app deletes them. They are gone."* This is flagged as one of *"two facts most people learn the hard way."*
+> **The deleted files trap:** The crash course explicitly warns: _"Deleted files often do NOT go to your recycle bin when an AI app deletes them. They are gone."_ This is flagged as one of _"two facts most people learn the hard way."_
 >
 > **Why B is wrong:** The Arena leaderboard helps choose between tools — it doesn't protect against misuse of any tool.
 >
 > **Why C is wrong:** Extended thinking applies to reasoning tasks, not file system operations.
 >
-> **Why D is wrong:** She gave *too broad* a permission (full Documents folder), not too narrow. The principle is *least privilege* — smallest permission the job needs.
+> **Why D is wrong:** She gave _too broad_ a permission (full Documents folder), not too narrow. The principle is _least privilege_ — smallest permission the job needs.
 
 ---
 
 > [!question] Q26 — C11: Desktop Apps — Permission Ladder (Long Case)
 > ⏱ **4 minutes**
 >
-> **SCENARIO:** Rahul is an account manager at an advertising agency. His company has just licensed an AI desktop app. His manager tells him: *"The more access you give it, the more useful it is — just give it full disk access upfront so it can find whatever it needs."*
+> **SCENARIO:** Rahul is an account manager at an advertising agency. His company has just licensed an AI desktop app. His manager tells him: _"The more access you give it, the more useful it is — just give it full disk access upfront so it can find whatever it needs."_
 >
 > Rahul has never used the app before. He is about to use it for his first task: reorganizing the proposal files inside one specific client folder (`/clients/NovaCorp/proposals/`), which contains 45 PDFs.
 >
@@ -870,9 +874,9 @@ order: 49
 > [!success]- Reveal Answer
 > **26A — Correct: B**
 >
-> **Why B is correct:** The crash course permission ladder is explicit for first sessions: *"Read-only access to a single small folder. Keep saying no to: Anything that writes, deletes, or renames."* Rahul's task is specifically scoped to one client's proposals folder — that is exactly the right scope. Full disk access for a first session is the exact mistake the crash course warns against.
+> **Why B is correct:** The crash course permission ladder is explicit for first sessions: _"Read-only access to a single small folder. Keep saying no to: Anything that writes, deletes, or renames."_ Rahul's task is specifically scoped to one client's proposals folder — that is exactly the right scope. Full disk access for a first session is the exact mistake the crash course warns against.
 >
-> **Why A is wrong:** The manager's advice violates the permission ladder directly. The crash course: *"Do not approve 'full disk access' for an app you have used twice."* Trust is earned by what the app does in your own work — not granted upfront.
+> **Why A is wrong:** The manager's advice violates the permission ladder directly. The crash course: _"Do not approve 'full disk access' for an app you have used twice."_ Trust is earned by what the app does in your own work — not granted upfront.
 >
 > **Why C and D are wrong:** Both grant broader access than the task requires. Read-only to a single folder is the correct first-session scope.
 >
@@ -880,20 +884,20 @@ order: 49
 >
 > **26B — Correct: B**
 >
-> **Why B is correct:** The crash course permission ladder for "After 2–3 successful runs": *"Read and write inside one specific folder. Keep saying no to: Access to broader directories like the desktop or documents root."* Three clean read-only sessions earns one step up the ladder — write access within the specific scoped folder, not broad directory access.
+> **Why B is correct:** The crash course permission ladder for "After 2–3 successful runs": _"Read and write inside one specific folder. Keep saying no to: Access to broader directories like the desktop or documents root."_ Three clean read-only sessions earns one step up the ladder — write access within the specific scoped folder, not broad directory access.
 >
-> **Why A is wrong:** Full disk access is the *"Trusted"* tier in the ladder — the last step after a sustained clean track record, not after three sessions.
+> **Why A is wrong:** Full disk access is the _"Trusted"_ tier in the ladder — the last step after a sustained clean track record, not after three sessions.
 >
 > **Why C is wrong:** The crash course endorses write access after earned trust — permanent read-only is overly restrictive and not what the course recommends.
 >
-> **Why D is wrong:** Three sessions earns write access *within the scoped folder*, not expansion to the full client directory tree.
+> **Why D is wrong:** Three sessions earns write access _within the scoped folder_, not expansion to the full client directory tree.
 
 ---
 
 > [!question] Q27 — C12: Model Selection and Jagged Ability
 > ⏱ **90 seconds**
 >
-> A communications director at a law firm has been using Claude exclusively for two years for all tasks: drafting client letters, analyzing 80-page contracts, creating internal reports, and generating graphics for presentations. She says: *"I've learned Claude well — it never surprises me anymore and I know exactly what to expect."*
+> A communications director at a law firm has been using Claude exclusively for two years for all tasks: drafting client letters, analyzing 80-page contracts, creating internal reports, and generating graphics for presentations. She says: _"I've learned Claude well — it never surprises me anymore and I know exactly what to expect."_
 >
 > What does the crash course identify as the **main professional risk** in her approach?
 >
@@ -908,7 +912,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course: *"AI is jagged, which means ability is uneven: different models lead on different tasks and the leader changes every few months. There is no single best model."* The specific warning: *"Someone who uses one AI for everything is wrong about the best tool for most of their tasks."* She has optimized for comfort, not performance. For image generation or certain analysis types, ChatGPT or Gemini may produce materially better results — but she will never know without running the same prompts in multiple tools. The crash course recommendation: *"Run the same prompt in 2 to 3 models regularly. Read the answers side by side."*
+> **Why B is correct:** The crash course: _"AI is jagged, which means ability is uneven: different models lead on different tasks and the leader changes every few months. There is no single best model."_ The specific warning: _"Someone who uses one AI for everything is wrong about the best tool for most of their tasks."_ She has optimized for comfort, not performance. For image generation or certain analysis types, ChatGPT or Gemini may produce materially better results — but she will never know without running the same prompts in multiple tools. The crash course recommendation: _"Run the same prompt in 2 to 3 models regularly. Read the answers side by side."_
 >
 > **Why A is wrong:** Tool availability is a practical concern but not what the crash course identifies as the main professional risk here.
 >
@@ -921,13 +925,13 @@ order: 49
 > [!question] Q28 — C12: Model Ladder vs. Thinking Switch
 > ⏱ **90 seconds**
 >
-> A data analyst at a marketing agency asks a colleague: *"I need to do a complex multi-constraint analysis comparing campaign performance across six dimensions. Should I switch to the Pro version of the AI, or turn on the thinking feature?"* The colleague replies: *"They're basically the same thing — both make the AI smarter for hard problems."*
+> A data analyst at a marketing agency asks a colleague: _"I need to do a complex multi-constraint analysis comparing campaign performance across six dimensions. Should I switch to the Pro version of the AI, or turn on the thinking feature?"_ The colleague replies: _"They're basically the same thing — both make the AI smarter for hard problems."_
 >
 > What is wrong with this answer?
 >
 > **A)** The colleague is correct — upgrading a model tier and enabling thinking mode both improve analytical output in equivalent ways
 >
-> **B)** The thinking switch and the model ladder are separate controls: the ladder is which model (fast/medium/heavy tier) and the thinking switch is a reasoning setting *within* a chosen model — they work differently and apply to different types of problems
+> **B)** The thinking switch and the model ladder are separate controls: the ladder is which model (fast/medium/heavy tier) and the thinking switch is a reasoning setting _within_ a chosen model — they work differently and apply to different types of problems
 >
 > **C)** Thinking mode is the correct choice for analytical tasks; the model ladder only applies to creative tasks
 >
@@ -936,7 +940,7 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B**
 >
-> **Why B is correct:** The crash course draws this distinction explicitly: *"The thinking switch from Concept 5 is a setting inside one model. The ladder is which model you opened."* They are orthogonal controls. The ladder determines the base model capability (speed vs. depth). The thinking switch controls how long the *selected model* reasons before answering. For a multi-constraint analysis: the right move is to select an appropriate model tier *and* turn on extended thinking — not treat them as equivalent alternatives.
+> **Why B is correct:** The crash course draws this distinction explicitly: _"The thinking switch from Concept 5 is a setting inside one model. The ladder is which model you opened."_ They are orthogonal controls. The ladder determines the base model capability (speed vs. depth). The thinking switch controls how long the _selected model_ reasons before answering. For a multi-constraint analysis: the right move is to select an appropriate model tier _and_ turn on extended thinking — not treat them as equivalent alternatives.
 >
 > **Why A is wrong:** They improve output in different ways. The ladder gives you a fundamentally different model (different training, different context size, different baseline capability). The thinking switch gives the current model more time to reason. Same model + thinking ≠ higher tier model.
 >
@@ -949,7 +953,7 @@ order: 49
 > [!question] Q29 — C13: Cross-Model Checking
 > ⏱ **90 seconds**
 >
-> A policy analyst at a public health organization has drafted a 25-page report on vaccine hesitancy interventions. She wants to quality-check it before submission. She asks her Claude Pro account to review it, then asks a colleague to run it through Claude Free. Both versions give the report a score of 8.5/10 with similar positive feedback and similar minor suggestions. She tells her manager: *"I ran a cross-model review — two independent AI systems agreed the report is strong."*
+> A policy analyst at a public health organization has drafted a 25-page report on vaccine hesitancy interventions. She wants to quality-check it before submission. She asks her Claude Pro account to review it, then asks a colleague to run it through Claude Free. Both versions give the report a score of 8.5/10 with similar positive feedback and similar minor suggestions. She tells her manager: _"I ran a cross-model review — two independent AI systems agreed the report is strong."_
 >
 > What is **wrong** with her claim?
 >
@@ -964,11 +968,11 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: C**
 >
-> **Why C is correct:** The crash course is explicit about this failure: *"Different models have different blind spots, because they were trained on different data by teams that cared about different things... This only works across different model families... Two Claude models checking each other is not cross-model checking, because their habits are too similar."* Claude Pro and Claude Free are both Anthropic products trained with the same approach — they share blind spots. A genuine cross-check requires a model from OpenAI, Google, Meta, or another distinct family. *"The point a first model misses, a second often catches — but only if they are genuinely different families."*
+> **Why C is correct:** The crash course is explicit about this failure: _"Different models have different blind spots, because they were trained on different data by teams that cared about different things... This only works across different model families... Two Claude models checking each other is not cross-model checking, because their habits are too similar."_ Claude Pro and Claude Free are both Anthropic products trained with the same approach — they share blind spots. A genuine cross-check requires a model from OpenAI, Google, Meta, or another distinct family. _"The point a first model misses, a second often catches — but only if they are genuinely different families."_
 >
 > **Why A is wrong:** Capability difference between tiers is real, but that's not the core issue here. Even a significant capability gap within the same family doesn't produce the independent blind-spot check that cross-family comparison does.
 >
-> **Why B is wrong:** Agreement between models from different families *is* meaningful — it means the same finding passed two independent checks. The problem is not agreement; it is using the same family, which shares too much training overlap to be independent.
+> **Why B is wrong:** Agreement between models from different families _is_ meaningful — it means the same finding passed two independent checks. The problem is not agreement; it is using the same family, which shares too much training overlap to be independent.
 >
 > **Why D is wrong:** This is directly contradicted by the crash course. Two models from the same family is not the standard — it is specifically what the crash course warns against.
 
@@ -994,15 +998,15 @@ order: 49
 > [!success]- Reveal Answer
 > **Correct: B and D**
 >
-> **Why B is correct:** The crash course: *"Save the cross-check for work where being wrong is expensive, such as a memo your boss will read, a chapter that will be published, a decision that affects other people."* A 40-page methodology section where reasoning errors cause rejection or unreproducible research is exactly this category. The effort of running three model families is justified by the cost of getting it wrong.
+> **Why B is correct:** The crash course: _"Save the cross-check for work where being wrong is expensive, such as a memo your boss will read, a chapter that will be published, a decision that affects other people."_ A 40-page methodology section where reasoning errors cause rejection or unreproducible research is exactly this category. The effort of running three model families is justified by the cost of getting it wrong.
 >
-> **Why D is correct:** A central argument making claims about health outcomes for 400,000 people has both high stakes and the specific failure mode the multi-model loop targets: *"counter-arguments she would never have seen on her own were in the memo before the board meeting."* A funder's primary scrutiny point is the highest-value cross-check candidate.
+> **Why D is correct:** A central argument making claims about health outcomes for 400,000 people has both high stakes and the specific failure mode the multi-model loop targets: _"counter-arguments she would never have seen on her own were in the memo before the board meeting."_ A funder's primary scrutiny point is the highest-value cross-check candidate.
 >
-> **Why A is wrong:** A two-paragraph logistics email is specifically in the "skip the loop" category: *"A short email, a quick lookup, a casual list of ideas: one model is fine."* The cost of a minor error here is minimal and reversible.
+> **Why A is wrong:** A two-paragraph logistics email is specifically in the "skip the loop" category: _"A short email, a quick lookup, a casual list of ideas: one model is fine."_ The cost of a minor error here is minimal and reversible.
 >
 > **Why C is wrong:** APA reference formatting is a mechanical task. Format errors are factually verifiable against the APA manual and don't require cross-family reasoning to catch.
 >
-> **Why E is wrong:** A team biography with factual credentials is verifiable against source documents (CVs, institutional pages). The cross-model loop is for *reasoning and craft* quality — not factual verification of information the team already knows. *"Models check each other for craft. Humans check the facts that matter."*
+> **Why E is wrong:** A team biography with factual credentials is verifiable against source documents (CVs, institutional pages). The cross-model loop is for _reasoning and craft_ quality — not factual verification of information the team already knows. _"Models check each other for craft. Humans check the facts that matter."_
 
 ---
 
@@ -1015,6 +1019,7 @@ order: 49
 >
 > **Step 1 — Score yourself:**
 > Count your correct answers. Each question = 1 point.
+>
 > - 27–30: Exceptional — exam-ready
 > - 23–26: Strong — review the concepts you missed
 > - 18–22: Solid — revisit the crash course sections for your weak concepts
@@ -1036,18 +1041,19 @@ order: 49
 > ---
 >
 > ### Concept Quick-Reference (for answer review)
-> | Concept | Core Rule |
-> |---------|-----------|
-> | C1 | A brief = files + goal + limits + ask. Length ≠ quality. |
-> | C2 | Confidence ≠ accuracy. Common topics reliable, thin/recent topics verify. |
-> | C3 | "What is X" → pretrained. "Today/latest" → web search. "Research thoroughly + cite" → deep research. |
-> | C4 | 6 layers in context window. Memory = tool writes it, not model remembers. Context rot = start new chat. Projects = repeated context. |
-> | C5 | Think hard = many inputs + trade-offs. Skip it for quick lookups. |
-> | C6 | Remove conclusion from question. Force numbers per criterion. "Find" beats "confirm." |
-> | C7 | Load → options → feedback → new options → expand one. Loose grip for brainstorm, tight for execution. Research before draft. |
-> | C8 | Image: strong on overall scene, weak on fine detail/edges. Audio: good clear speech, weak on jargon/multi-speaker. |
-> | C9 | Artifact = working object, shareable. One screen, no accounts, no outside services = in scope. Multiplayer = out of scope. |
-> | C10 | Silent failure = confident answer with no code block. Fix: "write and run code, show me the code." Verify totals even when code ran. |
-> | C11 | Plan before action. Read before write. Deleted files skip recycle bin. Permission ladder = read-only first. |
-> | C12 | No single best model. Jagged = uneven ability. Thinking switch ≠ model ladder. Check Arena monthly. |
-> | C13 | Cross-family check = different company. Two Claude models ≠ cross-model. Score = progress signal, not truth signal. |
+>
+> | Concept | Core Rule                                                                                                                            |
+> | ------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+> | C1      | A brief = files + goal + limits + ask. Length ≠ quality.                                                                             |
+> | C2      | Confidence ≠ accuracy. Common topics reliable, thin/recent topics verify.                                                            |
+> | C3      | "What is X" → pretrained. "Today/latest" → web search. "Research thoroughly + cite" → deep research.                                 |
+> | C4      | 6 layers in context window. Memory = tool writes it, not model remembers. Context rot = start new chat. Projects = repeated context. |
+> | C5      | Think hard = many inputs + trade-offs. Skip it for quick lookups.                                                                    |
+> | C6      | Remove conclusion from question. Force numbers per criterion. "Find" beats "confirm."                                                |
+> | C7      | Load → options → feedback → new options → expand one. Loose grip for brainstorm, tight for execution. Research before draft.         |
+> | C8      | Image: strong on overall scene, weak on fine detail/edges. Audio: good clear speech, weak on jargon/multi-speaker.                   |
+> | C9      | Artifact = working object, shareable. One screen, no accounts, no outside services = in scope. Multiplayer = out of scope.           |
+> | C10     | Silent failure = confident answer with no code block. Fix: "write and run code, show me the code." Verify totals even when code ran. |
+> | C11     | Plan before action. Read before write. Deleted files skip recycle bin. Permission ladder = read-only first.                          |
+> | C12     | No single best model. Jagged = uneven ability. Thinking switch ≠ model ladder. Check Arena monthly.                                  |
+> | C13     | Cross-family check = different company. Two Claude models ≠ cross-model. Score = progress signal, not truth signal.                  |
