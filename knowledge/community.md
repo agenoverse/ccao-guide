@@ -13,6 +13,7 @@ ksor:
     by: human:shazilk-dev
     at: "2026-09-29T03:41:17Z"
 order: 999
+community_url: "https://chat.whatsapp.com/EfboZO1NEms8UwN76E34WY"
 ---
 
 I created this WhatsApp group to help students preparing for the CCAO-F and PCAO-F exams.

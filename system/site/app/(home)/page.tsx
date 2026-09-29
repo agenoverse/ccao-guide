@@ -48,6 +48,12 @@ export default function HomePage(): ReactElement {
     entries.find((entry) => entry.url === first.url) ?? entryFor(first);
   const behind = entries.filter((entry) => entry.url !== lead.url).slice(0, 3);
   const communityPage = pages.find((page) => page.url === "/docs/community");
+  const communityUrl =
+    communityPage !== undefined &&
+    typeof (communityPage.data as { community_url?: unknown }).community_url ===
+      "string"
+      ? (communityPage.data as { community_url: string }).community_url
+      : null;
 
   return (
     <main className="flex flex-1 flex-col">
@@ -67,9 +73,7 @@ export default function HomePage(): ReactElement {
         firstUrl={first.url}
         lead={lead}
         behind={behind}
-        community={
-          communityPage === undefined ? null : { url: communityPage.url }
-        }
+        community={communityUrl}
         // Signed from inside the cover, so the front door is one screen rather
         // than a band with a strip of page beneath it.
         foot={
