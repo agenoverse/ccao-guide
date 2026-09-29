@@ -2,16 +2,16 @@
 type: Document
 title: "Just Delegate It: Practice Questions"
 description: "Exam-difficulty practice questions covering all 11 concepts and the Delegation Loop across Parts 1, 2, and 3-4."
-status: draft
+status: stable
 generated:
   by: human:shazilk-dev
-  at: "2026-09-28T17:45:00Z"
+  at: "2026-09-29T11:30:34Z"
 ksor:
   audience: [public]
   owner: human:shazilk-dev
   approval:
     by: human:shazilk-dev
-    at: "2026-09-28T17:45:00Z"
+    at: "2026-09-29T11:30:34Z"
 order: 18
 ---
 

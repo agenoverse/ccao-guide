@@ -1,15 +1,15 @@
 {
   "format": 1,
-  "build_id": "sha256:c812fd106e296c4af1d2e1a12bfad18061dbf70cb27ae9d788f80f4232b64f4e",
+  "build_id": "sha256:d766fc9711b45b4134b0f1fb5a0c167e1a7f875496e2519c89280cc819cbbe7c",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
     "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
-  "source_commit": "2e33b80ec93322bf5b49dc1beccb792b36f12b87",
+  "source_commit": "a1ab7ab2085d305084520448db485adb204bd0dc",
   "dirty": true,
-  "as_of": "2026-09-29T11:07:17.659Z",
+  "as_of": "2026-09-29T11:30:55.506Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -329,12 +329,14 @@
     },
     {
       "path": "courses/just-delegate-it/practice-questions.md",
-      "sha256": "cf1b5108cb24826dda67c2fec565ed43df7f6c9a8cd622e82e9688357bede618",
-      "status": "draft",
+      "sha256": "68a3bb9459d14e5f371b7a8c06f5cda43d2f51aca78d6187b2bbc618a77ce8d5",
+      "status": "stable",
       "audience": [
         "public"
       ],
-      "admitted": []
+      "admitted": [
+        "public"
+      ]
     },
     {
       "path": "courses/just-delegate-it/scenarios/part-1.md",
@@ -637,8 +639,8 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "1437d83681d3d36c106f53c683767bb5872ff08f8ff3afc82382b20fba948342",
-      "files": 61
+      "sha256": "5c8dc6a330e571372e3e1e99972ab99c12117676067114fa90492d7b970aeab7",
+      "files": 62
     }
   ]
 }
