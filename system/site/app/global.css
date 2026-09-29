@@ -78,13 +78,13 @@
      brand rather than a shade of grey (hue 258, between the text's 255 and the
      accent's 264). It was ink in both themes for one afternoon, which made the
      light theme a dark page with a white foot. */
-  --ksor-cover: oklch(0.982 0.006 235);
-  --ksor-cover-foreground: oklch(0.19 0.018 245);
-  --ksor-cover-muted: oklch(0.48 0.014 245);
-  --ksor-cover-rule: oklch(0.895 0.01 235);
-  --ksor-cover-hover: oklch(0.955 0.01 235);
+  --ksor-cover: oklch(0.995 0 0);
+  --ksor-cover-foreground: oklch(0.18 0 0);
+  --ksor-cover-muted: oklch(0.45 0 0);
+  --ksor-cover-rule: oklch(0.88 0 0);
+  --ksor-cover-hover: oklch(0.965 0 0);
   --ksor-cover-panel: oklch(1 0 0);
-  --ksor-cover-panel-rule: oklch(0.902 0.009 235);
+  --ksor-cover-panel-rule: oklch(0.88 0 0);
 }
 
 .dark {

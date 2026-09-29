@@ -101,7 +101,7 @@ export function HomeCover({
             <div className="mt-9 flex flex-wrap items-center gap-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards]">
               <Link
                 href={firstUrl}
-                className="group inline-flex items-center gap-2.5 rounded-md bg-fd-primary px-5 py-3 text-sm font-semibold text-fd-primary-foreground shadow-sm transition-transform hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transition-none"
+                className="group inline-flex items-center gap-2.5 rounded-md bg-[var(--ksor-cover-foreground)] px-4 py-2.5 text-sm font-semibold text-[var(--ksor-cover-panel)] shadow-[0_8px_20px_-12px_rgb(0_0_0/0.55)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-12px_rgb(0_0_0/0.65)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transform-none motion-reduce:transition-none"
               >
                 Start studying
                 <ArrowRight
