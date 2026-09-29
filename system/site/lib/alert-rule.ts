@@ -90,11 +90,27 @@ export function matchAlert(leadingText: string): AlertMatch | null {
  */
 export const ALERT_CASES = [
   // The five, as GitHub documents them.
-  { text: "[!NOTE]\nThe record is the source of truth.", type: "info", title: "Note" },
+  {
+    text: "[!NOTE]\nThe record is the source of truth.",
+    type: "info",
+    title: "Note",
+  },
   { text: "[!TIP]\nStart at level 0.", type: "idea", title: "Tip" },
-  { text: "[!IMPORTANT]\nCitations pin a generation.", type: "info", title: "Important" },
-  { text: "[!WARNING]\nThis document is superseded.", type: "warn", title: "Warning" },
-  { text: "[!CAUTION]\nA takedown does not unsay an answer.", type: "error", title: "Caution" },
+  {
+    text: "[!IMPORTANT]\nCitations pin a generation.",
+    type: "info",
+    title: "Important",
+  },
+  {
+    text: "[!WARNING]\nThis document is superseded.",
+    type: "warn",
+    title: "Warning",
+  },
+  {
+    text: "[!CAUTION]\nA takedown does not unsay an answer.",
+    type: "error",
+    title: "Caution",
+  },
   // Lowercase renders as an alert on GitHub, so it renders as one here.
   { text: "[!note]\nStill an alert.", type: "info", title: "Note" },
   { text: "[!Warning]\nStill an alert.", type: "warn", title: "Warning" },
@@ -128,7 +144,50 @@ interface AlertNode {
   children?: AlertNode[];
   value?: string;
   name?: string;
+  properties?: Record<string, unknown>;
   attributes?: { type: "mdxJsxAttribute"; name: string; value: string }[];
+}
+
+/** Convert Obsidian's collapsed answer callouts into native disclosures. */
+function collapsedCalloutFor(node: AlertNode): AlertNode | null {
+  if (node.type !== "element" || node.tagName !== "blockquote") return null;
+
+  const paragraph = node.children?.find((child) => child.type === "element");
+  if (!paragraph || paragraph.tagName !== "p") return null;
+
+  const lead = paragraph.children?.[0];
+  if (!lead || lead.type !== "text" || typeof lead.value !== "string")
+    return null;
+
+  const newline = lead.value.indexOf("\n");
+  const marker = newline === -1 ? lead.value : lead.value.slice(0, newline);
+  const match = /^\[!(?:success|note)\]-\s*(.*)$/i.exec(marker.trimEnd());
+  if (!match) return null;
+
+  const title = match[1]?.trim() || "Show Answer";
+  const rest = newline === -1 ? "" : lead.value.slice(newline + 1);
+  if (rest === "") {
+    paragraph.children?.shift();
+    if (paragraph.children?.length === 0) {
+      node.children = node.children?.filter((child) => child !== paragraph);
+    }
+  } else {
+    lead.value = rest;
+  }
+
+  return {
+    type: "element",
+    tagName: "details",
+    properties: { className: ["ksor-collapsible-callout"] },
+    children: [
+      {
+        type: "element",
+        tagName: "summary",
+        children: [{ type: "text", value: title }],
+      },
+      ...(node.children ?? []),
+    ],
+  };
 }
 
 /**
@@ -147,7 +206,8 @@ function calloutFor(node: AlertNode): AlertNode | null {
   if (!paragraph || paragraph.tagName !== "p") return null;
 
   const lead = paragraph.children?.[0];
-  if (!lead || lead.type !== "text" || typeof lead.value !== "string") return null;
+  if (!lead || lead.type !== "text" || typeof lead.value !== "string")
+    return null;
 
   const match = matchAlert(lead.value);
   if (!match) return null;
@@ -210,5 +270,25 @@ function convertAlerts(node: AlertNode): void {
 export function rehypeGithubAlerts(): (tree: AlertNode) => void {
   return (tree: AlertNode): void => {
     convertAlerts(tree);
+  };
+}
+
+function convertCollapsedCallouts(node: AlertNode): void {
+  const children = node.children;
+  if (!children) return;
+
+  for (let i = 0; i < children.length; i++) {
+    const child = children[i];
+    if (!child) continue;
+    convertCollapsedCallouts(child);
+    const disclosure = collapsedCalloutFor(child);
+    if (disclosure) children[i] = disclosure;
+  }
+}
+
+/** Preserve Obsidian's `-` collapsed state for answer callouts on the site. */
+export function rehypeCollapsedCallouts(): (tree: AlertNode) => void {
+  return (tree: AlertNode): void => {
+    convertCollapsedCallouts(tree);
   };
 }

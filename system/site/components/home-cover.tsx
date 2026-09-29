@@ -41,8 +41,8 @@ export function HomeCover({
         className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[var(--ksor-cover-rule)]"
       />
 
-      <div className="relative flex flex-1 items-center">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-5 py-10 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,1.08fr)_minmax(22rem,0.92fr)] lg:gap-16">
+      <div className="relative flex flex-1 items-start">
+        <div className="mx-auto grid w-full max-w-6xl items-start gap-12 px-5 py-10 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,1.08fr)_minmax(22rem,0.92fr)] lg:gap-16">
           <div>
             <div className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-500">
               <div className="flex flex-wrap items-center gap-3">

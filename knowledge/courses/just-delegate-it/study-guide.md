@@ -1,6 +1,6 @@
 ---
 type: Document
-title: "Just Delegate It: Complete Study Guide"
+title: "Just Delegate It: Complete Mind Map"
 description: "Exam-focused study guide covering the Delegation Loop, Delegation Brief, all 11 concepts, intervention moves, and verification method with domain mappings."
 status: stable
 generated:
@@ -15,7 +15,6 @@ ksor:
 order: 10
 ---
 
-
 > **Goal:** Master the two core frameworks (Delegation Loop + Delegation Brief),
 > every concept, every distinction the exam tests. Practical and visual.
 
@@ -26,6 +25,7 @@ order: 10
 > **Give AI the job. Watch it work. Check what matters. Then decide.**
 
 Two frameworks hold everything:
+
 1. **The Delegation Loop** - 6 steps (the rhythm)
 2. **The Delegation Brief** - 6 questions (the written form)
 
@@ -60,19 +60,19 @@ AI can HELP with your ends. It cannot TAKE them.
 
 ## THE 11 CONCEPTS AT A GLANCE
 
-| # | Concept | One-Liner | Part |
-|---|---------|-----------|------|
-| 1 | Asking vs Giving | Asking gets an answer (work stays with you). Giving a job gets a result (you just check). | Part 1 |
-| 2 | Outcome, Not Clicks | Describe the result. Leave the steps to AI. | Part 1 |
-| 3 | The Delegation Brief | 6 questions BEFORE AI starts = something to check against. | Part 1 |
-| 4 | Research | When the job needs current facts, make AI search, check that it did. | Part 2 |
-| 5 | The Source | Give it, say "use only this", check that it stayed inside. | Part 2 |
-| 6 | The Deliverable | Ask for the finished THING (table, doc, file), not an answer. | Part 2 |
-| 7 | Authority | Say what AI may decide alone, what it must ask about. Plan-first. | Part 3 |
-| 8 | The Job Again | Save what doesn't change. Third time = put it where AI reads it. | Part 3 |
-| 9 | Intervene | Fix drift with the smallest message. Write the lesson into the brief. | Part 3 |
-| 10 | Verify | Identify, Trace, Challenge, Decide. Accountability stays with YOU. | Part 4 |
-| 11 | Same Job, Different AI | A good brief runs in a second AI without a rewrite. The model is replaceable. | Part 4 |
+| #   | Concept                | One-Liner                                                                                 | Part   |
+| --- | ---------------------- | ----------------------------------------------------------------------------------------- | ------ |
+| 1   | Asking vs Giving       | Asking gets an answer (work stays with you). Giving a job gets a result (you just check). | Part 1 |
+| 2   | Outcome, Not Clicks    | Describe the result. Leave the steps to AI.                                               | Part 1 |
+| 3   | The Delegation Brief   | 6 questions BEFORE AI starts = something to check against.                                | Part 1 |
+| 4   | Research               | When the job needs current facts, make AI search, check that it did.                      | Part 2 |
+| 5   | The Source             | Give it, say "use only this", check that it stayed inside.                                | Part 2 |
+| 6   | The Deliverable        | Ask for the finished THING (table, doc, file), not an answer.                             | Part 2 |
+| 7   | Authority              | Say what AI may decide alone, what it must ask about. Plan-first.                         | Part 3 |
+| 8   | The Job Again          | Save what doesn't change. Third time = put it where AI reads it.                          | Part 3 |
+| 9   | Intervene              | Fix drift with the smallest message. Write the lesson into the brief.                     | Part 3 |
+| 10  | Verify                 | Identify, Trace, Challenge, Decide. Accountability stays with YOU.                        | Part 4 |
+| 11  | Same Job, Different AI | A good brief runs in a second AI without a rewrite. The model is replaceable.             | Part 4 |
 
 ---
 
@@ -103,10 +103,10 @@ Works on any plan, any model. Depends on what kind of sentence you type, not wha
 
 Two ways to hand over the same job:
 
-| Approach | What Happens | Problem |
-|----------|-------------|---------|
-| **Recipe** (dictate steps) | AI follows YOUR plan, even where it's weak | Your plan is the LIMIT. If your chosen sites aren't the best, the result is neat but poor. |
-| **Outcome** (describe result) | AI chooses the method, you judge the result | AI might find better sources you didn't think of. |
+| Approach                      | What Happens                                | Problem                                                                                    |
+| ----------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Recipe** (dictate steps)    | AI follows YOUR plan, even where it's weak  | Your plan is the LIMIT. If your chosen sites aren't the best, the result is neat but poor. |
+| **Outcome** (describe result) | AI chooses the method, you judge the result | AI might find better sources you didn't think of.                                          |
 
 **When steps ARE appropriate:** When a source or order of work is REQUIRED -- that's a constraint (Concept 3), not a recipe.
 
@@ -175,14 +175,14 @@ instead of guessing.
 
 ### How the Brief Maps to AI Fluency's Four Competencies
 
-| Brief Line | Competency |
-|-----------|-----------|
-| Outcome | Delegation + Description |
-| Context | Description |
-| Constraints | Description + Diligence |
-| Authority | Delegation + Diligence |
-| Deliverable | Description |
-| Verification | Discernment + Diligence |
+| Brief Line   | Competency               |
+| ------------ | ------------------------ |
+| Outcome      | Delegation + Description |
+| Context      | Description              |
+| Constraints  | Description + Diligence  |
+| Authority    | Delegation + Diligence   |
+| Deliverable  | Description              |
+| Verification | Discernment + Diligence  |
 
 ---
 
@@ -190,26 +190,29 @@ instead of guessing.
 
 AI has two ways of knowing things:
 
-| Source | Characteristics | When to Use |
-|--------|----------------|------------|
-| **Remembering** (training data) | Large, out of date. Fact arrives ALONE, sounds just as sure. | Background knowledge, concepts |
-| **Searching** (web) | Current, with sources. Fact should arrive WITH a source you can open. | Prices, dates, links, whether something still exists |
+| Source                          | Characteristics                                                       | When to Use                                          |
+| ------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------- |
+| **Remembering** (training data) | Large, out of date. Fact arrives ALONE, sounds just as sure.          | Background knowledge, concepts                       |
+| **Searching** (web)             | Current, with sources. Fact should arrive WITH a source you can open. | Prices, dates, links, whether something still exists |
 
 **The rule:** When the job needs what is true TODAY, make AI search, and CHECK that it searched.
 
 **How to verify it searched:**
+
 - A found fact comes WITH a source you can open
 - A remembered fact arrives ALONE
 - No source = don't assume it looked, regardless of what it says about itself
 - A source is NOT a date -- find the date on the PAGE yourself
 
 **Add this line to force transparency:**
+
 ```
 For each item, say whether you found it by searching just now
 or already knew about it, and give the date of the page you used.
 ```
 
 **Web search vs Deep research mode:**
+
 - Web search = one fact that one search settles
 - Deep research = job whose deliverable IS the report (takes minutes, reads many pages)
 
@@ -231,6 +234,7 @@ When the job needs something AI can't search for (your syllabus, your office not
 Together they make **"not in the source"** a GOOD answer instead of a gap AI fills for you.
 
 **Privacy rules BEFORE pasting:**
+
 - Remove names, phone numbers, account numbers, anything you wouldn't pin to a public notice board
 - For sensitive work: use temporary chat (ChatGPT) or incognito chat (Claude)
 - Neither makes the paste disappear -- provider still holds a copy for a time
@@ -246,15 +250,16 @@ Together they make **"not in the source"** a GOOD answer instead of a gap AI fil
 
 **Answer vs Deliverable:**
 
-| Answer | Deliverable |
-|--------|------------|
-| Replies to YOU | Shaped for someone to USE, save, hand on |
+| Answer            | Deliverable                                 |
+| ----------------- | ------------------------------------------- |
+| Replies to YOU    | Shaped for someone to USE, save, hand on    |
 | Lives in the chat | Can leave the chat (doc, file, spreadsheet) |
-| Read once, done | Kept, passed on, acted on |
+| Read once, done   | Kept, passed on, acted on                   |
 
 **Ask for the FORM:** table with named columns, document with sections, spreadsheet with formulas, file to download.
 
 **Critical rule:** Add this line to every brief:
+
 ```
 Keep every "unverified" mark exactly where it is.
 ```
@@ -280,12 +285,12 @@ An approved plan is NOT a cage. AI may find a better route. What it may NOT do: 
 
 ### Face 2: What AI may DO without asking (Boundaries)
 
-| Boundary | Why It Exists |
-|----------|--------------|
-| Research, but do not purchase | Money that moves is hard to move back |
-| Draft, but do not send | Sending creates a promise someone else sees |
-| Inspect, but do not delete | Deleting destroys evidence needed to check |
-| Choose, but say when you chose | A silent decision can't be reviewed |
+| Boundary                       | Why It Exists                               |
+| ------------------------------ | ------------------------------------------- |
+| Research, but do not purchase  | Money that moves is hard to move back       |
+| Draft, but do not send         | Sending creates a promise someone else sees |
+| Inspect, but do not delete     | Deleting destroys evidence needed to check  |
+| Choose, but say when you chose | A silent decision can't be reviewed         |
 
 **Trust grows with a record.** First run: read the plan AND every step. Fifth clean run: read the plan. This is how General Agents turns these into permission modes for unattended work.
 
@@ -308,11 +313,11 @@ An approved plan is NOT a cage. AI may find a better route. What it may NOT do: 
 
 ### Where to Put Recurring Context
 
-| What It Is | Where It Goes |
-|-----------|--------------|
-| Sources that don't change | **Project knowledge** (files AI reads in every chat inside the project) |
-| Rules that don't change | **Standing instructions** (rules AI follows in every chat inside the project) |
-| Today's specific job | The chat message |
+| What It Is                | Where It Goes                                                                 |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| Sources that don't change | **Project knowledge** (files AI reads in every chat inside the project)       |
+| Rules that don't change   | **Standing instructions** (rules AI follows in every chat inside the project) |
+| Today's specific job      | The chat message                                                              |
 
 **Project** = a space that holds files + standing instructions. Every chat inside it starts already informed.
 
@@ -321,6 +326,7 @@ An approved plan is NOT a cage. AI may find a better route. What it may NOT do: 
 **Memory vs Project:** Both assistants keep memory about you (if enabled). Once a month, check BOTH what you stored and what AI remembered. Remove what's no longer true. A wrong line in a Project = a wrong line in EVERY result.
 
 **Scheduling (optional):**
+
 - ChatGPT: scheduled tasks on paid plans (ordinary feature)
 - Claude: scheduled tasks on paid plans via Cowork
 - Rule: A brief you saved today is what you schedule. But General Agents teaches what must be true before a job runs unattended.
@@ -356,6 +362,7 @@ SYMPTOM                          MOVE                     SIZE
 **If free plan has no stronger model:** Make the job SMALLER. One step at a time, each checked.
 
 **After every intervention:**
+
 1. Check the fix IN THE RESULT (not in AI's description of the fix)
 2. Write the lesson into the brief as a Constraint or Authority line
 3. "A claimed fix that did not happen is the failure this step exists to catch."
@@ -384,6 +391,7 @@ to check?     find the   wrong
 ### Step 1: IDENTIFY (What to Check)
 
 Check where an error would COST you:
+
 - Prices, dates, figures, calculations
 - Quotations (exact words)
 - Legal or safety claims
@@ -430,6 +438,7 @@ Check where an error would COST you:
 **Why it works:** The brief describes the JOB, not the TOOL. Nothing in the six lines names a button. Buttons differ between assistants and change every few months.
 
 **What to record (NOT a ranking):**
+
 - Did it finish the job?
 - How many messages needed?
 - Did it honor the Authority line?
@@ -446,17 +455,17 @@ Check where an error would COST you:
 
 The rule: a control is learned when a job NEEDS it, not before.
 
-| The Job Needs | So You | Concept |
-|--------------|--------|---------|
-| Current information | Ask for it, turn on web search | 4 |
-| A source only you have | Paste it or attach file | 5 |
-| Something private in the job | Remove private parts, use temp/incognito chat | 5 |
-| A finished thing, not an answer | Ask for the document/table/file itself | 6 |
-| Room to choose its own method | Say what it may decide alone + what it must ask | 7 |
-| The same context every time | Put sources in Project as knowledge, rules as instructions | 8 |
-| The same job on a clock | Scheduled task (where plan has one) | 8 |
-| More capability than it showed | Turn on thinking / stronger model | 9 |
-| A place for the result / source in another app | Connector | 7 + Skills course |
+| The Job Needs                                  | So You                                                     | Concept           |
+| ---------------------------------------------- | ---------------------------------------------------------- | ----------------- |
+| Current information                            | Ask for it, turn on web search                             | 4                 |
+| A source only you have                         | Paste it or attach file                                    | 5                 |
+| Something private in the job                   | Remove private parts, use temp/incognito chat              | 5                 |
+| A finished thing, not an answer                | Ask for the document/table/file itself                     | 6                 |
+| Room to choose its own method                  | Say what it may decide alone + what it must ask            | 7                 |
+| The same context every time                    | Put sources in Project as knowledge, rules as instructions | 8                 |
+| The same job on a clock                        | Scheduled task (where plan has one)                        | 8                 |
+| More capability than it showed                 | Turn on thinking / stronger model                          | 9                 |
+| A place for the result / source in another app | Connector                                                  | 7 + Skills course |
 
 ---
 
@@ -527,14 +536,14 @@ The same questions, asked at larger scale.
 
 ## THE BOOK'S GROWTH LADDER
 
-| Step | What You Say to AI | Where Taught |
-|------|-------------------|-------------|
-| Prompt | "Tell me something." | AI Prompting |
-| Collaboration | "Help me do something." | AI Fluency |
-| **Delegated job** | **"Here is the outcome. Do the work."** | **THIS COURSE** |
-| Workflow | "This work happens again and again." | General Agents + Workflow Design |
-| AI Worker | "Own this responsibility." | Building a Digital FTE |
-| Agent Factory | "Build and run those workers as a method." | Thesis |
+| Step              | What You Say to AI                         | Where Taught                     |
+| ----------------- | ------------------------------------------ | -------------------------------- |
+| Prompt            | "Tell me something."                       | AI Prompting                     |
+| Collaboration     | "Help me do something."                    | AI Fluency                       |
+| **Delegated job** | **"Here is the outcome. Do the work."**    | **THIS COURSE**                  |
+| Workflow          | "This work happens again and again."       | General Agents + Workflow Design |
+| AI Worker         | "Own this responsibility."                 | Building a Digital FTE           |
+| Agent Factory     | "Build and run those workers as a method." | Thesis                           |
 
 **The 10-80-10 Rule:** First 10% is yours (define). Middle 80% is AI's (execute). Last 10% is yours (verify).
 
@@ -562,62 +571,72 @@ The same questions, asked at larger scale.
 
 ## KEY VOCABULARY
 
-| Term | Definition |
-|------|-----------|
-| **Delegation Loop** | 6 steps: Define, Delegate, Observe, Intervene, Verify, Accept |
-| **Delegation Brief** | 6 questions before AI starts: Outcome, Context, Constraints, Authority, Deliverable, Verification |
-| **Outcome** | What should exist when work is complete |
-| **Context** | What AI needs to know that it can't know on its own |
-| **Constraints** | Requirements and limits on the job |
-| **Authority** | What AI may decide without asking. In chat = decisions. Later = permissions. |
-| **Deliverable** | The FORM the result takes, shaped so someone can use it |
-| **Verification** | What you'll check before accepting, written BEFORE the work starts |
-| **Plan-first** | Ask AI to list steps and wait for go-ahead before starting |
-| **Project** | Space holding files + standing instructions, loaded in every chat inside it |
-| **Knowledge** | The files a Project holds (what AI may read) |
-| **Standing instruction** | A rule written once, followed in every chat inside the Project |
-| **Temporary chat** | Chat not saved to history, no memory added (ChatGPT name). Claude = incognito chat. |
-| **Running job** | One job carried through the course, re-delegated at each concept |
-| **Need first, then tool** | A control is learned when a job needs it, not before |
-| **Identify, Trace, Challenge, Decide** | The 4 steps inside Verify |
-| **Accept, Correct, Investigate, Reject** | The 4 decisions verification ends in |
-| **Delegation Record** | One-page record: brief, run, check, decision |
-| **Fresh chat** | New chat with no carryover from previous conversation |
-| **Escalate** | Turn on thinking or stronger model when AI can't handle the level |
-| **Operating layer** | AI that acts on your real work, not just a box you type into |
+| Term                                     | Definition                                                                                        |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Delegation Loop**                      | 6 steps: Define, Delegate, Observe, Intervene, Verify, Accept                                     |
+| **Delegation Brief**                     | 6 questions before AI starts: Outcome, Context, Constraints, Authority, Deliverable, Verification |
+| **Outcome**                              | What should exist when work is complete                                                           |
+| **Context**                              | What AI needs to know that it can't know on its own                                               |
+| **Constraints**                          | Requirements and limits on the job                                                                |
+| **Authority**                            | What AI may decide without asking. In chat = decisions. Later = permissions.                      |
+| **Deliverable**                          | The FORM the result takes, shaped so someone can use it                                           |
+| **Verification**                         | What you'll check before accepting, written BEFORE the work starts                                |
+| **Plan-first**                           | Ask AI to list steps and wait for go-ahead before starting                                        |
+| **Project**                              | Space holding files + standing instructions, loaded in every chat inside it                       |
+| **Knowledge**                            | The files a Project holds (what AI may read)                                                      |
+| **Standing instruction**                 | A rule written once, followed in every chat inside the Project                                    |
+| **Temporary chat**                       | Chat not saved to history, no memory added (ChatGPT name). Claude = incognito chat.               |
+| **Running job**                          | One job carried through the course, re-delegated at each concept                                  |
+| **Need first, then tool**                | A control is learned when a job needs it, not before                                              |
+| **Identify, Trace, Challenge, Decide**   | The 4 steps inside Verify                                                                         |
+| **Accept, Correct, Investigate, Reject** | The 4 decisions verification ends in                                                              |
+| **Delegation Record**                    | One-page record: brief, run, check, decision                                                      |
+| **Fresh chat**                           | New chat with no carryover from previous conversation                                             |
+| **Escalate**                             | Turn on thinking or stronger model when AI can't handle the level                                 |
+| **Operating layer**                      | AI that acts on your real work, not just a box you type into                                      |
 
 ---
 
 ## QUICK SELF-TEST (10 Questions)
 
 **Q1:** What's the difference between asking AI and giving AI a job?
+
 > Asking gets an answer and keeps the next steps with you. A job asks for a thing to exist and leaves you the checking.
 
 **Q2:** Name the 6 steps of the Delegation Loop. Which stay yours?
+
 > Define, Delegate, Observe, Intervene, Verify, Accept. Both ENDS stay yours: Define + Delegate at the start, Verify + Accept at the end.
 
 **Q3:** Why does describing the outcome beat dictating the steps?
+
 > A recipe limits the result to the quality of YOUR plan. An outcome lets AI choose the method and lets you judge the result against what you asked for.
 
 **Q4:** Name the 6 lines of the Delegation Brief. Which two do people skip?
+
 > Outcome, Context, Constraints, Authority, Deliverable, Verification. People skip **Authority** and **Verification**.
 
 **Q5:** How can you tell whether AI searched or answered from memory?
+
 > A searched fact should arrive WITH a source you can open. A remembered fact arrives alone and sounds just as sure. No source = don't assume it looked.
 
 **Q6:** What two instructions turn pasted text into a source?
+
 > "Using only the text below" + "quote the sentence you used." Together they make "not in the source" a good answer.
 
 **Q7:** What's the cheapest moment to fix a job, and how do you get there?
+
 > BEFORE the run. Ask for the plan and wait for go-ahead (plan-first), then change one step.
 
 **Q8:** Third time you paste the same background -- where does it go?
+
 > Into a **Project**: sources as knowledge, rules as standing instructions. The chat carries only today's specific job.
 
 **Q9:** Name the 6 intervention moves. Which one do people miss?
+
 > Stop, Correct, Redirect, Change the requirement, Escalate, Take it back. **Escalate** is the one people miss ("AI failed" sometimes means "I used the wrong level").
 
 **Q10:** What are the 4 steps of verification and the 4 decisions it ends in?
+
 > Steps: **Identify, Trace, Challenge, Decide.** Decisions: **Accept, Correct, Investigate, Reject.**
 
 ---
@@ -641,11 +660,11 @@ Then add:
 
 ## EXAM DOMAIN MAPPING
 
-| Exam Domain | Concepts That Map Here |
-|------------|----------------------|
-| Domain 1: Prompting & Task Execution | Concepts 1, 2, 3, 6 |
-| Domain 2: Output Evaluation & Validation | Concept 10 (verification) |
-| Domain 3: Product & Model Selection | Concepts 4, 5, 11 |
-| Domain 5: Configuration & Knowledge Mgmt | Concept 8 (Projects, standing instructions) |
-| Domain 6: Governance, Risk, Responsible Use | Concepts 7, 10 (authority, accountability) |
-| Domain 7: Troubleshooting & Optimization | Concept 9 (intervention moves) |
+| Exam Domain                                 | Concepts That Map Here                      |
+| ------------------------------------------- | ------------------------------------------- |
+| Domain 1: Prompting & Task Execution        | Concepts 1, 2, 3, 6                         |
+| Domain 2: Output Evaluation & Validation    | Concept 10 (verification)                   |
+| Domain 3: Product & Model Selection         | Concepts 4, 5, 11                           |
+| Domain 5: Configuration & Knowledge Mgmt    | Concept 8 (Projects, standing instructions) |
+| Domain 6: Governance, Risk, Responsible Use | Concepts 7, 10 (authority, accountability)  |
+| Domain 7: Troubleshooting & Optimization    | Concept 9 (intervention moves)              |

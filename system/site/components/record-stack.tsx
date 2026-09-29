@@ -35,7 +35,7 @@ export function RecordStack({
           {lead.badge === null ? null : <StatusChip badge={lead.badge} />}
         </div>
 
-        <h2 className="mt-3 font-display text-2xl leading-snug font-semibold tracking-[-0.006em] transition-colors group-hover:text-fd-primary">
+        <h2 className="mt-3 font-display text-xl leading-snug font-semibold tracking-[-0.006em] transition-colors group-hover:text-fd-primary">
           {lead.title}
         </h2>
 
@@ -89,11 +89,11 @@ export function RecordStack({
                     className="size-4 shrink-0 text-[var(--ksor-cover-muted)] transition-colors group-hover:text-fd-primary"
                   />
                   <span className="min-w-0 flex-1 overflow-hidden pr-2">
-                    <span className="block max-w-full truncate text-sm font-medium transition-colors group-hover:text-fd-primary">
+                    <span className="block max-w-full truncate text-[0.8125rem] font-medium transition-colors group-hover:text-fd-primary">
                       {entry.title}
                     </span>
                     {entry.description === null ? null : (
-                      <span className="mt-0.5 block max-w-full text-xs/5 text-[var(--ksor-cover-muted)] line-clamp-2">
+                      <span className="mt-0.5 block max-w-full text-[0.6875rem]/4 text-[var(--ksor-cover-muted)] line-clamp-2">
                         {entry.description}
                       </span>
                     )}

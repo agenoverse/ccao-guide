@@ -64,7 +64,7 @@
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
   --radius: 0.5rem;
-  --sidebar: oklch(0.985 0.002 255);
+  --sidebar: oklch(1 0 0);
   --sidebar-foreground: oklch(0.17 0.012 255);
   --sidebar-primary: oklch(0.205 0 0);
   --sidebar-primary-foreground: oklch(0.985 0 0);
@@ -145,16 +145,11 @@
    from the site's furniture around them, and both from an address a machine
    resolves.
 
-   System stacks only. A web font would be fetched at build time, which costs
-   the offline build and byte-identical rebuilds the scaffold pins — and the
-   browser smoke test asserts zero external requests. Georgia and its siblings
-   are on every machine this site is read on, and a serif that arrives instantly
-   beats a distinctive one that arrives late. */
+   Inter is self-hosted by the app shell, so the reading voice is consistent
+   across machines without creating a runtime network dependency. */
 @theme {
-  --font-display:
-    "Segoe UI Variable", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
-  --font-reading:
-    "Segoe UI Variable", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter Variable", Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-reading: "Inter Variable", Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
 @theme inline {
@@ -587,13 +582,12 @@ html > body[data-scroll-locked] {
 }
 
 /* The record's long-form study text should read like study material, not app
-   chrome. Keep the surrounding shell in sans and the machine vocabulary in
-   mono, but set the markdown body in a warmer system serif with a little more
-   air between lines and list items. */
+  chrome. Keep the surrounding shell in sans and the machine vocabulary in
+  mono, with a compact but generous reading rhythm. */
 #nd-page .prose {
   font-family: var(--font-reading);
-  font-size: 1.0625rem;
-  line-height: 1.76;
+  font-size: 1rem;
+  line-height: 1.75;
   color: color-mix(
     in oklab,
     var(--color-fd-foreground) 94%,
@@ -603,7 +597,7 @@ html > body[data-scroll-locked] {
 }
 
 #nd-page .prose :is(p, li) {
-  line-height: 1.76;
+  line-height: 1.75;
 }
 
 #nd-page .prose p {
@@ -839,6 +833,27 @@ html > body[data-scroll-locked] {
 #nd-page .prose blockquote {
   font-style: normal;
   color: var(--color-fd-muted-foreground);
+}
+
+/* Obsidian's collapsed answer callouts become native disclosures on the site,
+  so practice questions stay questions until the reader opens them. */
+#nd-page .prose details.ksor-collapsible-callout {
+  margin-block: 1.25rem;
+  border: 1px solid var(--color-fd-border);
+  border-left: 3px solid var(--color-fd-primary);
+  background: var(--color-fd-muted);
+  padding: 0.75rem 1rem;
+}
+
+#nd-page .prose details.ksor-collapsible-callout summary {
+  cursor: pointer;
+  color: var(--color-fd-foreground);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+#nd-page .prose details.ksor-collapsible-callout > :not(summary):first-of-type {
+  margin-top: 1rem;
 }
 
 /* Inline code is the record's machine vocabulary — a frontmatter key, a path,

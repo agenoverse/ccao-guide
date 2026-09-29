@@ -1,4 +1,5 @@
 import { RootProvider } from "fumadocs-ui/provider/next";
+import "@fontsource-variable/inter";
 import "./global.css";
 import type { Metadata } from "next";
 import { appTitle } from "@/lib/shared";
@@ -6,11 +7,8 @@ import { basePath, badgeByUrl } from "@/lib/source";
 import { readStageManifest } from "@/lib/stage-manifest";
 import KsorSearchDialog from "@/components/search-dialog";
 
-// No next/font/google: it fetches the face from Google at BUILD time, so a
-// scaffolded project could not build offline and two builds of one commit
-// could differ byte-wise (review finding, 2026-08-18). The system UI stack
-// costs zero bytes and zero network; replace it with a self-hosted @font-face
-// if the project wants a specific face.
+// Inter is bundled locally rather than fetched from Google, so the site keeps
+// its zero-runtime-request posture while using one consistent reading face.
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +19,9 @@ export const metadata: Metadata = {
   // A build that shows drafts (`KSOR_DRAFTS=show`) is a preview, and a static
   // site's pages are open-web artefacts: it says so to every crawler rather
   // than letting a draft be indexed under the record's name (build spec §3).
-  ...(readStageManifest().drafts === "shown" ? { robots: { index: false, follow: false } } : {}),
+  ...(readStageManifest().drafts === "shown"
+    ? { robots: { index: false, follow: false } }
+    : {}),
 };
 
 export default function Layout({ children }: LayoutProps<"/">) {

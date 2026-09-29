@@ -1,9 +1,13 @@
 import path from "node:path";
 
-import { defineCollections, defineConfig, defineDocs } from "fumadocs-mdx/config";
+import {
+  defineCollections,
+  defineConfig,
+  defineDocs,
+} from "fumadocs-mdx/config";
 import { rehypeCodeDefaultOptions } from "fumadocs-core/mdx-plugins";
 import { remarkCodeTab } from "fumadocs-core/mdx-plugins/remark-code-tab";
-import { rehypeGithubAlerts } from "./lib/alert-rule";
+import { rehypeCollapsedCallouts, rehypeGithubAlerts } from "./lib/alert-rule";
 import { rehypeEmbeds } from "./lib/embed-rule";
 import { metaSchema, pageSchema } from "fumadocs-core/source/schema";
 import { z } from "zod";
@@ -39,7 +43,9 @@ const _docSchemaBase = pageSchema.extend({
 // Runtime: catchall passes governance frontmatter through Zod's output so
 // readGovernance(page.data, ...) can read sources/verified/etc. TypeScript
 // sees typeof _docSchemaBase (no index signature) via the cast.
-const docSchema = _docSchemaBase.catchall(z.any()) as unknown as typeof _docSchemaBase;
+const docSchema = _docSchemaBase.catchall(
+  z.any(),
+) as unknown as typeof _docSchemaBase;
 
 // The documents this build's viewer may see (and the assets they reference)
 // are staged into a filtered copy FIRST, for EVERY build, and this is where
@@ -213,6 +219,7 @@ export default defineConfig({
        * record's markdown is serialized from the mdast, so converting there
        * publishes this site's React component to the agent surface.
        */
+      rehypeCollapsedCallouts,
       rehypeGithubAlerts,
       /**
        * An interactive page the document points at, as a click-to-load

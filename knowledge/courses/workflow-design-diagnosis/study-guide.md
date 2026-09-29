@@ -1,6 +1,6 @@
 ---
 type: Document
-title: "Workflow Design & Diagnosis: Complete Study Guide"
+title: "Workflow Design & Diagnosis: Complete Mind Map"
 description: "Exam-focused study guide covering workflow design patterns, diagnosing failures, handoff points, and human-in-the-loop principles."
 status: stable
 generated:
@@ -14,7 +14,6 @@ ksor:
     at: "2026-09-28T17:30:00Z"
 order: 80
 ---
-
 
 > **Goal:** Master every concept from the Workflow Design & Diagnosis crash course.
 > Covers **Domain 4** (Workflow Integration & Solution Design, 16%) and **Domain 7** (Troubleshooting & Optimization, 10%) = **26% of the CCAO-F exam.**
@@ -112,6 +111,7 @@ requirements? step?     in a loop?   appear?         reference, or  is the human
 **A step** = one named piece of a workflow, with ONE owner.
 
 **Key distinction:**
+
 - **Session** = you judge it afterwards ("did I like the result?")
 - **Step** = you decide about it in advance, on grounds that don't change when output looks good
 
@@ -172,11 +172,11 @@ Looks like a requirement. It's NOT one. Two days and two weeks are both "prompt"
 
 ### Where Requirements Work Goes (Preview of C14)
 
-| What | Home | Why |
-|------|------|-----|
-| Past winning proposals | Knowledge base (on the Project) | Reference material |
-| Extraction format | Standing instruction (on the Project) | Rule that always applies |
-| Formatting procedure | Skill (at account level) | Same steps every time, for every Project |
+| What                   | Home                                  | Why                                      |
+| ---------------------- | ------------------------------------- | ---------------------------------------- |
+| Past winning proposals | Knowledge base (on the Project)       | Reference material                       |
+| Extraction format      | Standing instruction (on the Project) | Rule that always applies                 |
+| Formatting procedure   | Skill (at account level)              | Same steps every time, for every Project |
 
 ---
 
@@ -185,11 +185,11 @@ Looks like a requirement. It's NOT one. Two days and two weeks are both "prompt"
 ```
 SYNTHESIS                          CALCULATION
 (gathering + shaping options)      (numbers that matter)
-                                   
+
 AI does this WELL                  AI CAN do this
 Holding many factors at once       BUT: you can't tell from the
 without losing the thread          page whether it DID
-                                   
+
                                    A written figure and a
                                    calculated one LOOK THE SAME
 ```
@@ -223,9 +223,9 @@ GOOD: "Using code execution on the attached ticket data,
 SYNTHESIS STEP                     JUDGMENT STEP
 Runs on information you            Runs on information you
 CAN supply                         CANNOT supply (or wouldn't)
-                                   
+
 --> Hands over well                --> Stays human
-                                   
+
 Examples:                          Examples:
 - Trend analysis                   - Risk appetite
 - Option generation                - A hiring freeze
@@ -267,10 +267,10 @@ An operations lead asked for a whole capacity plan. Trend analysis was fine. Rec
 
 ### Research: Same Test Applies
 
-| Question about... | Source | What to ask for |
-|-------------------|--------|-----------------|
-| A stable concept or method | Model's own knowledge | The explanation + reasoning |
-| Anything current, priced, or dated | An external source YOU can open | The answer AND THE LINK |
+| Question about...                  | Source                          | What to ask for             |
+| ---------------------------------- | ------------------------------- | --------------------------- |
+| A stable concept or method         | Model's own knowledge           | The explanation + reasoning |
+| Anything current, priced, or dated | An external source YOU can open | The answer AND THE LINK     |
 
 > **For anything current, ask for a source you can open. Never a confident answer.**
 
@@ -355,24 +355,24 @@ Every step gets classified as one of:
 
 ### Contract Review Map
 
-| Step | Owner | Criterion | Carried by |
-|------|-------|-----------|------------|
-| Extract clauses | AI | Reversible, low stakes | Skill |
-| Flag departures from playbook | AI | Reversible, errors surface at redline | Skill |
-| Draft redline + rationale | Collaborative | High stakes, human judges each edit | Skill + gate |
-| Compute penalty exposure | AI | Reversible, checked at approval gate | Code execution |
-| Approve or reject each change | Human | This step IS the decision | Named reviewer |
-| Sign and send | Human | Irreversible, externally binding | Named signer |
+| Step                          | Owner         | Criterion                             | Carried by     |
+| ----------------------------- | ------------- | ------------------------------------- | -------------- |
+| Extract clauses               | AI            | Reversible, low stakes                | Skill          |
+| Flag departures from playbook | AI            | Reversible, errors surface at redline | Skill          |
+| Draft redline + rationale     | Collaborative | High stakes, human judges each edit   | Skill + gate   |
+| Compute penalty exposure      | AI            | Reversible, checked at approval gate  | Code execution |
+| Approve or reject each change | Human         | This step IS the decision             | Named reviewer |
+| Sign and send                 | Human         | Irreversible, externally binding      | Named signer   |
 
 ### Onboarding Documents Map
 
-| Step | Owner | Criterion | Carried by |
-|------|-------|-----------|------------|
-| Pull new-hire details from HR export | AI | Reversible, checked at confirmation | Code execution |
-| Draft offer letter from template | AI | Reversible draft, low stakes until sent | Skill |
-| Personalise welcome note | Collaborative | Manager's voice can't be supplied | Named reviewer |
-| Confirm compensation matches req | Human | This step is the check, nothing follows | Named reviewer |
-| Send signed offer | Human | Irreversible, externally binding | Named signer |
+| Step                                 | Owner         | Criterion                               | Carried by     |
+| ------------------------------------ | ------------- | --------------------------------------- | -------------- |
+| Pull new-hire details from HR export | AI            | Reversible, checked at confirmation     | Code execution |
+| Draft offer letter from template     | AI            | Reversible draft, low stakes until sent | Skill          |
+| Personalise welcome note             | Collaborative | Manager's voice can't be supplied       | Named reviewer |
+| Confirm compensation matches req     | Human         | This step is the check, nothing follows | Named reviewer |
+| Send signed offer                    | Human         | Irreversible, externally binding        | Named signer   |
 
 ### The Pattern
 
@@ -434,16 +434,17 @@ It's just not the WORK.
 
 ### The Customer-Complaint Map (Spot the 3 Errors)
 
-| Step | Owner | Stated Reason |
-|------|-------|---------------|
-| Pull complaint + ticket history | AI | Mechanical retrieval |
-| Summarise into issue template | AI | "Our summarising Skill is very good at this" |
-| Classify severity (L/M/H) | AI | "Summaries have been accurate for 3 months" |
-| Draft customer response | Collaborative | AI drafts, duty agent reviews |
-| Send response | AI | "Low severity only, drafts have been strong" |
-| Log outcome in CRM | AI | Mechanical write |
+| Step                            | Owner         | Stated Reason                                |
+| ------------------------------- | ------------- | -------------------------------------------- |
+| Pull complaint + ticket history | AI            | Mechanical retrieval                         |
+| Summarise into issue template   | AI            | "Our summarising Skill is very good at this" |
+| Classify severity (L/M/H)       | AI            | "Summaries have been accurate for 3 months"  |
+| Draft customer response         | Collaborative | AI drafts, duty agent reviews                |
+| Send response                   | AI            | "Low severity only, drafts have been strong" |
+| Log outcome in CRM              | AI            | Mechanical write                             |
 
 **The diagnosis:**
+
 - **Row 2 = mapping the tool.** Reason is that the Skill is good, not that the step needs doing this way.
 - **Row 3 = halo delegation.** Reason cites SUMMARY accuracy. Classification is a DIFFERENT step. A missed high-severity complaint is not recovered by reclassifying a week later.
 - **Row 5 = over-delegation.** Severity was set in Row 3 by the SAME system now sending without review. A step can't give ITSELF permission to skip the gate. Sending also can't be undone.
@@ -465,11 +466,11 @@ It's just not the WORK.
 
 ### Three Things That Decay Silently
 
-| What decays | Looks like | Signal at moment of failure |
-|-------------|------------|----------------------------|
-| A review gate | Reviews become glances, then clicks | **NONE** |
-| A standing instruction | Output slowly stops meeting a rule | **NONE** |
-| The map itself | Describes a workflow nobody runs anymore | **NONE** |
+| What decays            | Looks like                               | Signal at moment of failure |
+| ---------------------- | ---------------------------------------- | --------------------------- |
+| A review gate          | Reviews become glances, then clicks      | **NONE**                    |
+| A standing instruction | Output slowly stops meeting a rule       | **NONE**                    |
+| The map itself         | Describes a workflow nobody runs anymore | **NONE**                    |
 
 **No signal = only a scheduled read catches them.**
 
@@ -532,11 +533,11 @@ It's just not the WORK.
 
 ### The Dashboard Example: 3 Cycles
 
-| Cycle | What happened | Lesson |
-|-------|---------------|--------|
-| **Cycle 1:** Build | 5 charts, readable, roughly right | Makes people OVERCONFIDENT |
-| **Cycle 2:** Filter + totals | Filter works. Totals WRONG but look right | Totals were WRITTEN not COMPUTED. No prompt fix for this. |
-| **Cycle 3:** Colors + print | Worked first time | This was a DESCRIPTION problem. Solved by describing better. |
+| Cycle                        | What happened                             | Lesson                                                       |
+| ---------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
+| **Cycle 1:** Build           | 5 charts, readable, roughly right         | Makes people OVERCONFIDENT                                   |
+| **Cycle 2:** Filter + totals | Filter works. Totals WRONG but look right | Totals were WRITTEN not COMPUTED. No prompt fix for this.    |
+| **Cycle 3:** Colors + print  | Worked first time                         | This was a DESCRIPTION problem. Solved by describing better. |
 
 ### The Critical Distinction
 
@@ -575,6 +576,7 @@ internally            + one puts numbers
 ```
 
 **Once other people RELY on something, it has requirements it never had before:**
+
 - Uptime
 - Access control
 - Somebody to call when it breaks
@@ -584,10 +586,10 @@ internally            + one puts numbers
 
 ### Two Signals That Sound Alike
 
-| Signal | Means | Go to |
-|--------|-------|-------|
-| Other people now depend on this | It's infrastructure, needs engineering | Developer/architect |
-| I've solved this the same way 3 times | Shape is stable, can be manufactured | A Skill / worker |
+| Signal                                | Means                                  | Go to               |
+| ------------------------------------- | -------------------------------------- | ------------------- |
+| Other people now depend on this       | It's infrastructure, needs engineering | Developer/architect |
+| I've solved this the same way 3 times | Shape is stable, can be manufactured   | A Skill / worker    |
 
 ---
 
@@ -596,6 +598,7 @@ internally            + one puts numbers
 ## CONCEPT 11: Four Causes, Told Apart by TIMING
 
 When output disappoints, most people either:
+
 - Give up ("the tool can't do this")
 - Change things at random
 
@@ -616,12 +619,12 @@ TIMELINE OF ONE SESSION
 
 ### The Four Causes
 
-| # | Cause | When it shows | What it means | Cheap test | Fix |
-|---|-------|---------------|---------------|------------|-----|
-| 1 | **Under-specification** | Wrong from FIRST answer | Prompt never carried what it needed | Re-read prompt. Is the missing thing actually in it? | Add what it left out |
-| 2 | **Context overload** | Started fine, then DEGRADED | Conversation grew past context window; early instructions lost | Restate instruction in FRESH session. Does it hold? | Restart or summarise |
-| 3 | **Wrong feature or model** | One REPEATABLE error type | Step went to wrong tool | Run step once with right feature/stronger tier | Change feature or tier |
-| 4 | **Stale configuration** | USED TO WORK, now doesn't | Standing instruction, knowledge, or Skill is out of date | Open the instruction/knowledge source, check its date | Maintenance on config |
+| #   | Cause                      | When it shows               | What it means                                                  | Cheap test                                            | Fix                    |
+| --- | -------------------------- | --------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- | ---------------------- |
+| 1   | **Under-specification**    | Wrong from FIRST answer     | Prompt never carried what it needed                            | Re-read prompt. Is the missing thing actually in it?  | Add what it left out   |
+| 2   | **Context overload**       | Started fine, then DEGRADED | Conversation grew past context window; early instructions lost | Restate instruction in FRESH session. Does it hold?   | Restart or summarise   |
+| 3   | **Wrong feature or model** | One REPEATABLE error type   | Step went to wrong tool                                        | Run step once with right feature/stronger tier        | Change feature or tier |
+| 4   | **Stale configuration**    | USED TO WORK, now doesn't   | Standing instruction, knowledge, or Skill is out of date       | Open the instruction/knowledge source, check its date | Maintenance on config  |
 
 ### Important Nuances
 
@@ -667,6 +670,7 @@ CHEAP                                              EXPENSIVE
 ### Step 1 in Detail: The 5-Part Prompt Check
 
 Hold the prompt against:
+
 1. **Role** - who is the model being?
 2. **Context** - background the model couldn't have known
 3. **Task** - clear instruction
@@ -687,13 +691,13 @@ No prompt, restart, feature change, or config check fixes that. This is a task t
 
 ### Quick Reference: Symptoms to Diagnoses
 
-| What you'd say | Diagnosis | Fix |
-|----------------|-----------|-----|
-| "Summary keeps missing key points" | Under-specification | Name criteria for what counts as key |
-| "Stopped following format halfway" | Context overload | Restart from summary, or persist format |
-| "Numbers are subtly wrong" | Wrong feature | Move calculation to code execution |
-| "Worked last month, now it's off" | Stale configuration | Audit instructions + knowledge sources |
-| "Can't predict exact future figure" | Expectation mismatch | Reshape task to what's possible |
+| What you'd say                      | Diagnosis            | Fix                                     |
+| ----------------------------------- | -------------------- | --------------------------------------- |
+| "Summary keeps missing key points"  | Under-specification  | Name criteria for what counts as key    |
+| "Stopped following format halfway"  | Context overload     | Restart from summary, or persist format |
+| "Numbers are subtly wrong"          | Wrong feature        | Move calculation to code execution      |
+| "Worked last month, now it's off"   | Stale configuration  | Audit instructions + knowledge sources  |
+| "Can't predict exact future figure" | Expectation mismatch | Reshape task to what's possible         |
 
 ---
 
@@ -733,6 +737,7 @@ REACTION                              INSTRUCTION
 ### Why This Matters
 
 A fix found in Monday's session and left in that conversation:
+
 - Will be found AGAIN next Monday
 - And again by whoever covers for you
 - Each time costs what the first one cost
@@ -782,12 +787,12 @@ The fix existed. It was just in a place only one person could find.
 
 ### Memory vs Configuration
 
-| Feature | Memory | Configuration |
-|---------|--------|---------------|
-| Scope | Per-user | Shared with everyone |
-| Reliability | Best-effort (may pick up, may not) | Guaranteed |
-| Inspectable | No (can't point at it, read it) | Yes (open, read, hand to someone) |
-| Verdict | USE both, RELY on configuration | |
+| Feature     | Memory                             | Configuration                     |
+| ----------- | ---------------------------------- | --------------------------------- |
+| Scope       | Per-user                           | Shared with everyone              |
+| Reliability | Best-effort (may pick up, may not) | Guaranteed                        |
+| Inspectable | No (can't point at it, read it)    | Yes (open, read, hand to someone) |
+| Verdict     | USE both, RELY on configuration    |                                   |
 
 ---
 
@@ -797,11 +802,11 @@ The fix existed. It was just in a place only one person could find.
 
 ### Three Signals
 
-| Signal | Looks like | Fix |
-|--------|-----------|-----|
-| **Repetition** | You paste/type the same thing every run | Saved context or standing instruction |
-| **Correction** | You fix the same flaw in every output | Configuration change so it stops appearing |
-| **Variance** | Different people, same task, different results | Shared Skill or knowledge base |
+| Signal         | Looks like                                     | Fix                                        |
+| -------------- | ---------------------------------------------- | ------------------------------------------ |
+| **Repetition** | You paste/type the same thing every run        | Saved context or standing instruction      |
+| **Correction** | You fix the same flaw in every output          | Configuration change so it stops appearing |
+| **Variance**   | Different people, same task, different results | Shared Skill or knowledge base             |
 
 **Variance is the one teams miss.** No individual feels it. The inconsistency exists only BETWEEN people. It shows up at the REVIEWER who has to reconcile different formats.
 
@@ -826,11 +831,11 @@ you're about to merge away is wasted work.
 
 Team's weekly reporting: 45 min/analyst, outputs vary.
 
-| Friction found | Type (C14 test) | Home | Action |
-|---------------|-----------------|------|--------|
-| Each analyst re-pastes background | Reference | Knowledge base | Put in shared Project |
-| Each analyst reformats output by hand | Procedure | Skill | Create shared Skill |
-| Each analyst catches different issues | Rule | Standing instruction | Write consistent checks |
+| Friction found                        | Type (C14 test) | Home                 | Action                  |
+| ------------------------------------- | --------------- | -------------------- | ----------------------- |
+| Each analyst re-pastes background     | Reference       | Knowledge base       | Put in shared Project   |
+| Each analyst reformats output by hand | Procedure       | Skill                | Create shared Skill     |
+| Each analyst catches different issues | Rule            | Standing instruction | Write consistent checks |
 
 Result: ~25 min/analyst, consistent format, one fewer revision round.
 
@@ -854,12 +859,12 @@ Run the workflow ONCE, unchanged. Record:
 
 ### Pick the RIGHT Metric
 
-| If the workflow is... | Optimize for | Because |
-|-----------------------|-------------|---------|
-| An internal draft | **Time** | Speed is the point, small errors are cheap |
-| A customer-facing report | **Consistency** | Varying formats erode trust faster than delay |
-| A compliance/finance output | **Accuracy** | One wrong figure costs more than an hour saved |
-| Work done by several people | **Variance** | The cost lives between people, not within a person |
+| If the workflow is...       | Optimize for    | Because                                            |
+| --------------------------- | --------------- | -------------------------------------------------- |
+| An internal draft           | **Time**        | Speed is the point, small errors are cheap         |
+| A customer-facing report    | **Consistency** | Varying formats erode trust faster than delay      |
+| A compliance/finance output | **Accuracy**    | One wrong figure costs more than an hour saved     |
+| Work done by several people | **Variance**    | The cost lives between people, not within a person |
 
 > Naming the metric up front tells you **when to stop**. Once good enough = more tuning becomes its own friction.
 
@@ -933,10 +938,10 @@ BAD OUTPUT GETS OUT
 
 ### Three Phrases That Overstate (Never Use These)
 
-| Phrase | Problem |
-|--------|---------|
-| "Fully automated" | Almost never true. First visible error exposes it publicly |
-| "AI handles X" | Drops the human gate out of the sentence. Listener believes there's no gate |
+| Phrase                                    | Problem                                                                          |
+| ----------------------------------------- | -------------------------------------------------------------------------------- |
+| "Fully automated"                         | Almost never true. First visible error exposes it publicly                       |
+| "AI handles X"                            | Drops the human gate out of the sentence. Listener believes there's no gate      |
 | "It's basically as good as a person at Y" | Sets a standard the tool will eventually miss, in front of someone who remembers |
 
 ### The Formula
@@ -951,12 +956,15 @@ BAD OUTPUT GETS OUT
 ### Same Workflow, Three Audiences
 
 **To the legal lead** (wants mechanism + failure modes):
+
 > "It pulls clauses, marks departures from our playbook, writes the first redline. Approving a change is still yours. Watch for obligations implied rather than stated, which it can miss."
 
 **To the practice executive** (wants outcome + oversight):
+
 > "Turnaround went from two days to about half a day, same approval standard. A lawyer still signs off every change before it leaves."
 
 **To the client's risk function** (wants the control):
+
 > "Drafting is AI-assisted. A qualified lawyer reviews and approves every term. Nothing sent without that sign-off."
 
 Same facts. Three levels of detail. **None of the three drops the gate.**
@@ -969,40 +977,40 @@ The instinct is to play down human involvement (sounds like tool does less). The
 
 # MASTER CHEATSHEET: ALL KEY TERMS
 
-| Term | Definition | Remember |
-|------|-----------|----------|
-| **Step** | One named piece of a workflow, one owner | Decide about the step, not the session |
-| **Task definition** | 5 answers: what, for whom, how often, from what data, what format | Missing answer = question you OWE, not blank for model |
-| **Code execution** | Model writes + runs code, reports computed result | If it matters, compute it. Never write it |
-| **Context / Context window** | Everything model can see / the limit on that | Limit = why long sessions lose early instructions |
-| **Window test** | Can everything this step needs be put in front of the model? | Passing = eligible, NOT owned |
-| **Synthesis vs Judgment** | Info you can supply vs info you can't | Judgment stays human (inputs unavailable, not sacred) |
-| **Delegation map** | Workflow step by step, with owner + reason | Needs one named owner + review date |
-| **Reversibility** | Can it be undone? | Draft = yes. Sent email = no |
-| **Stakes** | What error costs in the BAD case | Not average, not usually |
-| **Accountability** | Who answers for this step? | Never moves to machine |
-| **AI-appropriate** | Can be undone + somebody judges | |
-| **Human-retained** | Person owns outright | |
-| **Collaborative** | AI produces, named person judges | Stops being collaborative when nobody judges |
-| **Over-delegation** | More than the risk allows | |
-| **Halo delegation** | Handing step to AI because PREVIOUS step went well | Competence was real, belonged to different step |
-| **Unstaffed gate** | Review no longer really done | Map records design, not reality |
-| **Map owner** | One named person, not team | Answerable for map = reality |
-| **Scheduled read** | Review on fixed date | Only way to catch silent decay |
-| **Build loop** | Ideate, prototype, feedback, refine | |
-| **Escalation signal** | Other people depend on your tool | --> Engineering, not prompt-and-iterate |
-| **Under-specification** | Wrong from first answer | Prompt missing what it needed |
-| **Context overload** | Degrades over session | Earlier instructions lost |
-| **Wrong feature/model** | One repeatable error type | "Subtly wrong numbers" = asked in prose |
-| **Stale configuration** | Used to work, now doesn't | Fails silently, twin of unstaffed gate |
-| **Expectation mismatch** | Tool can't do this task | Reshape the task |
-| **Diagnostic sequence** | Prompt > session > feature > config > task fit | Cheapest first. Always. |
-| **Reaction vs Instruction** | "Too generic" vs "Name the audience" | Name the LEVER or it's still a reaction |
-| **Promotion** | Fix moves from chat to configuration | So it lasts + others can use it |
-| **Rule / Reference / Procedure** | Standing instruction / Knowledge base / Skill | Wrong home = fix doesn't stick |
-| **Friction** | Small repeated cost you stopped noticing | Repetition, correction, variance |
-| **Baseline** | Measurement BEFORE change | Can't be reconstructed after |
-| **Parallel run** | Old + new together, 2-3 cycles | Evidence, fallback, and buy-in |
+| Term                             | Definition                                                        | Remember                                               |
+| -------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------ |
+| **Step**                         | One named piece of a workflow, one owner                          | Decide about the step, not the session                 |
+| **Task definition**              | 5 answers: what, for whom, how often, from what data, what format | Missing answer = question you OWE, not blank for model |
+| **Code execution**               | Model writes + runs code, reports computed result                 | If it matters, compute it. Never write it              |
+| **Context / Context window**     | Everything model can see / the limit on that                      | Limit = why long sessions lose early instructions      |
+| **Window test**                  | Can everything this step needs be put in front of the model?      | Passing = eligible, NOT owned                          |
+| **Synthesis vs Judgment**        | Info you can supply vs info you can't                             | Judgment stays human (inputs unavailable, not sacred)  |
+| **Delegation map**               | Workflow step by step, with owner + reason                        | Needs one named owner + review date                    |
+| **Reversibility**                | Can it be undone?                                                 | Draft = yes. Sent email = no                           |
+| **Stakes**                       | What error costs in the BAD case                                  | Not average, not usually                               |
+| **Accountability**               | Who answers for this step?                                        | Never moves to machine                                 |
+| **AI-appropriate**               | Can be undone + somebody judges                                   |                                                        |
+| **Human-retained**               | Person owns outright                                              |                                                        |
+| **Collaborative**                | AI produces, named person judges                                  | Stops being collaborative when nobody judges           |
+| **Over-delegation**              | More than the risk allows                                         |                                                        |
+| **Halo delegation**              | Handing step to AI because PREVIOUS step went well                | Competence was real, belonged to different step        |
+| **Unstaffed gate**               | Review no longer really done                                      | Map records design, not reality                        |
+| **Map owner**                    | One named person, not team                                        | Answerable for map = reality                           |
+| **Scheduled read**               | Review on fixed date                                              | Only way to catch silent decay                         |
+| **Build loop**                   | Ideate, prototype, feedback, refine                               |                                                        |
+| **Escalation signal**            | Other people depend on your tool                                  | --> Engineering, not prompt-and-iterate                |
+| **Under-specification**          | Wrong from first answer                                           | Prompt missing what it needed                          |
+| **Context overload**             | Degrades over session                                             | Earlier instructions lost                              |
+| **Wrong feature/model**          | One repeatable error type                                         | "Subtly wrong numbers" = asked in prose                |
+| **Stale configuration**          | Used to work, now doesn't                                         | Fails silently, twin of unstaffed gate                 |
+| **Expectation mismatch**         | Tool can't do this task                                           | Reshape the task                                       |
+| **Diagnostic sequence**          | Prompt > session > feature > config > task fit                    | Cheapest first. Always.                                |
+| **Reaction vs Instruction**      | "Too generic" vs "Name the audience"                              | Name the LEVER or it's still a reaction                |
+| **Promotion**                    | Fix moves from chat to configuration                              | So it lasts + others can use it                        |
+| **Rule / Reference / Procedure** | Standing instruction / Knowledge base / Skill                     | Wrong home = fix doesn't stick                         |
+| **Friction**                     | Small repeated cost you stopped noticing                          | Repetition, correction, variance                       |
+| **Baseline**                     | Measurement BEFORE change                                         | Can't be reconstructed after                           |
+| **Parallel run**                 | Old + new together, 2-3 cycles                                    | Evidence, fallback, and buy-in                         |
 
 ---
 

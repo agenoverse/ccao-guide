@@ -1,7 +1,14 @@
 "use client";
 
 import type { TOCItemType } from "fumadocs-core/toc";
-import { createContext, use, useEffect, useState, type ReactElement, type ReactNode } from "react";
+import {
+  createContext,
+  use,
+  useEffect,
+  useState,
+  type ReactElement,
+  type ReactNode,
+} from "react";
 
 /**
  * The document's headings, handed down from the page.
@@ -122,10 +129,13 @@ export function RecordToc(): ReactElement | null {
       id="nd-toc"
       className="sticky top-(--fd-docs-row-1) flex h-[calc(var(--fd-docs-height)-var(--fd-docs-row-1))] w-(--fd-toc-width) flex-col [grid-area:toc] pt-12 pe-4 pb-2 max-xl:hidden xl:layout:[--fd-toc-width:268px]"
     >
-      <p className="mb-3 ps-4 font-mono text-[0.6875rem] tracking-[0.16em] text-fd-muted-foreground uppercase">
+      <p className="mb-2 ps-3 font-mono text-[0.625rem] tracking-[0.14em] text-fd-muted-foreground uppercase">
         On this page
       </p>
-      <nav aria-label="On this page" className="flex flex-col overflow-y-auto text-sm">
+      <nav
+        aria-label="On this page"
+        className="flex flex-col gap-0.5 overflow-y-auto text-xs leading-4"
+      >
         {items.map((item) => {
           const id = item.url.slice(1);
           const here = id === activeId;
@@ -140,14 +150,16 @@ export function RecordToc(): ReactElement | null {
               // neither. The section keeps the reader's place without competing
               // with the line they are actually on — full ink and a dimmed bar
               // against the accent and a solid one.
-              className={`border-s-2 py-1.5 pe-2 transition-colors ${
+              className={`border-s py-1 pe-2 transition-colors ${
                 here
-                  ? "border-fd-primary text-fd-primary"
+                  ? "rounded-sm border-fd-foreground bg-fd-muted text-fd-foreground"
                   : within
-                    ? "border-fd-primary/40 text-fd-foreground"
-                    : "border-fd-border text-fd-muted-foreground hover:text-fd-foreground"
+                    ? "border-fd-border text-fd-foreground"
+                    : "border-transparent text-fd-muted-foreground hover:text-fd-foreground"
               }`}
-              style={{ paddingInlineStart: `${(item.depth - top) * 0.75 + 1}rem` }}
+              style={{
+                paddingInlineStart: `${(item.depth - top) * 0.65 + 0.75}rem`,
+              }}
               aria-current={here ? "location" : undefined}
             >
               {item.title}

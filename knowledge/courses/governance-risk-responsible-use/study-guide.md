@@ -1,6 +1,6 @@
 ---
 type: Document
-title: "Governance, Risk & Responsible Use: Complete Study Guide"
+title: "Governance, Risk & Responsible Use: Complete Mind Map"
 description: "Exam-focused study guide covering AI governance principles, risk categories, responsible use policies, and regulatory obligations."
 status: stable
 generated:
@@ -14,7 +14,6 @@ ksor:
     at: "2026-09-28T17:30:00Z"
 order: 90
 ---
-
 
 > **Goal:** Master the four-question framework, the three-answer system,
 > and every governance concept the exam tests. This is the "judgment" course.
@@ -55,12 +54,12 @@ Each question gets ONE of THREE answers:
 
 ### The Four Questions with Their Three Answers
 
-| Question | Answer 1 | Answer 2 (Middle) | Answer 3 |
-|----------|----------|-------------------|----------|
-| **1. The Case** | Fully appropriate | Appropriate WITH REVIEW | Inappropriate |
-| **2. The Data** | Green (go) | Yellow (check first / add control) | Red (not through this route) |
-| **3. The Capability** | Enable | Escalate for review | Decline |
-| **4. The People** | Decide and document | Disclose | Escalate the question |
+| Question              | Answer 1            | Answer 2 (Middle)                  | Answer 3                     |
+| --------------------- | ------------------- | ---------------------------------- | ---------------------------- |
+| **1. The Case**       | Fully appropriate   | Appropriate WITH REVIEW            | Inappropriate                |
+| **2. The Data**       | Green (go)          | Yellow (check first / add control) | Red (not through this route) |
+| **3. The Capability** | Enable              | Escalate for review                | Decline                      |
+| **4. The People**     | Decide and document | Disclose                           | Escalate the question        |
 
 ---
 
@@ -70,12 +69,12 @@ This comes FIRST. If AI shouldn't do the work at all, data/tools/people question
 
 ### The Four Delegation Criteria (Screens)
 
-| Screen | Plain-English Question |
-|--------|----------------------|
-| **Reversibility** | If the output is wrong, can we catch and undo it before harm? |
-| **Consequence of error** | If wrong: trivial, expensive, harmful, regulated, or irreversible? |
+| Screen                     | Plain-English Question                                                      |
+| -------------------------- | --------------------------------------------------------------------------- |
+| **Reversibility**          | If the output is wrong, can we catch and undo it before harm?               |
+| **Consequence of error**   | If wrong: trivial, expensive, harmful, regulated, or irreversible?          |
 | **Human judgment/empathy** | Does the task depend on relationship, care, or context a person should own? |
-| **Accountability** | Who is answerable? Can that person really review and own what AI produced? |
+| **Accountability**         | Who is answerable? Can that person really review and own what AI produced?  |
 
 **Do NOT score and add up.** Use them to show WHY the case belongs in one category.
 
@@ -122,15 +121,16 @@ This is the ONE screen actually carrying the classification. Name it explicitly.
 
 ### A Defined Gate vs Just Words
 
-| A DEFINED GATE (real control) | NOT A GATE (just intention) |
-|-------------------------------|---------------------------|
-| Names WHO reviews (the role) | "Someone will check it" |
-| Names WHAT they verify (the specific risk) | "It gets reviewed" |
+| A DEFINED GATE (real control)               | NOT A GATE (just intention)  |
+| ------------------------------------------- | ---------------------------- |
+| Names WHO reviews (the role)                | "Someone will check it"      |
+| Names WHAT they verify (the specific risk)  | "It gets reviewed"           |
 | Names WHEN (before it becomes hard to undo) | "With appropriate oversight" |
 
 **Test:** If you can't write the gate as "WHO checks WHAT, and WHEN" --> the workflow is NOT ready to run.
 
 **Worked example:**
+
 > "The account manager checks delivery facts against the dispatch record before the report is sent to the customer."
 > WHO: account manager. WHAT: delivery facts against dispatch record. WHEN: before sending.
 
@@ -207,10 +207,10 @@ tier)
 
 ### Redaction: Useful But NOT Magic
 
-| Failure Mode | What Happens |
-|-------------|-------------|
-| **Partial redaction** | Removed the name, but rare job title + date + region = still identifiable |
-| **Redaction breaks the task** | Removed info the task needs. Result looks safe, IS useless. |
+| Failure Mode                  | What Happens                                                              |
+| ----------------------------- | ------------------------------------------------------------------------- |
+| **Partial redaction**         | Removed the name, but rare job title + date + region = still identifiable |
+| **Redaction breaks the task** | Removed info the task needs. Result looks safe, IS useless.               |
 
 **Pseudonymized** = names replaced by labels BUT someone still holds the mapping list. Keeps its tier.
 **Anonymized** = changed so it no longer identifies anyone, by your org's standard. Tier drops.
@@ -294,11 +294,11 @@ CONNECTOR                         SKILL
 
 ### Three Outcomes
 
-| Outcome | When to Use | What It Means |
-|---------|------------|---------------|
-| **Enable** | Source known, reach proportionate, task fits, actions controlled | Turn it on |
+| Outcome      | When to Use                                                                          | What It Means                                           |
+| ------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| **Enable**   | Source known, reach proportionate, task fits, actions controlled                     | Turn it on                                              |
 | **Escalate** | Something important is unsettled (source uncertain, reach broad, unnecessary access) | Name the SPECIFIC unresolved question to admin/security |
-| **Decline** | Clearly disproportionate, untrustworthy, or unnecessary | Don't use it |
+| **Decline**  | Clearly disproportionate, untrustworthy, or unnecessary                              | Don't use it                                            |
 
 **Good escalation:** "This tool requests write access to our shared drive even though the workflow only requires reading. Can security review whether that access can be narrowed?"
 **Bad escalation:** "Can I use this?"
@@ -324,6 +324,7 @@ CONNECTOR                         SKILL
 **Key insight:** Injection risk lives on the VERTICAL axis (what it reads), not the horizontal (who built it). A trusted tool reading untrusted content is the quadrant people miss.
 
 **Default for knowledge work:**
+
 1. Let AI read only what it needs
 2. Prefer read-only when enough
 3. Keep send/publish/pay/delete/approve behind a human gate until workflow earns autonomy
@@ -353,6 +354,7 @@ The first three questions protect the ORGANIZATION. This one looks OUTWARD.
 > When AI narrows a set and humans inspect only the survivors, systematic removal of a group goes UNNOTICED.
 
 **Examples of dangerous narrowing:**
+
 - Candidate shortlists
 - Fraud/risk flags
 - Support tickets for escalation
@@ -363,6 +365,7 @@ The first three questions protect the ORGANIZATION. This one looks OUTWARD.
 **Control:** Sample EXCLUSIONS as well as inclusions.
 
 **Bias enters through:**
+
 - The data (historical patterns)
 - The prompt (unstated standards -- "rank the strongest candidates" carries assumptions)
 - How language gets generated (phrasing patterns)
@@ -378,7 +381,7 @@ STEP 1: Is disclosure REQUIRED?
 STEP 2: If no rule answers it:
   Would AI involvement reasonably CHANGE this person's
   understanding of the work or the relationship?
-  
+
   AI reformats a table --> probably no
   AI drafts what an employee reads as a manager's
     personal assessment --> probably yes
@@ -386,16 +389,17 @@ STEP 2: If no rule answers it:
 
 **Two common disclosure cases:**
 
-| Case | Rule |
-|------|------|
-| **Authorship** | Work under your name is yours to stand behind. Check org/professional body rules. Test: would the reader's understanding change if they knew? Board paper, reference letter, published article = usually yes. Tidied agenda = usually no. |
-| **AI notetaker in meeting** | Touches all four questions at once. Announce at start. Some jurisdictions require every participant's consent. |
+| Case                        | Rule                                                                                                                                                                                                                                      |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Authorship**              | Work under your name is yours to stand behind. Check org/professional body rules. Test: would the reader's understanding change if they knew? Board paper, reference letter, published article = usually yes. Tidied agenda = usually no. |
+| **AI notetaker in meeting** | Touches all four questions at once. Announce at start. Some jurisdictions require every participant's consent.                                                                                                                            |
 
 **When no rule settles it:** Disclose rather than conceal. Concealment damages trust when it surfaces later.
 
 ### Escalation
 
 Three signals that mean escalate:
+
 1. Affected population is LARGE
 2. Potential harm is SIGNIFICANT
 3. Question touches an area your team lacks STANDING to resolve (law, contract, employment)
@@ -549,11 +553,13 @@ If the approved path takes 10 steps and the unapproved takes 1, people under dea
 **Shadow AI** = work data flowing through tools the org never approved and can't see.
 
 **Fix:** Don't take away the tools. Fix the approved path.
+
 > "What makes the approved way harder than the unsafe way?"
 
 ### Usage Audit (Quarterly at Minimum)
 
 Five questions:
+
 1. Which AI workflows are actually in use?
 2. What data is actually going through them?
 3. Did defined human gates really run?
@@ -565,6 +571,7 @@ Five questions:
 ### Re-Check Triggers
 
 Re-check the Governance Record when ANY of these change:
+
 - Model or model family
 - AI product feature or retention behavior
 - Connector, Skill, plugin, permission, or action
@@ -579,6 +586,7 @@ Re-check the Governance Record when ANY of these change:
 ### When There's No AI Policy
 
 Don't invent one and present it as official. Write an interim proposal for the right owner:
+
 1. Approved AI products and specific routes for work data
 2. Short list of data types requiring confirmation before use
 3. Human-gate rule for external/consequential outputs
@@ -589,12 +597,12 @@ Don't invent one and present it as official. Write an interim proposal for the r
 
 ## FOR AGENT BUILDERS: The Four Questions as Architecture
 
-| Question | Becomes | Design Principle |
-|----------|---------|-----------------|
-| The Case | Autonomy level | Draft only / Propose for confirmation / Act within narrow reversible boundary / Act alone (only with reliability + monitoring + rollback) |
-| The Data | Custody & minimization | What agent may read, where stored, what enters prompts/logs, how long kept, which fields excluded BEFORE agent sees them |
-| The Capability | Scoped authority | Narrow credentials, read-only default, tool allow-lists, confirmation for consequential actions, audit trails, separate agent identities |
-| The People | Evaluation & recourse | Fairness testing across groups, review exclusions, meaningful disclosure, way to appeal/reverse, post-deployment monitoring |
+| Question       | Becomes                | Design Principle                                                                                                                          |
+| -------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| The Case       | Autonomy level         | Draft only / Propose for confirmation / Act within narrow reversible boundary / Act alone (only with reliability + monitoring + rollback) |
+| The Data       | Custody & minimization | What agent may read, where stored, what enters prompts/logs, how long kept, which fields excluded BEFORE agent sees them                  |
+| The Capability | Scoped authority       | Narrow credentials, read-only default, tool allow-lists, confirmation for consequential actions, audit trails, separate agent identities  |
+| The People     | Evaluation & recourse  | Fairness testing across groups, review exclusions, meaningful disclosure, way to appeal/reverse, post-deployment monitoring               |
 
 **Critical:** If Governance Record says "human approves before send" but the API token CAN send without confirmation, the architecture has already overruled the policy.
 
@@ -627,71 +635,83 @@ Don't invent one and present it as official. Write an interim proposal for the r
 
 ## KEY VOCABULARY
 
-| Term | Definition |
-|------|-----------|
-| **Four questions** | The Case, The Data, The Capability, The People |
-| **Three answers** | Fully appropriate / appropriate with review / inappropriate (or equivalent per question) |
-| **Delegation criteria** | Four screens: reversibility, consequence, human judgment, accountability |
-| **Deciding factor** | The one screen actually carrying the classification |
-| **Defined gate** | Review naming WHO, WHAT, WHEN |
-| **Accountability** | Who stays answerable. Cannot transfer to a tool. |
-| **Data tier** | Green (go), Yellow (check), Red (keep out unless approved route) |
-| **Discriminator** | "Does the task need identifiers or only the pattern?" |
-| **Redaction** | Removing fields the task doesn't need before AI sees data |
-| **Pseudonymized** | Names replaced by labels, but mapping to people still exists |
-| **Anonymized** | Changed so it no longer identifies anyone, by org's standard |
-| **Entry point** | Route data takes into AI (chat, upload, connector, API) |
-| **Purpose** | Reason data was first collected. New use needs original reason or fresh permission. |
-| **Scopes** | Exact list of things you allow a connector to do. Skills have NONE. |
-| **Five checks** | Source, reach, fit, outside content, actions |
-| **Three outcomes** | Enable, escalate, decline |
-| **Prompt injection** | Hidden instructions in content AI reads, written to steer it |
-| **Least privilege** | Narrowest authority that finishes the job |
-| **Shadow AI** | Work data through unapproved tools the org can't see |
-| **Diligence gap** | Distance between policy and what people actually do |
-| **Residual risk** | What can still go wrong after every planned control works |
-| **Governance Record** | One page: Case + Data + Capability + People + Evidence + re-check triggers |
-| **Synthetic data** | Made-up data shaped like the real thing, safe to practice on |
-| **Code execution sandbox** | Walled-off space where AI runs code without touching your systems |
+| Term                       | Definition                                                                               |
+| -------------------------- | ---------------------------------------------------------------------------------------- |
+| **Four questions**         | The Case, The Data, The Capability, The People                                           |
+| **Three answers**          | Fully appropriate / appropriate with review / inappropriate (or equivalent per question) |
+| **Delegation criteria**    | Four screens: reversibility, consequence, human judgment, accountability                 |
+| **Deciding factor**        | The one screen actually carrying the classification                                      |
+| **Defined gate**           | Review naming WHO, WHAT, WHEN                                                            |
+| **Accountability**         | Who stays answerable. Cannot transfer to a tool.                                         |
+| **Data tier**              | Green (go), Yellow (check), Red (keep out unless approved route)                         |
+| **Discriminator**          | "Does the task need identifiers or only the pattern?"                                    |
+| **Redaction**              | Removing fields the task doesn't need before AI sees data                                |
+| **Pseudonymized**          | Names replaced by labels, but mapping to people still exists                             |
+| **Anonymized**             | Changed so it no longer identifies anyone, by org's standard                             |
+| **Entry point**            | Route data takes into AI (chat, upload, connector, API)                                  |
+| **Purpose**                | Reason data was first collected. New use needs original reason or fresh permission.      |
+| **Scopes**                 | Exact list of things you allow a connector to do. Skills have NONE.                      |
+| **Five checks**            | Source, reach, fit, outside content, actions                                             |
+| **Three outcomes**         | Enable, escalate, decline                                                                |
+| **Prompt injection**       | Hidden instructions in content AI reads, written to steer it                             |
+| **Least privilege**        | Narrowest authority that finishes the job                                                |
+| **Shadow AI**              | Work data through unapproved tools the org can't see                                     |
+| **Diligence gap**          | Distance between policy and what people actually do                                      |
+| **Residual risk**          | What can still go wrong after every planned control works                                |
+| **Governance Record**      | One page: Case + Data + Capability + People + Evidence + re-check triggers               |
+| **Synthetic data**         | Made-up data shaped like the real thing, safe to practice on                             |
+| **Code execution sandbox** | Walled-off space where AI runs code without touching your systems                        |
 
 ---
 
 ## QUICK SELF-TEST (12 Questions)
 
 **Q1:** What are the four questions, in order?
+
 > The Case, The Data, The Capability, The People.
 
 **Q2:** What three things does a defined gate name?
+
 > WHO reviews, WHAT they verify, WHEN they review (before it becomes hard to undo).
 
 **Q3:** Can accountability transfer to a tool?
+
 > No. The person delegating stays answerable, no matter how much AI drafted.
 
 **Q4:** What question do you ask before deciding a sensitive task is impossible?
+
 > "Does the task actually need the identifiers, or only the pattern?"
 
 **Q5:** What's the difference between pseudonymized and anonymized data?
+
 > Pseudonymized: mapping back to people still exists -- keeps its tier. Anonymized: meets org's standard for no longer identifying anyone -- tier drops.
 
 **Q6:** "Is this AI product approved?" -- why is this the wrong question?
+
 > Should be: "Is THIS ROUTE approved for THIS DATA and THIS PURPOSE?" The route, data, and purpose all matter.
 
 **Q7:** Which two of the five capability checks tell you how dangerous a mistake could become?
+
 > Outside content (check 4) and Actions (check 5).
 
 **Q8:** Why does reviewing only what AI selected hide the fairness problem?
+
 > If AI systematically removes a group, nobody notices when review looks only at what remains. Must sample exclusions too.
 
 **Q9:** What's the Diligence gap?
+
 > The distance between what the policy requires and what people actually do. Risk lives in that gap.
 
 **Q10:** Why is deleting the chat the wrong first move when something goes wrong?
+
 > Deleting removes YOUR visibility, not the data (org/vendor records may persist). It can interfere with investigation and turns a mistake into concealment.
 
 **Q11:** In Ayesha's workflow, why doesn't stripping identifiers solve the data question?
+
 > The customer report MUST identify the customer and shipments. Task needs the identifiers. Route confirmation is the answer, not redaction.
 
 **Q12:** What four things does the Evidence line hold?
+
 > Success measure, failure threshold, monitoring owner + cadence, residual risk.
 
 ---
@@ -726,31 +746,31 @@ Don't invent one and present it as official. Write an interim proposal for the r
 
 ### Updated Data Handling Policy (Current Exam-Ready Summary)
 
-| Plan Type | Training Use | Anthropic's Role |
-|-----------|-------------|-----------------|
-| **API / Team / Enterprise** | NOT used for training by default | Data processor |
-| **Free / Pro / Max** | MAY be used if user opts in, or safety flagging, or explicit feedback | Data controller. Users adjust at claude.ai/settings. De-identified before training. |
+| Plan Type                   | Training Use                                                          | Anthropic's Role                                                                    |
+| --------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **API / Team / Enterprise** | NOT used for training by default                                      | Data processor                                                                      |
+| **Free / Pro / Max**        | MAY be used if user opts in, or safety flagging, or explicit feedback | Data controller. Users adjust at claude.ai/settings. De-identified before training. |
 
 ### Updated HIPAA/BAA Coverage (Current)
 
-| Surface | BAA Covered? |
-|---------|-------------|
-| Enterprise plans (API/chat) | YES |
-| Claude Code WITH Zero Data Retention (ZDR) | YES |
-| Cowork | **NO** |
-| Claude Code WITHOUT ZDR | **NO** |
-| Team / Free / Pro / Max | **NO** |
-| Pre-Dec 2025 API BAAs | **NO** |
+| Surface                                    | BAA Covered? |
+| ------------------------------------------ | ------------ |
+| Enterprise plans (API/chat)                | YES          |
+| Claude Code WITH Zero Data Retention (ZDR) | YES          |
+| Cowork                                     | **NO**       |
+| Claude Code WITHOUT ZDR                    | **NO**       |
+| Team / Free / Pro / Max                    | **NO**       |
+| Pre-Dec 2025 API BAAs                      | **NO**       |
 
 - BAA acceptance is one-way (irreversible), requires Primary Owner, resets org settings to HIPAA defaults
 
 ### Cowork Safety Controls (Current Details)
 
-| Mode | Behavior |
-|------|----------|
-| Manually approve | Pauses for actions needing approval |
+| Mode                  | Behavior                                                    |
+| --------------------- | ----------------------------------------------------------- |
+| Manually approve      | Pauses for actions needing approval                         |
 | Automatically approve | Safety classifier checks each action, escalates unsafe ones |
-| Skip all approvals | No ordinary approvals, no auto-check |
+| Skip all approvals    | No ordinary approvals, no auto-check                        |
 
 - Claude ALWAYS asks before permanently deleting files in ALL modes
 - Trust boundary: prompt injection requires BOTH read access beyond trust boundary AND ability to take harmful action
