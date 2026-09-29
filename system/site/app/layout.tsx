@@ -2,7 +2,7 @@ import { RootProvider } from "fumadocs-ui/provider/next";
 import "@fontsource-variable/inter";
 import "./global.css";
 import type { Metadata } from "next";
-import { appTitle } from "@/lib/shared";
+import { appDescription, appTitle } from "@/lib/shared";
 import { basePath, badgeByUrl } from "@/lib/source";
 import { readStageManifest } from "@/lib/stage-manifest";
 import KsorSearchDialog from "@/components/search-dialog";
@@ -10,12 +10,39 @@ import KsorSearchDialog from "@/components/search-dialog";
 // Inter is bundled locally rather than fetched from Google, so the site keeps
 // its zero-runtime-request posture while using one consistent reading face.
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? process.env.NEXT_PUBLIC_SITE_URL
+  : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: appTitle,
     template: `%s | ${appTitle}`,
   },
-  description: "The Knowledge System of Record for humans and AI agents.",
+  description: appDescription ?? appTitle,
+  openGraph: {
+    type: "website",
+    siteName: appTitle,
+    title: appTitle,
+    description: appDescription ?? appTitle,
+    images: [
+      {
+        url: "/icon.png",
+        width: 512,
+        height: 512,
+        alt: `${appTitle} logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: appTitle,
+    description: appDescription ?? appTitle,
+    images: ["/icon.png"],
+  },
   // A build that shows drafts (`KSOR_DRAFTS=show`) is a preview, and a static
   // site's pages are open-web artefacts: it says so to every crawler rather
   // than letting a draft be indexed under the record's name (build spec §3).
