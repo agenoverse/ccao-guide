@@ -1,15 +1,15 @@
 {
   "format": 1,
-  "build_id": "sha256:b0d2cf3bfad1abe7727f847e6b0ca08476e03e5a5597555b9abc7af65fa73d67",
+  "build_id": "sha256:2f61e979b4f891dad480c8cc723d96686f350346059e8e2bfa29c225774c956f",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
     "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
-  "source_commit": "6be6d95fe221a463ba923397fd938a46a201b898",
+  "source_commit": "fbe79e92490f64804dc1300d9a8d46425f443c31",
   "dirty": true,
-  "as_of": "2026-09-29T03:25:05.475Z",
+  "as_of": "2026-09-29T03:46:27.661Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -39,6 +39,17 @@
     {
       "path": "business-concepts/exam-vocabulary.md",
       "sha256": "5981ffa6a4679c13345081de12cfaf5345c6f59b161c78b24dbc04b6048c4557",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "community.md",
+      "sha256": "af21ab218407448e14d1f45de7950f4a8e8a5d65d03461871bf337500b48793e",
       "status": "stable",
       "audience": [
         "public"
@@ -626,7 +637,7 @@
     },
     {
       "path": "index.md",
-      "sha256": "ec7a1a10c49a63e852f568f3fdd428c94ec7d7464b6854133a16046445c5db48"
+      "sha256": "7434f8ccf291855d2381ff0b3b53251917a2864973b7ba203228e2dfa6d6ad55"
     },
     {
       "path": "practice-exams/index.md",
@@ -636,8 +647,8 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "5c44020738c6fc80097f8773e069d0a20f83f230e739fca2ee542c708533f62e",
-      "files": 65
+      "sha256": "2e79e81c6a1e3de46795a44426797cb52632537cbf281556c3e29ccf404bb3da",
+      "files": 66
     }
   ]
 }

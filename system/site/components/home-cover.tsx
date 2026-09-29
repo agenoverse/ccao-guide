@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
-import { ArrowRight, BookOpen, LibraryBig } from "lucide-react";
+import { ArrowRight, BookOpen, LibraryBig, MessageCircle } from "lucide-react";
 import type { ReactElement } from "react";
 
 import { RecordStack } from "@/components/record-stack";
@@ -16,6 +16,7 @@ export function HomeCover({
   firstUrl,
   lead,
   behind,
+  community,
 }: {
   mark: StaticImageData;
   name: string;
@@ -27,6 +28,8 @@ export function HomeCover({
   lead: RecordEntry;
   /** The entries standing behind it in the stack. */
   behind: readonly RecordEntry[];
+  /** A record-owned community page, when this corpus offers one. */
+  community: Pick<RecordEntry, "url"> | null;
   /** Signed from inside the cover, so the front door is one screen. */
   foot?: ReactElement;
 }): ReactElement {
@@ -117,6 +120,17 @@ export function HomeCover({
                 Browse all
               </Link>
             </div>
+
+            {community === null ? null : (
+              <Link
+                href={community.url}
+                className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-[var(--ksor-cover-foreground)] underline decoration-[var(--ksor-cover-rule)] underline-offset-4 transition-colors hover:decoration-[var(--ksor-cover-foreground)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-fd-ring"
+              >
+                <MessageCircle aria-hidden className="size-4" />
+                Join the study community
+                <ArrowRight aria-hidden className="size-3.5" />
+              </Link>
+            )}
           </div>
 
           <div className="flex justify-center lg:justify-end">

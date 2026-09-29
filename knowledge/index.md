@@ -9,3 +9,4 @@ okf_version: "0.2"
 * [Courses](courses/)
 * [Practice exams](practice-exams/)
 * [Business concepts](business-concepts/)
+* [Join the CCAO-F & PCAO-F Study Community](community.md) - A WhatsApp study group for students preparing for the CCAO-F and PCAO-F exams.
