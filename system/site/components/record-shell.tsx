@@ -19,7 +19,11 @@ import { basePath, getSortedPageTree, getSortedPages } from "@/lib/source";
  * once: two copies of it drift, and the drift shows up as a sidebar that
  * disagrees with itself between two routes.
  */
-export function RecordShell({ children }: { children: ReactNode }): ReactElement {
+export function RecordShell({
+  children,
+}: {
+  children: ReactNode;
+}): ReactElement {
   const documents = getSortedPages().length;
 
   return (
@@ -50,7 +54,8 @@ export function RecordShell({ children }: { children: ReactNode }): ReactElement
                 door an agent is told to read. The sidebar had three links and
                 then several hundred pixels of nothing beneath them. */}
             <p className="text-xs text-fd-muted-foreground">
-              <span className="font-mono">{appName}</span> · {documents} document
+              <span className="font-mono">{appName}</span> · {documents}{" "}
+              document
               {documents === 1 ? "" : "s"} ·{" "}
               <a
                 href={`${basePath}/llms.txt`}
@@ -59,11 +64,13 @@ export function RecordShell({ children }: { children: ReactNode }): ReactElement
                 llms.txt
               </a>
             </p>
-            <div className="flex items-center justify-between gap-3">
-              <p className="text-xs">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <p className="min-w-0 max-w-full text-xs">
                 <FooterMark />
               </p>
-              <ThemeSwitch />
+              <span className="shrink-0">
+                <ThemeSwitch />
+              </span>
             </div>
           </div>
         ),

@@ -45,7 +45,7 @@ export function HomeCover({
       />
 
       <div className="relative flex flex-1 items-start">
-        <div className="mx-auto grid w-full max-w-6xl items-start gap-12 px-5 py-10 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,1.08fr)_minmax(22rem,0.92fr)] lg:gap-16">
+        <div className="mx-auto grid w-full max-w-6xl items-start gap-10 px-5 py-6 sm:px-6 sm:py-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(22rem,0.92fr)] lg:gap-16">
           <div>
             <div className="motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-500">
               <div className="flex flex-wrap items-center gap-3">
@@ -69,18 +69,23 @@ export function HomeCover({
                 </p>
               </div>
 
-              <h1 className="mt-7 max-w-2xl font-display text-[clamp(2.25rem,4.4vw,3.65rem)] leading-[1.07] font-semibold tracking-[-0.018em] text-balance">
+              <h1 className="mt-5 max-w-2xl font-display text-[clamp(2.25rem,4.4vw,3.65rem)] leading-[1.07] font-semibold tracking-[-0.018em] text-balance">
                 {title}
               </h1>
             </div>
 
             {purpose === null ? null : (
-              <p className="relative mt-6 max-w-xl text-base/8 text-pretty text-[var(--ksor-cover-muted)] sm:text-lg/8 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:120ms] motion-safe:[animation-fill-mode:backwards]">
-                {purpose}
-              </p>
+              <>
+                <p className="relative mt-4 max-w-xl text-base/7 text-pretty text-[var(--ksor-cover-muted)] sm:text-lg/7 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:120ms] motion-safe:[animation-fill-mode:backwards]">
+                  {purpose}
+                </p>
+                <p className="mt-1 text-sm font-medium text-[var(--ksor-cover-muted)]">
+                  By Shazil Khan
+                </p>
+              </>
             )}
 
-            <dl className="mt-8 grid max-w-xl grid-cols-2 border-y border-[var(--ksor-cover-rule)] py-4 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:180ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-[repeat(2,minmax(0,12rem))]">
+            <dl className="mt-5 grid max-w-xl grid-cols-2 border-y border-[var(--ksor-cover-rule)] py-3 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:180ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-[repeat(2,minmax(0,12rem))]">
               <div className="border-r border-[var(--ksor-cover-rule)] pr-4">
                 <dt className="flex items-center gap-2 font-mono text-[10px] tracking-[0.14em] text-[var(--ksor-cover-muted)] uppercase">
                   <LibraryBig aria-hidden className="size-3.5" />
@@ -101,7 +106,7 @@ export function HomeCover({
               </div>
             </dl>
 
-            <div className="mt-9 grid w-full max-w-2xl grid-cols-1 gap-2 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-2 lg:grid-cols-[1.05fr_0.95fr_1.2fr]">
+            <div className="mt-6 grid w-full max-w-2xl grid-cols-1 gap-2 motion-safe:animate-in motion-safe:fade-in motion-safe:duration-500 motion-safe:[animation-delay:240ms] motion-safe:[animation-fill-mode:backwards] sm:grid-cols-2 lg:grid-cols-[1.05fr_0.95fr_1.2fr]">
               <Link
                 href={firstUrl}
                 className="group inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-[var(--ksor-cover-foreground)] px-3.5 py-2.5 text-[0.8125rem] font-semibold text-[var(--ksor-cover-panel)] shadow-[0_8px_20px_-12px_rgb(0_0_0/0.55)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-12px_rgb(0_0_0/0.65)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring motion-reduce:transform-none motion-reduce:transition-none"
@@ -139,7 +144,7 @@ export function HomeCover({
           </div>
         </div>
       </div>
-      {foot === undefined ? null : <div className="relative pb-10">{foot}</div>}
+      {foot === undefined ? null : <div className="relative pb-4">{foot}</div>}
     </section>
   );
 }
