@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "build_id": "sha256:d766fc9711b45b4134b0f1fb5a0c167e1a7f875496e2519c89280cc819cbbe7c",
+  "build_id": "sha256:c9386a58484b06cf62301b7977bd8e4dcf2d43d61a4bc8c9deea6107a3646da3",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
@@ -8,8 +8,8 @@
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
   "source_commit": "4323a20bccded0a914b7c2fb65128db995e45dce",
-  "dirty": false,
-  "as_of": "2026-09-30T12:17:46.273Z",
+  "dirty": true,
+  "as_of": "2026-10-05T12:45:49.316Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -242,6 +242,17 @@
       ]
     },
     {
+      "path": "courses/governance-risk-responsible-use/exam-simulation-22q.md",
+      "sha256": "ef0af241fcb15947e95359d4835a8006968fbdecd401d6dd1ec41c9c733d56a0",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
       "path": "courses/governance-risk-responsible-use/hard-practice-test.md",
       "sha256": "28078157a333147b8a6549e7971a67cdf2c6f29197482763e80364759c8aea93",
       "status": "draft",
@@ -328,6 +339,17 @@
       ]
     },
     {
+      "path": "courses/just-delegate-it/exam-simulation-22q.md",
+      "sha256": "2693848af3da31d0e03a02f109e05115573760b11eb1b7f1fd7493f646b6d4a3",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
       "path": "courses/just-delegate-it/practice-questions.md",
       "sha256": "68a3bb9459d14e5f371b7a8c06f5cda43d2f51aca78d6187b2bbc618a77ce8d5",
       "status": "stable",
@@ -385,6 +407,17 @@
     {
       "path": "courses/just-delegate-it/study-guide.md",
       "sha256": "fe3077b8b35d2e05d2cd87f04b8f5660dfdd6313a575ce11e24d96765c0a90e9",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
+      "path": "courses/workflow-design-diagnosis/exam-simulation-22q.md",
+      "sha256": "c4589d828307e16f01ed27651b0ec9752e6b29e0ed0d90b6aeaf73eda420bd9e",
       "status": "stable",
       "audience": [
         "public"
@@ -601,7 +634,7 @@
     },
     {
       "path": "courses/governance-risk-responsible-use/index.md",
-      "sha256": "6d79a9f2b8d237986a645d99f0f055d48b23b623aa7ad7fdc57ffdbe481a9fad"
+      "sha256": "acc6d15ba3b82f6152ce5180dc9ac49571667bb99537260b8db5f0a0a03dfb8f"
     },
     {
       "path": "courses/governance-risk-responsible-use/scenarios/index.md",
@@ -613,7 +646,7 @@
     },
     {
       "path": "courses/just-delegate-it/index.md",
-      "sha256": "40050df54b337f4eda6c831116adc2bbc6524c47d27754d2c58ec57128f23b09"
+      "sha256": "afd5dfeb3401c52c1629319a5b1fc968895060d91992506bcadfd16528b0dff1"
     },
     {
       "path": "courses/just-delegate-it/scenarios/index.md",
@@ -621,7 +654,7 @@
     },
     {
       "path": "courses/workflow-design-diagnosis/index.md",
-      "sha256": "db2e2922b9fce8d73f953a8b37452624d5202fa65ea4b06b229b8b7ff27d408d"
+      "sha256": "a571c62913c889a7bbedc98838e8e42781b7e43c6833da8cfe12f28e8850f0b5"
     },
     {
       "path": "courses/workflow-design-diagnosis/scenarios/index.md",
@@ -639,8 +672,8 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "5c8dc6a330e571372e3e1e99972ab99c12117676067114fa90492d7b970aeab7",
-      "files": 62
+      "sha256": "6bb78928606b577c1edf60d33b35b356e3d9824006720320b7c29116cf2a1a9f",
+      "files": 65
     }
   ]
 }

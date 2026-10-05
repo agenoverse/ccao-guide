@@ -4,3 +4,4 @@
 * [Scenarios](scenarios/)
 * [Workflow Design & Diagnosis: Practice Questions](practice-questions.md) - Practice questions covering workflow design and diagnosis concepts at exam difficulty.
 * [Workflow Design & Diagnosis: Hard Practice Test](hard-practice-test.md) - Hard-difficulty practice test with complex multi-step workflow scenarios and diagnosis challenges.
+* [Workflow Design & Diagnosis: Exam Simulation (22 Questions)](exam-simulation-22q.md) - Hard-difficulty 22-question exam simulation covering workflow design, diagnosis, handoffs, and troubleshooting.
