@@ -1,17 +1,17 @@
 ---
 type: Document
 title: "NotebookLM Study Notebooks"
-description: "Ready-made NotebookLM notebooks for the ten courses and the seven CCAO-F domains, with the starter prompt to paste into each."
+description: "Ready-made NotebookLM notebooks for each of the seven CCAO-F domains, with starter prompts to practise exam-style questions or learn a domain step by step."
 status: stable
 generated:
   by: human:shazilk-dev
-  at: "2026-10-31T02:41:44Z"
+  at: "2026-10-31T02:43:39Z"
 ksor:
   audience: [public]
   owner: human:shazilk-dev
   approval:
     by: human:shazilk-dev
-    at: "2026-10-31T02:42:00Z"
+    at: "2026-10-31T02:43:42Z"
 order: 998
 sources:
   - id: saad-linkedin
@@ -19,16 +19,39 @@ sources:
     title: "Muhammad Saad Bandukda — LinkedIn video on using the NotebookLM notebooks"
 ---
 
-Besides reading this guide, you can practise inside NotebookLM. Each notebook below already holds the course or domain material, so you paste one starter prompt and the notebook teaches you or tests you.
+Besides reading this guide, you can practise inside NotebookLM. There is one notebook for each exam domain. Each already holds that domain's material, so you open it, paste a starter prompt, and the notebook tests you or teaches you.
 
-Pick where you want to start:
+## Domain notebooks
 
-- [Course notebooks](#course-notebooks) — one notebook per course, for **learning** a course deeply.
-- [Domain notebooks](#domain-notebooks) — one notebook per exam domain, for **practising** exam-style questions.
+Open the notebook for the domain you want to work on. Start with D2, D4 and D6: together they are 52% of the exam.
 
-## Course notebooks
+| Domain | Topic                                    | Weight | Notebook                                                                                    |
+| ------ | ---------------------------------------- | ------ | ------------------------------------------------------------------------------------------- |
+| D1     | Prompting and Task Execution             | 14%    | [Open Domain 1](https://notebook.google.com/notebook/b2aeaf38-50c3-4754-8066-a07552e758b5) |
+| D2     | Output Evaluation and Validation         | 21%    | [Open Domain 2](https://notebook.google.com/notebook/2b448354-c652-44d2-ae6a-431429d61a61) |
+| D3     | Product and Model Selection              | 12%    | [Open Domain 3](https://notebook.google.com/notebook/9b84a340-1f6f-46d1-b4a7-4c3514318e4d) |
+| D4     | Workflow Integration and Solution Design | 16%    | [Open Domain 4](https://notebook.google.com/notebook/62554388-833f-471c-9b51-9b97e2d365e7) |
+| D5     | Configuration and Knowledge Management   | 12%    | [Open Domain 5](https://notebook.google.com/notebook/ad9d9477-f6de-4cdd-bcd8-9833ab331214) |
+| D6     | Governance, Risk and Responsible Use     | 15%    | [Open Domain 6](https://notebook.google.com/notebook/ec64e749-e9d6-4ba4-ba01-a75626951938) |
+| D7     | Troubleshooting and Optimization         | 10%    | [Open Domain 7](https://notebook.google.com/notebook/7b0aed18-05e1-4f04-8b08-e4725091bf31) |
 
-Open the notebook for the course you are studying, then paste this prompt as your first message. It teaches one concept at a time and tests you with scenario questions before moving on.
+## Practise with exam-style questions
+
+Paste this prompt as your first message in a domain notebook, and replace `[DOMAIN_NUMBER]` with the domain's number. It asks one exam-style question at a time, tracks your score and re-tests your weak spots.
+
+```text
+Act as an official-style PCAO-F/CCAO-F exam question setter. Using only the uploaded domain resources, PCAO-F/CCAO-F exam guides, and MCQ creation guide, generate 10 challenging, exam-realistic, scenario-based MCQs for the selected Domain [DOMAIN_NUMBER].
+Align questions with the relevant exam objectives, domain weightings, and MCQ creation guidelines.
+Test practical application, decision-making, tricky distinctions, and common misconceptions rather than simple definitions.
+Provide four options (A–D) with exactly one best answer. Do not reveal the answer before I respond.
+After each response, explain the correct answer, clarify the underlying concept, and explain why the other options are incorrect.
+Track my score, identify weak concepts, and test them with new questions.
+Ask one question at a time and maintain realistic exam difficulty.
+```
+
+## Learn a topic deeply first
+
+If a domain is new to you, use this prompt instead. It teaches one concept at a time and tests you with scenario questions before moving on.
 
 ```text
 Teach me this document deeply so I can build a strong mental model, not just memorize or summarize it.
@@ -79,34 +102,6 @@ The goal is not merely to get questions correct. The goal is to learn how to rec
 Use the provided source as the primary authority. If you add information beyond the source, clearly label it as additional information.
 Start with a very short overview, then teach Concept 1.
 ```
-
-The course notebook links are being added.
-
-## Domain notebooks
-
-Open the notebook for the domain you want to drill. Paste this prompt as your first message and replace `[DOMAIN_NUMBER]` with the domain's number. It asks one exam-style question at a time, tracks your score and re-tests your weak spots.
-
-```text
-Act as an official-style PCAO-F/CCAO-F exam question setter. Using only the uploaded domain resources, PCAO-F/CCAO-F exam guides, and MCQ creation guide, generate 10 challenging, exam-realistic, scenario-based MCQs for the selected Domain [DOMAIN_NUMBER].
-Align questions with the relevant exam objectives, domain weightings, and MCQ creation guidelines.
-Test practical application, decision-making, tricky distinctions, and common misconceptions rather than simple definitions.
-Provide four options (A–D) with exactly one best answer. Do not reveal the answer before I respond.
-After each response, explain the correct answer, clarify the underlying concept, and explain why the other options are incorrect.
-Track my score, identify weak concepts, and test them with new questions.
-Ask one question at a time and maintain realistic exam difficulty.
-```
-
-| Domain | Topic                                | Weight | Notebook                                                                                  |
-| ------ | ------------------------------------ | ------ | ----------------------------------------------------------------------------------------- |
-| D1     | Prompting and Task Execution         | 14%    | [Open Domain 1](https://notebook.google.com/notebook/b2aeaf38-50c3-4754-8066-a07552e758b5) |
-| D2     | Output Evaluation and Validation     | 21%    | [Open Domain 2](https://notebook.google.com/notebook/2b448354-c652-44d2-ae6a-431429d61a61) |
-| D3     | Product and Model Selection          | 12%    | [Open Domain 3](https://notebook.google.com/notebook/9b84a340-1f6f-46d1-b4a7-4c3514318e4d) |
-| D4     | Workflow Integration and Solution Design | 16% | [Open Domain 4](https://notebook.google.com/notebook/62554388-833f-471c-9b51-9b97e2d365e7) |
-| D5     | Configuration and Knowledge Management | 12%  | [Open Domain 5](https://notebook.google.com/notebook/ad9d9477-f6de-4cdd-bcd8-9833ab331214) |
-| D6     | Governance, Risk and Responsible Use | 15%    | [Open Domain 6](https://notebook.google.com/notebook/ec64e749-e9d6-4ba4-ba01-a75626951938) |
-| D7     | Troubleshooting and Optimization     | 10%    | [Open Domain 7](https://notebook.google.com/notebook/7b0aed18-05e1-4f04-8b08-e4725091bf31) |
-
-Start with D2, D4 and D6. Together they are 52% of the exam.
 
 ## Watch: how to use the notebooks
 
