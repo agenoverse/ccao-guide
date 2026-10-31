@@ -37,14 +37,14 @@ export function baseOptions(): BaseLayoutProps {
               <ExternalLink aria-hidden className="size-3" />
             </a>
             <a
-              href="https://instagram.com/risewith.sk"
+              href="https://www.linkedin.com/in/shazilkhan-dev/"
               target="_blank"
               rel="noreferrer"
-              aria-label="Shazil Khan on Instagram"
-              title="Instagram"
+              aria-label="Shazil Khan on LinkedIn"
+              title="LinkedIn"
               className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs text-fd-muted-foreground transition-colors hover:text-fd-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fd-ring"
             >
-              Instagram
+              LinkedIn
               <ExternalLink aria-hidden className="size-3" />
             </a>
           </div>

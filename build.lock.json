@@ -1,15 +1,15 @@
 {
   "format": 1,
-  "build_id": "sha256:5fddc44af480516b94e677348c4e88d05d74b9ead38184280adbb35639b01060",
+  "build_id": "sha256:417a758d8512f3da61be8d17a49ed53f8afb210940805bab0b7eee9e02be920d",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
     "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
-  "source_commit": "91859597f0b6483182ddad8dc30194c93e984e82",
+  "source_commit": "70fad7c61fc1d289688f39499deafaf3a34cf1e7",
   "dirty": true,
-  "as_of": "2026-10-31T02:56:49.248Z",
+  "as_of": "2026-10-31T03:06:26.999Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -49,7 +49,7 @@
     },
     {
       "path": "community.md",
-      "sha256": "3306470f381b0507a47111147cdaf0454544326f50219957d1551fa44a8f6a2e",
+      "sha256": "0e1f9c0aa039d4fd824d95464884a8d9556d08b3ea771f9639a00e6a0b2d030f",
       "status": "stable",
       "audience": [
         "public"
@@ -678,7 +678,7 @@
     },
     {
       "path": "index.md",
-      "sha256": "a9ed0970794fdcacb154e68d9635396a8a13d985e871997b7fbef4d816e5f2a5"
+      "sha256": "f05d33399fe5824b98723533bbe99166d8da6ea083dbce5b9e6e444efec25ae5"
     },
     {
       "path": "practice-exams/index.md",
@@ -688,7 +688,7 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "fa192ca339850203eecf8eb72cfb107a0ecadef854ecad75e1126459b4ae6383",
+      "sha256": "fbbf7163a0e65916d1976f54ff7bcb9e706eae2ffabfe1233235ba8c55083600",
       "files": 67
     }
   ]

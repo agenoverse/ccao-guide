@@ -10,4 +10,4 @@ okf_version: "0.2"
 * [Practice exams](practice-exams/)
 * [Business concepts](business-concepts/)
 * [NotebookLM Study Notebooks](study-notebooks.md) - Ready-made NotebookLM notebooks for each of the seven CCAO-F domains, with starter prompts to practise exam-style questions or learn a domain step by step.
-* [Join the CCAO-F & PCAO-F Study Community](community.md) - A WhatsApp study group for students preparing for the CCAO-F and PCAO-F exams.
+* [Join the CCAO-F & PCAO-F Study Community](community.md) - A WhatsApp study group and channel for students preparing for the CCAO-F and PCAO-F exams.
