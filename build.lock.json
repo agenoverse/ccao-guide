@@ -1,15 +1,15 @@
 {
   "format": 1,
-  "build_id": "sha256:c9386a58484b06cf62301b7977bd8e4dcf2d43d61a4bc8c9deea6107a3646da3",
+  "build_id": "sha256:8d8a2d8445137186da36d78b242c56bfc57a19a74dc67fc8a4f3665683935607",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
     "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
-  "source_commit": "4323a20bccded0a914b7c2fb65128db995e45dce",
+  "source_commit": "9a548e238a8a7882c6ae59a7585b518828b7eaa0",
   "dirty": true,
-  "as_of": "2026-10-05T12:45:49.316Z",
+  "as_of": "2026-10-31T02:41:54.410Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -599,6 +599,17 @@
       "admitted": [
         "public"
       ]
+    },
+    {
+      "path": "study-notebooks.md",
+      "sha256": "598bc644b99015725617f85b7e3b6fc839260aeed5a6eaf419d411558cc1804b",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
     }
   ],
   "companions": [],
@@ -662,7 +673,7 @@
     },
     {
       "path": "index.md",
-      "sha256": "7434f8ccf291855d2381ff0b3b53251917a2864973b7ba203228e2dfa6d6ad55"
+      "sha256": "edf2ee4d1418fb1c74ad10e1173249495d13152e325d5e5f38258aa9d2618225"
     },
     {
       "path": "practice-exams/index.md",
@@ -672,8 +683,8 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "6bb78928606b577c1edf60d33b35b356e3d9824006720320b7c29116cf2a1a9f",
-      "files": 65
+      "sha256": "9d7b1e9d719d7435fa2ea856ab9b8b9ee599e7dc2584a18a20d80d49008dfe21",
+      "files": 66
     }
   ]
 }
