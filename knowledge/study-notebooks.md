@@ -5,19 +5,22 @@ description: "Ready-made NotebookLM notebooks for each of the seven CCAO-F domai
 status: stable
 generated:
   by: human:shazilk-dev
-  at: "2026-10-31T02:43:39Z"
+  at: "2026-10-31T02:56:33Z"
 ksor:
   audience: [public]
   owner: human:shazilk-dev
   approval:
     by: human:shazilk-dev
-    at: "2026-10-31T02:43:42Z"
+    at: "2026-10-31T02:56:35Z"
 order: 998
 sources:
   - id: saad-linkedin
     resource: "https://www.linkedin.com/posts/muhammad-saad-bandukda_giaic-pcaof-ccaof-ugcPost-7520494996928540672-PTzr/"
     title: "Muhammad Saad Bandukda — LinkedIn video on using the NotebookLM notebooks"
 ---
+
+> [!NOTE]
+> These NotebookLM notebooks and prompts were shared by [Muhammad Saad Bandukda](https://www.linkedin.com/in/muhammad-saad-bandukda/) to help students prepare. His walkthrough video is at the end of this page.
 
 Besides reading this guide, you can practise inside NotebookLM. There is one notebook for each exam domain. Each already holds that domain's material, so you open it, paste a starter prompt, and the notebook tests you or teaches you.
 
@@ -105,8 +108,12 @@ Start with a very short overview, then teach Concept 1.
 
 ## Watch: how to use the notebooks
 
-A short walkthrough of using these notebooks for exam preparation.
+A short walkthrough by Muhammad Saad Bandukda on using these notebooks for exam preparation. Click the picture to watch it on LinkedIn.
 
-[Play the LinkedIn walkthrough](https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7520494996928540672 "embed")
+[![Muhammad Saad's walkthrough video on LinkedIn: PCAO-F exam prep strategy and resources](study-notebooks-video.jpg)](https://www.linkedin.com/posts/muhammad-saad-bandukda_giaic-pcaof-ccaof-ugcPost-7520494996928540672-PTzr/)
 
-The notebooks, the prompts above and this walkthrough video were shared by Muhammad Saad Bandukda.[^saad-linkedin]
+Or play it right here on the page:
+
+[Play the walkthrough on this page](https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7520494996928540672 "embed")
+
+The notebooks, the prompts above and this walkthrough video were shared by [Muhammad Saad Bandukda](https://www.linkedin.com/in/muhammad-saad-bandukda/).[^saad-linkedin]

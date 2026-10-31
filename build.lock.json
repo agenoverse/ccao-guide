@@ -1,15 +1,15 @@
 {
   "format": 1,
-  "build_id": "sha256:225551361978a1ff190a97fe66f71a22d3799c5993ce393d81ab6db309361274",
+  "build_id": "sha256:5fddc44af480516b94e677348c4e88d05d74b9ead38184280adbb35639b01060",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
     "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
-  "source_commit": "3654c2488f73ad635ba24e611a71dce20813224b",
+  "source_commit": "91859597f0b6483182ddad8dc30194c93e984e82",
   "dirty": true,
-  "as_of": "2026-10-31T02:44:08.688Z",
+  "as_of": "2026-10-31T02:56:49.248Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -602,7 +602,7 @@
     },
     {
       "path": "study-notebooks.md",
-      "sha256": "9b61d443187d3bf5e552890f1a95feed65a008793a19decc68fa8b947290f180",
+      "sha256": "10de17db473c98e975fb65e1831c4a5703888904c654bfa1d307da25710f4dac",
       "status": "stable",
       "audience": [
         "public"
@@ -613,7 +613,12 @@
     }
   ],
   "companions": [],
-  "assets": [],
+  "assets": [
+    {
+      "path": "study-notebooks-video.jpg",
+      "sha256": "d073d55477f7d3757918417db5a5aba69e5f3410be1b38ceda8b980755f8ad02"
+    }
+  ],
   "indexes": [
     {
       "path": "business-concepts/index.md",
@@ -683,8 +688,8 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "a773abd1f2f125f82eeff44f7feafb11ae8dd8e4db5575ea3a3393ef53a2580e",
-      "files": 66
+      "sha256": "fa192ca339850203eecf8eb72cfb107a0ecadef854ecad75e1126459b4ae6383",
+      "files": 67
     }
   ]
 }
