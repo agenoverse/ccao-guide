@@ -1,15 +1,15 @@
 {
   "format": 1,
-  "build_id": "sha256:12bd88c23e3f8b246161098a5bb40f2ba30e14f4ddfd32b9e88007d736acaf63",
+  "build_id": "sha256:13eeb2099cfd1db96aa91cdaf0f8de25764692b9237c93b853c2f06a23c91736",
   "ksor_version": "0.0.60",
   "okf": {
     "version": "0.2",
     "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
-  "source_commit": "6f6681d6067d503b2b5664d05ad1b8edaf72a7d2",
+  "source_commit": "e5578c4b352b5ca23c48601701f886623772a5cc",
   "dirty": false,
-  "as_of": "2026-11-10T11:20:13.408Z",
+  "as_of": "2026-11-10T11:49:06.824Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
@@ -535,6 +535,17 @@
       ]
     },
     {
+      "path": "other-preparation-resources.md",
+      "sha256": "0f5d0a171fb525353115ae0586185fc4eea4483ec90db211deabf8b64cc2df26",
+      "status": "stable",
+      "audience": [
+        "public"
+      ],
+      "admitted": [
+        "public"
+      ]
+    },
+    {
       "path": "overview.md",
       "sha256": "be5975a7baa45de535ebee4cfcce41ac32a3e33274d28e04c703a4bd3e8d2ed2",
       "status": "stable",
@@ -592,17 +603,6 @@
     {
       "path": "practice-exams/mock-exam-2.md",
       "sha256": "823bfcdab1246bea245bb82f8a9c840156893099426a3bfb66a61cbb75ae0305",
-      "status": "stable",
-      "audience": [
-        "public"
-      ],
-      "admitted": [
-        "public"
-      ]
-    },
-    {
-      "path": "resources.md",
-      "sha256": "4c2a743c45f40103c48b54157ddcabd5e37872141eb34bd2b13cda3dacb5e433",
       "status": "stable",
       "audience": [
         "public"
@@ -689,7 +689,7 @@
     },
     {
       "path": "index.md",
-      "sha256": "a0c6cfc3617adf3995d7ff4c99a36f4c124c5b821b500c161ae6bdd434826e22"
+      "sha256": "95f3338e3a0d233e11ba73902d99f16c83417c6269445642d11dbd27e457ea3a"
     },
     {
       "path": "practice-exams/index.md",
@@ -699,7 +699,7 @@
   "bundles": [
     {
       "viewer": "public",
-      "sha256": "b8248ddcf19e35bdbe876f1b34cf178c11f2256c800bbab9f19dafa28bacae5b",
+      "sha256": "e602ef76c99ad53448034e596825dabb12025c59ff6eed648ac73d9168b1c7b9",
       "files": 68
     }
   ]
