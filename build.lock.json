@@ -8,8 +8,8 @@
     "spec_sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101"
   },
   "source_commit": "6f6681d6067d503b2b5664d05ad1b8edaf72a7d2",
-  "dirty": true,
-  "as_of": "2026-11-10T11:15:57.697Z",
+  "dirty": false,
+  "as_of": "2026-11-10T11:20:13.408Z",
   "drafts": "hidden",
   "instance_sha256": "e645fd3cbfef55bab1b0baf9a389b1cbf2fda0b3a31dea6f26629b3f2b8269fc",
   "policy_sha256": "a0efa8bc3888f6746c9b7550e3b74ed30ea262db23ee4421cc4a6730f3b7bf1c",
