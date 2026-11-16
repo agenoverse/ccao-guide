@@ -5,7 +5,7 @@
       "root": "system/site",
       "framework": "nextjs",
       "installCommand": "cd ../.. && bun install",
-      "buildCommand": "cd ../.. && bun run build",
+      "buildCommand": "if [ \"$(git rev-parse --is-shallow-repository)\" = \"true\" ]; then git fetch --unshallow; fi; cd ../.. && bun run build",
       "outputDirectory": "out"
     },
     "door": {
