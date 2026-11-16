@@ -3,6 +3,7 @@
   "services": {
     "site": {
       "root": ".",
+      "framework": "nextjs",
       "installCommand": "bun install",
       "buildCommand": "bun run build",
       "outputDirectory": "system/site/out"
