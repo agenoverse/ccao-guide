@@ -5,8 +5,7 @@
       "root": "system/site",
       "framework": "nextjs",
       "installCommand": "cd ../.. && bun install",
-      "buildCommand": "cd ../.. && if [ \"$(git rev-parse --is-shallow-repository)\" = \"true\" ]; then git fetch --unshallow https://github.com/agenoverse/ccao-guide.git; fi && bun run build",
-      "outputDirectory": "out"
+      "buildCommand": "cd ../.. && if [ \"$(git rev-parse --is-shallow-repository)\" = \"true\" ]; then git fetch --unshallow https://github.com/agenoverse/ccao-guide.git; fi && bun run build"
     },
     "door": {
       "root": ".",
